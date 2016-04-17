@@ -5,12 +5,12 @@
 #include "simple_logger.h"
 #include <SDL.h>
 
-int numSounds = 0;
-int maxSounds = 0;
-int numMusics = 0;
-int maxMusics = 0;
-Sound *soundList = NULL;
-Music *musicList = NULL;
+static int numSounds = 0;
+static int maxSounds = 0;
+static int numMusics = 0;
+static int maxMusics = 0;
+static Sound *soundList = NULL;
+static Music *musicList = NULL;
 
 void audio_music_free(Music **music)
 {

@@ -1,0 +1,82 @@
+{"enemy_config": {
+	"melt": {
+		"sprite": {
+			"file": "images/melt.png",
+			"bounds": "128 128",
+			"frame": "1",
+			"fpl": "1",
+			"frames": "1"
+		},
+		"info": {
+			"type": "MELT",
+			"nexthink": "0",
+			"thinkrate": "800",
+			"health": "3",
+			"vel": "5 5"
+		}
+	},
+	"celery_stalker": {
+		"sprite": {
+			"file": "images/celery_stalker.png",
+			"bounds": 128 128,
+			"frame": 1,
+			"fpl": 1,
+			"frames": 1
+		},
+		"info": {
+			"type": "CELERY_STALKER",
+			"nexthink": 0,
+			"thinkrate": 2000,
+			"health": 1,
+			"vel": 5 5
+		}
+	},
+	"clarence": {
+		"sprite": {
+			"file": "images/clarence.png",
+			"bounds": 128 128,
+			"frame": 1,
+			"fpl": 1,
+			"frames": 1
+		},
+		"info": {
+			"type": "CLARENCE",
+			"nexthink": 0,
+			"thinkrate": 800,
+			"health": 1000000,
+			"vel": 0 20
+		}
+	},
+	"milk_tank": {
+		"sprite": {
+			"file": "images/milk_tank.png",
+			"bounds": 128 128,
+			"frame": 1,
+			"fpl": 1,
+			"frames": 1
+		},
+		"info": {
+			"type": "MILK_TANK",
+			"nexthink": 0,
+			"thinkrate": 2000,
+			"health": 10,
+			"vel": 4 4
+		}
+	},
+	"professor_slice": {
+		"sprite": {
+			"file": "images/professor_slice.png",
+			"bounds": 128 128,
+			"frame": 1,
+			"fpl": 1,
+			"frames": 1
+		},
+		"info": {
+			"type": "PROFESSOR_SLICE",
+			"nexthink": 0,
+			"thinkrate": 800,
+			"health": 5,
+			"vel": 5 5
+		}
+	}
+}}	

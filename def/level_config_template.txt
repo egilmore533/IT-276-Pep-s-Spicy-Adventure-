@@ -1,0 +1,66 @@
+{"tutorial_config": {
+	"player": {
+		"id": 1,
+		"position": "100 100"
+	},
+	"enemies": {
+		"melts": {
+			"number": "2"
+			"position": "100 100"
+			"position": "800 100"
+		},
+		"milk_tanks": {
+			"number": "2"
+			"position": "100 100"
+			"position": "800 100"
+		},
+		"clarences": {
+			"number": "2"
+			"position": "100 100"
+			"position": "800 100"
+		},
+		"celery_stalkers": {
+			"number": "2"
+			"position": "100 100"
+			"position": "800 100"
+		},
+		"professor_slices": {
+			"number": "2"
+			"position": "100 100"
+			"position": "800 100"
+		}
+	},
+	"power_ups": {
+		"heat_shields": {
+			"number": "2"
+			"position": "100 100"
+			"position": "800 100"
+		},
+		"goo_shots": {
+			"number": "2"
+			"position": "100 100"
+			"position": "800 100"
+		},
+		"spread_shots": {
+			"number": "2"
+			"position": "100 100"
+			"position": "800 100"
+		},
+		"double_taps": {
+			"number": "2"
+			"position": "100 100"
+			"position": "800 100"
+		},
+		"extra_lifes": {
+			"number": "2"
+			"position": "100 100"
+			"position": "800 100"
+		},
+		"bomb_pickups": {
+			"number": "2"
+			"position": "100 100"
+			"position": "800 100"
+		}
+	}
+}}	
+

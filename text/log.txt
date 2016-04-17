@@ -1,0 +1,38 @@
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\game.c:53: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\sprite.c:47: spriteList not initialized
+c:\users\user\desktop\it-276\src\audio.c:77: musicList not initialized
+c:\users\user\desktop\it-276\src\audio.c:96: soundList not initialized
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\game.c:53: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\game.c:53: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\game.c:53: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\game.c:53: 
+
+ QUIT GAME 
+
+

@@ -1,0 +1,18 @@
+{"player_config": {
+	"player": {
+		"sprite": {
+			"file": "images/pep3.png",
+			"bounds": 128 64,
+			"frame": 1,
+			"fpl": 2,
+			"frames": 2
+		},
+		"info": {
+			"type": "PLAYER",
+			"nexthink": 0,
+			"thinkrate": 200,
+			"health": 1,
+			"vel": 10 10
+		}
+	}
+}}	

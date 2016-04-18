@@ -5,6 +5,7 @@
 #include "sprite.h"
 #include "camera.h"
 #include "background.h"
+#include "player.h"
 
 #define	MAX_SPRITES		1000
 
@@ -35,6 +36,7 @@ int main(int argc, char *argv[])
 	audio_play_music(background_music); 
 	test = sprite_load("images/pep3.png", test_frame_size, 2, 2);
 	background_pak_new("def/sunny_peps_background_config.txt");
+	player_load(vect2d_new(200, 200), 1);
 	//test end
 
 	done = 0;
@@ -45,6 +47,7 @@ int main(int argc, char *argv[])
 		background_draw_all();
 
 		entity_update_all();
+		entity_draw_all();
 		
 		graphics_next_frame();
 		SDL_PumpEvents();

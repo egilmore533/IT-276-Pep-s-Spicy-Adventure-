@@ -3,15 +3,14 @@
 		"sprite": {
 			"file": "images/pep3.png",
 			"bounds": "128 64",
-			"frame": "1",
-			"fpl": "2",
-			"frames": "2"
+			"frame": 0,
+			"fpl": 2,
+			"frames": 2
 		},
 		"info": {
-			"type": "PLAYER",
-			"nextThink": "0",
-			"thinkRate": "200",
-			"health": "1",
+			"nextThink": 0,
+			"thinkRate": 200,
+			"health": 1,
 			"vel": "10 10"
 		}
 	}

@@ -58,7 +58,7 @@ void camera_initialize(Vect2d position, int id)
 	thinkRate = cJSON_GetObjectItem(buf, "thinkRate")->valueint;
 	nextThink = cJSON_GetObjectItem(buf, "nextThink")->valueint;
 
-	camera = entity_new(0, thinkRate, health, pos, vel);
+	camera = entity_new(nextThink, thinkRate, health, pos, vel);
 	camera->bounds = rect(camera->position.x, position.y, WINDOW_WIDTH, WINDOW_HEIGHT);
 	camera->update = &camera_update;
 }

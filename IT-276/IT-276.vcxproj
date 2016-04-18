@@ -41,7 +41,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LibraryPath>C:\Users\User\Desktop\IT-276\IT-276\SDL\lib x86;$(LibraryPath)</LibraryPath>
-    <TargetName>$Pep'sSpicyAdventure</TargetName>
+    <TargetName>Pep'sSpicyAdventure</TargetName>
     <OutDir>../</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -75,6 +75,7 @@
     <ClInclude Include="..\include\cJSON.h" />
     <ClInclude Include="..\include\entity.h" />
     <ClInclude Include="..\include\graphics.h" />
+    <ClInclude Include="..\include\player.h" />
     <ClInclude Include="..\include\simple_logger.h" />
     <ClInclude Include="..\include\sprite.h" />
     <ClInclude Include="..\include\vector.h" />
@@ -87,6 +88,7 @@
     <ClCompile Include="..\src\entity.c" />
     <ClCompile Include="..\src\game.c" />
     <ClCompile Include="..\src\graphics.c" />
+    <ClCompile Include="..\src\player.c" />
     <ClCompile Include="..\src\simple_logger.c" />
     <ClCompile Include="..\src\sprite.c" />
     <ClCompile Include="..\src\vector.c" />

@@ -1,0 +1,10 @@
+{"camera_config": {
+	"camera": {
+		"info": {
+			"nexthink": "0",
+			"thinkrate": "0",
+			"health": "0",
+			"vel": "3 0"
+		}
+	}
+}}	

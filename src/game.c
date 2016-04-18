@@ -3,6 +3,7 @@
 #include "audio.h"
 #include "simple_logger.h"
 #include "sprite.h"
+#include "camera.h"
 
 #define	MAX_SPRITES		1000
 
@@ -22,6 +23,7 @@ int main(int argc, char *argv[])
 	Vect2d test_frame_size = vect2d_new(128, 64);
 	Sprite *test = NULL;
 	Music *background_music = NULL;
+	Vect2d camera_pos = vect2d_new(0, 0);
 	//test end
 
 	initialize_all(1);
@@ -30,7 +32,9 @@ int main(int argc, char *argv[])
 	//test start
 	background_music = audio_load_music("sound/HotSalsa.ogg", -1);
 	audio_play_music(background_music); 
+	camera_initialize(camera_pos, 0);
 	test = sprite_load("images/pep3.png", test_frame_size, 2, 2);
+
 	//test end
 
 	done = 0;
@@ -38,7 +42,11 @@ int main(int argc, char *argv[])
 	{
 		SDL_RenderClear(the_renderer);
 
+		entity_update_all();
+
 		sprite_draw(test, 1, test_frame_size); //test
+
+		entity_update_all();
 		
 		graphics_next_frame();
 		SDL_PumpEvents();
@@ -72,6 +80,7 @@ void initialize_all(Uint8 level_number)
 	audio_initialize(128, 3);
 
 	sprite_initialize_system(MAX_SPRITES);
+	entity_initialize_system(200);
 }
 
 void initialize_next_level(Uint8 level_number)

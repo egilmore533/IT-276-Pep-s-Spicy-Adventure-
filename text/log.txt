@@ -36,3 +36,27 @@ c:\users\user\desktop\it-276\src\game.c:53:
  QUIT GAME 
 
 
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\entity.c:36: Maximum Entity Reached.
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\game.c:59: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\game.c:59: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\game.c:61: 
+
+ QUIT GAME 
+
+

@@ -6,6 +6,7 @@
 #include "sprite.h"
 #include "simple_logger.h"
 #include "graphics.h"
+#include "camera.h"
 
 static Sprite *spriteList = NULL;
 static int spriteNum;
@@ -157,12 +158,12 @@ Sprite *sprite_load(char *filename, Vect2d frameSize, int fpl, int frames)
 void sprite_draw(Sprite *sprite, int frame, Vect2d drawPos)
 {
 	
-	Vect2d positionRelative = drawPos; // remove = drawPos after entity and camera are up
-	//Entity *cam;
+	Vect2d positionRelative; // remove = drawPos after entity and camera are up
+	Entity *cam;
 	SDL_Rect source, destination;
 	SDL_Renderer *renderer = graphics_get_renderer();
-	//cam = camera_get();
-	//vect2d_subtract(drawPos, cam->position, positionRelative); 
+	cam = camera_get();
+	vect2d_subtract(drawPos, cam->position, positionRelative); 
 	if(!sprite)
 	{
 		slog("sprite doesn't point to anything");

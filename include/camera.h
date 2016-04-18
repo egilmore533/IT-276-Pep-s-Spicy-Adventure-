@@ -37,8 +37,19 @@ void camera_free_entity_outside_bounds(Entity *ent);
 /** @brief	stops the camera from moving */
 void camera_stop();
 
+/** @brief sets the camera to move */
 void camera_move();
 
+/**
+ * @brief frees the camera from memory 
+ * @param [in,out] free the camera that needs to be freed
+ */
 void camera_free(Entity *free);
+
+/**
+ * @brief returns the status of the camera (whether or not its moving)
+ * @return the status of the camera's movement
+ */
+Uint8 camera_get_move();
 
 #endif

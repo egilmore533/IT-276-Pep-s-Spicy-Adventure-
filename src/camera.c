@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdarg.h>
 
 #include "cJSON.h"
 #include "simple_logger.h"
@@ -8,7 +7,7 @@
 #include "graphics.h"
 
 static Entity *camera = NULL;
-static Vect2d velocity_move = {0, 0}; //the velocity that we want the camera to move at, used to reset the velocity
+static Uint8 moving = 0; /**< flag to tell the camera to start and stop moving */
 
 void camera_initialize(Vect2d position, int id)
 {
@@ -55,10 +54,9 @@ void camera_initialize(Vect2d position, int id)
 
 	//reads string that is two floats and sets them to be the two components of vel
 	sscanf(cJSON_GetObjectItem(buf, "vel")->valuestring, "%f %f", &vel.x, &vel.y);
-	velocity_move = vel;
 	health = cJSON_GetObjectItem(buf, "health")->valueint;
 	thinkRate = cJSON_GetObjectItem(buf, "thinkRate")->valueint;
-	//nextThink = cJSON_GetObjectItem(buf, "nextThink")->valueint;
+	nextThink = cJSON_GetObjectItem(buf, "nextThink")->valueint;
 
 	camera = entity_new(0, thinkRate, health, pos, vel);
 	camera->bounds = rect(camera->position.x, position.y, WINDOW_WIDTH, WINDOW_HEIGHT);
@@ -67,7 +65,10 @@ void camera_initialize(Vect2d position, int id)
 
 void camera_update(Entity *self)
 {
-	vect2d_add(self->position, self->velocity, self->position);
+	if(moving)
+	{
+		vect2d_add(self->position, self->velocity, self->position);
+	}
 }
 
 Entity *camera_get()
@@ -85,26 +86,21 @@ void camera_free_entity_outside_bounds(Entity *ent)
 
 void camera_stop()
 {
-	if(!camera)
-	{
-		slog("Camera not initialized");
-		return;
-	}
-	vect2d_set(camera->velocity, 0, 0);
+	moving = 0;
 }
 
 void camera_move()
 {
-	if(!camera)
-	{
-		slog("Camera not initialized");
-		return;
-	}
-	vect2d_set(camera->velocity, velocity_move.x, velocity_move.y);
+	moving = 1;
 }
 
 void camera_free(Entity *camera)
 {
-	vect2d_set(velocity_move, 0, 0);
 	entity_free(&camera);
+	camera = NULL; //just to be sure
+}
+
+Uint8 camera_get_move()
+{
+	return moving;
 }

@@ -9,8 +9,8 @@
 		},
 		"info": {
 			"type": "MELT",
-			"nexthink": "0",
-			"thinkrate": "800",
+			"nextThink": "0",
+			"thinkRate": "800",
 			"health": "3",
 			"vel": "5 5"
 		}
@@ -25,8 +25,8 @@
 		},
 		"info": {
 			"type": "CELERY_STALKER",
-			"nexthink": "0",
-			"thinkrate": "2000",
+			"nextThink": "0",
+			"thinkRate": "2000",
 			"health": "1",
 			"vel": "5 5"
 		}
@@ -41,8 +41,8 @@
 		},
 		"info": {
 			"type": "CLARENCE",
-			"nexthink": "0",
-			"thinkrate": "800",
+			"nextThink": "0",
+			"thinkRate": "800",
 			"health": "100000",
 			"vel": "0 20"
 		}
@@ -57,8 +57,8 @@
 		},
 		"info": {
 			"type": "MILK_TANK",
-			"nexthink": "0",
-			"thinkrate": "2000",
+			"nextThink": "0",
+			"thinkRate": "2000",
 			"health": "10",
 			"vel": "4 4"
 		}
@@ -73,8 +73,8 @@
 		},
 		"info": {
 			"type": "PROFESSOR_SLICE",
-			"nexthink": "0",
-			"thinkrate": "800",
+			"nextThink": "0",
+			"thinkRate": "800",
 			"health": "5",
 			"vel": "5 5"
 		}

@@ -9,8 +9,8 @@
 		},
 		"info": {
 			"type": "PLAYER",
-			"nexthink": "0",
-			"thinkrate": "200",
+			"nextThink": "0",
+			"thinkRate": "200",
 			"health": "1",
 			"vel": "10 10"
 		}

@@ -3,28 +3,28 @@
 		"red": {
 			"sprite": {
 				"file": "images/redSpark.png",
-				"bounds": 32 32,
-				"frame": 1,
-				"fpl": 16,
-				"frames": 32
+				"bounds": "32 32",
+				"frame": "1",
+				"fpl": "16",
+				"frames": "32"
 			}
 		},
 		"blue": {
 			"sprite": {
 				"file": "images/blueSpark.png",
-				"bounds": 32 32,
-				"frame": 1,
-				"fpl": 16,
-				"frames": 32
+				"bounds": "32 32",
+				"frame": "1",
+				"fpl": "16",
+				"frames": "32"
 			}
 		},
 		"green": {
 			"sprite": {
 				"file": "images/greenSpark.png",
-				"bounds": 32 32,
-				"frame": 1,
-				"fpl": 16,
-				"frames": 32
+				"bounds": "32 32",
+				"frame": "1",
+				"fpl": "16",
+				"frames": "32"
 			}
 		}
 	}

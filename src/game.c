@@ -4,6 +4,7 @@
 #include "simple_logger.h"
 #include "sprite.h"
 #include "camera.h"
+#include "background.h"
 
 #define	MAX_SPRITES		1000
 
@@ -32,19 +33,16 @@ int main(int argc, char *argv[])
 	//test start
 	background_music = audio_load_music("sound/HotSalsa.ogg", -1);
 	audio_play_music(background_music); 
-	camera_initialize(camera_pos, 0);
 	test = sprite_load("images/pep3.png", test_frame_size, 2, 2);
-
+	background_pak_new("def/sunny_peps_background_config.txt");
 	//test end
 
 	done = 0;
 	do
 	{
 		SDL_RenderClear(the_renderer);
-
-		entity_update_all();
-
-		sprite_draw(test, 1, test_frame_size); //test
+		background_update_all();
+		background_draw_all();
 
 		entity_update_all();
 		
@@ -67,6 +65,8 @@ int main(int argc, char *argv[])
 void clean_up_all()
 {
 	/* any other cleanup functions can be added here FILO order*/
+	background_close_system();
+	entity_close_system();
 	sprite_close_system();
 	audio_close_lists();
 	graphics_close();
@@ -81,6 +81,10 @@ void initialize_all(Uint8 level_number)
 
 	sprite_initialize_system(MAX_SPRITES);
 	entity_initialize_system(200);
+
+	background_initialize_system(8);
+
+	camera_initialize(vect2d_new(0, 0), 0); //test
 }
 
 void initialize_next_level(Uint8 level_number)

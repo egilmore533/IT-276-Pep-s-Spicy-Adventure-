@@ -70,6 +70,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\include\audio.h" />
+    <ClInclude Include="..\include\background.h" />
     <ClInclude Include="..\include\camera.h" />
     <ClInclude Include="..\include\cJSON.h" />
     <ClInclude Include="..\include\entity.h" />
@@ -80,6 +81,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\audio.c" />
+    <ClCompile Include="..\src\background.c" />
     <ClCompile Include="..\src\camera.c" />
     <ClCompile Include="..\src\cJSON.c" />
     <ClCompile Include="..\src\entity.c" />

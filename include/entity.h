@@ -37,11 +37,11 @@ typedef struct Entity_s
 	SDL_Rect bounds;												/**< the bounding box of the entity, determined by the sprite */
 	
 	Sprite *sprite;													/**< sprite component of the entity */
-	int frame_num;													/**< frame number the entity is on */
+	int frameNumber;												/**< frame number the entity is on */
 
 	int health;														/**< the current health of the entity */
 	Uint8  state;													/**< special states for each entity type (ie: stickied enemy, shielded player, goo bullet)*/
-	Uint8  bullet_state;											/**< the state an entities bullets will be in*/
+	Uint8  bulletState;												/**< the state an entities bullets will be in*/
 
 	struct Entity_s *owner;											/**< the owner of the entity, such as the entity that fired the bullet */
 	struct Entity_s *target;										/**< the target of this struct (ie: entity will be chasing player, power_up gives player a shield) */

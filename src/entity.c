@@ -159,7 +159,7 @@ void entity_draw_all()
 		/*
 		IF (entity != cam && entity_intersect(cam, entity))
 		*/
-		entityList[i].draw(entityList[i].sprite, entityList[i].frame_num, entityList[i].position);
+		entityList[i].draw(entityList[i].sprite, entityList[i].frameNumber, entityList[i].position);
 	}
 }
 
@@ -172,7 +172,7 @@ void entity_draw(Entity *entity)
 	}
 	
 	//draw the entity to the position on the entity as if the camera was the actual screen
-	entity->draw(entity->sprite, entity->frame_num, entity->position);
+	entity->draw(entity->sprite, entity->frameNumber, entity->position);
 }
 
 void entity_intersect_all(Entity *entity)

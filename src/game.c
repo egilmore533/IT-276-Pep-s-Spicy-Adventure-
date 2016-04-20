@@ -5,7 +5,7 @@
 #include "sprite.h"
 #include "camera.h"
 #include "background.h"
-#include "player.h"
+#include "level.h"
 
 #define	MAX_SPRITES		1000
 
@@ -26,6 +26,7 @@ int main(int argc, char *argv[])
 	Sprite *test = NULL;
 	Music *background_music = NULL;
 	Vect2d camera_pos = vect2d_new(0, 0);
+	Vect2d player_pos = vect2d_new(200, 200);
 	//test end
 
 	initialize_all(1);
@@ -36,7 +37,7 @@ int main(int argc, char *argv[])
 	audio_play_music(background_music); 
 	test = sprite_load("images/pep3.png", test_frame_size, 2, 2);
 	background_pak_new("def/sunny_peps_background_config.txt");
-	player_load(vect2d_new(200, 200), 1);
+	entity_load(PLAYER, player_pos, 1);
 	//test end
 
 	done = 0;
@@ -85,10 +86,9 @@ void initialize_all(Uint8 level_number)
 
 	sprite_initialize_system(MAX_SPRITES);
 	entity_initialize_system(200);
+	entity_load(CAMERA, vect2d_new(0, 0), 0); //test
 
 	background_initialize_system(8);
-
-	camera_initialize(vect2d_new(0, 0), 0); //test
 }
 
 void initialize_next_level(Uint8 level_number)

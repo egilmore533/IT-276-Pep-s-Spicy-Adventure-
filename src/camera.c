@@ -9,7 +9,7 @@
 static Entity *camera = NULL;
 static Uint8 moving = 0; /**< flag to tell the camera to start and stop moving */
 
-void camera_initialize(Vect2d position, int id)
+Entity *camera_load(Vect2d position, int id)
 {
 	//config file stuff
 	cJSON *json, *root, 
@@ -61,6 +61,9 @@ void camera_initialize(Vect2d position, int id)
 	camera = entity_new(nextThink, thinkRate, health, pos, vel);
 	camera->bounds = rect(camera->position.x, position.y, WINDOW_WIDTH, WINDOW_HEIGHT);
 	camera->update = &camera_update;
+	camera->free = &entity_free;
+	camera->id = id;
+	return camera;
 }
 
 void camera_update(Entity *self)

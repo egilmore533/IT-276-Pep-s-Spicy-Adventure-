@@ -47,6 +47,7 @@ typedef struct Entity_s
 
 	Vect2d position;												/**< x and y coordinates of the entity */
 	Vect2d velocity;												/**< x and y velocities that the entity is moving */
+	Vect2d maxVelocity;												/**< the entities maximum x and y velocities */
 	Vect2d direction;												/**< normalized vector of which way the entity will be moving */
 	SDL_Rect bounds;												/**< the bounding box of the entity, determined by the sprite */
 	
@@ -69,7 +70,7 @@ typedef struct Entity_s
 	void (*think) (struct Entity_s *self);							/**< behavior of the entity */
 	void (*update) (struct Entity_s *self);							/**< update function for changing the entity's data and checking its status */
 	void (*touch) (struct Entity_s *self, struct Entity_s *other);	/**< collision behavior of the entity */
-	void (*free) (struct Entity_s *self);							/**< function to free the entity */
+	void (*free) (struct Entity_s **self);							/**< function to free the entity */
 
 }Entity;
 

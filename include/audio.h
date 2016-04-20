@@ -16,7 +16,7 @@ typedef enum
 	FX_NULL = 0, 
 	FX_Bullets, 
 	FX_Impacts, 
-	FX_Monsters, 
+	FX_Enemy, 
 	FX_Player
 }SOUND_GROUPS;
 

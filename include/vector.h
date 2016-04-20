@@ -91,6 +91,10 @@ Vect3d vect3d_new(float a, float b, float c);
  */
 Vect4d vect4d_new(float a, float b, float c, float d);
 
+#define vect2d_copy(a,b)(a.x = b.x, a.y = b.y);
+#define vect3d_copy(a,b)(a.x = b.x, a.y = b.y, a.z = b.z);
+#define vect4d_copy(a,b)(a.x = b.x, a.y = b.y, a.z = b.z, a.w = b.w);
+
 /**
  * @brief	A macro that subtracts the second vect2d from the second, and puts it into the third vect2d.
  * @param	a   	The whole.

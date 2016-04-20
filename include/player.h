@@ -18,7 +18,7 @@
  * @param position	the position the player will be spawned in
  * @param id		the player's id
  */
-void player_load(Vect2d position, int id);
+Entity *player_load(Entity *player, Vect2d position, int id);
 
 /**
  * @brief	fires by clicking, holding click for a certain amount of time will result in a charged attack, press space to use a

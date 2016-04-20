@@ -14,7 +14,7 @@
  * @param	position  	The x and y coordinates of the camera.
  * @param	id		  	The camera entity's identifier.
  */
-void camera_initialize(Vect2d position, int id);
+Entity *camera_load(Vect2d position, int id);
 
 /**
  * @brief	moves the camera, performs the intersect all to check what entities are inside the camera's bounds, then camera_touch will draw them, be sure to remove camera_touch after runnign intersect all that way nothing is drawn twice.

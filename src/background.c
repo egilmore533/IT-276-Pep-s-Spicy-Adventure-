@@ -123,6 +123,7 @@ Background *background_new(float moveFactor, Uint32 nextThink, Uint32 thinkRate)
 BackgroundPak *background_pak_new(char *file)
 {
 	BackgroundPak *pak = NULL;
+	int i;
 
 	//config file stuff
 	cJSON *json, *root, 
@@ -169,107 +170,83 @@ BackgroundPak *background_pak_new(char *file)
 		return NULL;
 	}
 
-	// back of the pak
-	obj = cJSON_GetObjectItem(root, "back");
-
-	if(!obj)
-	{
-		slog("no back for the pak");
-		return NULL;
-	}
-
 	pak = (BackgroundPak *) malloc (sizeof (BackgroundPak));
 	memset(pak, 0, sizeof (BackgroundPak));
 
-	pak->free = &background_pak_free;
-
-	buf = cJSON_GetObjectItem(obj, "info");
-	moveFactor = cJSON_GetObjectItem(buf, "moveFactor")->valuedouble;
-	thinkRate = cJSON_GetObjectItem(buf, "thinkRate")->valueint;
-	nextThink = cJSON_GetObjectItem(buf, "nextThink")->valueint;
-	pak->back = background_new(moveFactor, nextThink, thinkRate);
-
-	buf = cJSON_GetObjectItem(obj, "sprite");
-	filepath = cJSON_GetObjectItem(buf, "file")->valuestring;
-	sscanf(cJSON_GetObjectItem(buf, "bounds")->valuestring, "%f %f", &frameSize.x, &frameSize.y);
-	frame = cJSON_GetObjectItem(buf, "frame")->valueint;
-	fpl = cJSON_GetObjectItem(buf, "fpl")->valueint;
-	frames = cJSON_GetObjectItem(buf, "frames")->valueint;
-
-	pak->back->sprite = sprite_load(filepath, frameSize, fpl, frames);
-
-	// middle of the pak
-	obj = cJSON_GetObjectItem(root, "middle");
-
-	if(!obj)
+	for(i = 0; i < 4; i++)
 	{
-		slog("no middle for the pak");
-		return pak;
+		//initializing the obj
+		switch(i)
+		{
+			case 0:
+				obj = cJSON_GetObjectItem(root, "back");
+				if(!obj)
+				{
+					slog("no back for the pak");
+					continue;
+				}
+				break;
+			case 1:
+				obj = cJSON_GetObjectItem(root, "middle");
+				if(!obj)
+				{
+					slog("no middle for the pak");
+					continue;
+				}
+				break;
+			case 2:
+				obj = cJSON_GetObjectItem(root, "front");
+				if(!obj)
+				{
+					slog("no front for the pak");
+					continue;
+				}
+				break;
+			case 3:
+				obj = cJSON_GetObjectItem(root, "flair");
+				if(!obj)
+				{
+					slog("no flair for the pak");
+					continue;
+				}
+				break;
+		}
+
+		pak->free = &background_pak_free;
+
+		buf = cJSON_GetObjectItem(obj, "info");
+		moveFactor = cJSON_GetObjectItem(buf, "moveFactor")->valuedouble;
+		thinkRate = cJSON_GetObjectItem(buf, "thinkRate")->valueint;
+		nextThink = cJSON_GetObjectItem(buf, "nextThink")->valueint;
+
+		buf = cJSON_GetObjectItem(obj, "sprite");
+		filepath = cJSON_GetObjectItem(buf, "file")->valuestring;
+		sscanf(cJSON_GetObjectItem(buf, "bounds")->valuestring, "%f %f", &frameSize.x, &frameSize.y);
+		frame = cJSON_GetObjectItem(buf, "frame")->valueint;
+		fpl = cJSON_GetObjectItem(buf, "fpl")->valueint;
+		frames = cJSON_GetObjectItem(buf, "frames")->valueint;
+
+		//loading for the specific obj
+		switch(i)
+		{
+			case 0:
+				pak->back = background_new(moveFactor, nextThink, thinkRate);
+				pak->back->sprite = sprite_load(filepath, frameSize, fpl, frames);
+				break;
+			case 1:
+				pak->middle = background_new(moveFactor, nextThink, thinkRate);
+				pak->middle->sprite = sprite_load(filepath, frameSize, fpl, frames);
+				break;
+			case 2:
+				pak->front = background_new(moveFactor, nextThink, thinkRate);
+				pak->front->sprite = sprite_load(filepath, frameSize, fpl, frames);
+				break;
+			case 3:
+				pak->flair = background_new(moveFactor, nextThink, thinkRate);
+				pak->flair->sprite = sprite_load(filepath, frameSize, fpl, frames);
+				break;
+		}
 	}
-
-	buf = cJSON_GetObjectItem(obj, "info");
-	moveFactor = cJSON_GetObjectItem(buf, "moveFactor")->valuedouble;
-	thinkRate = cJSON_GetObjectItem(buf, "thinkRate")->valueint;
-	nextThink = cJSON_GetObjectItem(buf, "nextThink")->valueint;
-	pak->middle = background_new(moveFactor, nextThink, thinkRate);
-
-	buf = cJSON_GetObjectItem(obj, "sprite");
-	filepath = cJSON_GetObjectItem(buf, "file")->valuestring;
-	sscanf(cJSON_GetObjectItem(buf, "bounds")->valuestring, "%f %f", &frameSize.x, &frameSize.y);
-	frame = cJSON_GetObjectItem(buf, "frame")->valueint;
-	fpl = cJSON_GetObjectItem(buf, "fpl")->valueint;
-	frames = cJSON_GetObjectItem(buf, "frames")->valueint;
-
-	pak->middle->sprite = sprite_load(filepath, frameSize, fpl, frames);
-
-	// front of the pak
-	obj = cJSON_GetObjectItem(root, "front");
-
-	if(!obj)
-	{
-		slog("no front for the pak");
-		return pak;
-	}
-
-	buf = cJSON_GetObjectItem(obj, "info");
-	moveFactor = cJSON_GetObjectItem(buf, "moveFactor")->valuedouble;
-	thinkRate = cJSON_GetObjectItem(buf, "thinkRate")->valueint;
-	nextThink = cJSON_GetObjectItem(buf, "nextThink")->valueint;
-	pak->front = background_new(moveFactor, nextThink, thinkRate);
-
-	buf = cJSON_GetObjectItem(obj, "sprite");
-	filepath = cJSON_GetObjectItem(buf, "file")->valuestring;
-	sscanf(cJSON_GetObjectItem(buf, "bounds")->valuestring, "%f %f", &frameSize.x, &frameSize.y);
-	frame = cJSON_GetObjectItem(buf, "frame")->valueint;
-	fpl = cJSON_GetObjectItem(buf, "fpl")->valueint;
-	frames = cJSON_GetObjectItem(buf, "frames")->valueint;
-
-	pak->front->sprite = sprite_load(filepath, frameSize, fpl, frames);
-
-	// flair of the pak
-	obj = cJSON_GetObjectItem(root, "flair");
-
-	if(!obj)
-	{
-		slog("no flair for the pak");
-		return pak;
-	}
-
-	buf = cJSON_GetObjectItem(obj, "info");
-	moveFactor = cJSON_GetObjectItem(buf, "moveFactor")->valuedouble;
-	thinkRate = cJSON_GetObjectItem(buf, "thinkRate")->valueint;
-	nextThink = cJSON_GetObjectItem(buf, "nextThink")->valueint;
-	pak->flair = background_new(moveFactor, nextThink, thinkRate);
-
-	buf = cJSON_GetObjectItem(obj, "sprite");
-	filepath = cJSON_GetObjectItem(buf, "file")->valuestring;
-	sscanf(cJSON_GetObjectItem(buf, "bounds")->valuestring, "%f %f", &frameSize.x, &frameSize.y);
-	frame = cJSON_GetObjectItem(buf, "frame")->valueint;
-	fpl = cJSON_GetObjectItem(buf, "fpl")->valueint;
-	frames = cJSON_GetObjectItem(buf, "frames")->valueint;
-
-	pak->flair->sprite = sprite_load(filepath, frameSize, fpl, frames);
-
 	return pak;
 
 }

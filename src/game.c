@@ -46,6 +46,7 @@ int main(int argc, char *argv[])
 		background_update_all();
 		background_draw_all();
 
+		entity_think_all();
 		entity_update_all();
 		entity_draw_all();
 		
@@ -80,7 +81,7 @@ void initialize_all(Uint8 level_number)
 	init_logger("text/log.txt"); //init simple logger from DJ's source code
 	
 	graphics_initialize("Pep's Spicy Adventure", WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_WIDTH, WINDOW_HEIGHT, 0);
-	audio_initialize(128, 3);
+	audio_initialize(128, 3, 30);
 
 	sprite_initialize_system(MAX_SPRITES);
 	entity_initialize_system(200);

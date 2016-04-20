@@ -5,6 +5,7 @@
 #include "camera.h"
 #include "cJSON.h"
 #include "simple_logger.h"
+#include "audio.h"
 
 static Entity	*player = NULL;
 static Uint32	respawn_moment;
@@ -35,6 +36,13 @@ void player_load(Vect2d position, int id)
 	int frame;
 	int fpl;
 	int frames;
+
+	//audioPak info
+	char *name;
+	char *fire1_file;
+	char *fire2_file;
+	char *death_file;
+	char *moving_file;
 
 	player_config_file = fopen("def/player_config.txt","r");
 	if(!player_config_file)
@@ -77,8 +85,16 @@ void player_load(Vect2d position, int id)
 	fpl = cJSON_GetObjectItem(buf, "fpl")->valueint;
 	frames = cJSON_GetObjectItem(buf, "frames")->valueint;
 
+	buf = cJSON_GetObjectItem(obj, "audioPak");
+	name = cJSON_GetObjectItem(buf, "name")->valuestring;
+	fire1_file = cJSON_GetObjectItem(buf, "firing1")->valuestring;
+	fire2_file = cJSON_GetObjectItem(buf, "firing2")->valuestring;
+	death_file = cJSON_GetObjectItem(buf, "death")->valuestring;
+	moving_file = cJSON_GetObjectItem(buf, "moving")->valuestring;
+
 	player = entity_new(nextThink, thinkRate, health, pos, vel);
 	player->sprite = sprite_load(filepath, frameSize, fpl, frames);
+	player->entitySounds = audio_load_pak(FX_Player, name, fire1_file, fire2_file, death_file, moving_file);
 	player->frameNumber = frame;
 	player->bounds = rect(player->position.x, position.y, frameSize.x, frameSize.y);
 	player->update = &player_update;
@@ -124,6 +140,7 @@ void player_think(Entity *player)
 			{
 				//weapon_pep_spread_fire(player);
 				slog("spread fire");
+				audio_play_sound(player->entitySounds->firing1);
 				player->nextThink = SDL_GetTicks() + player->thinkRate;
 			}
 		}
@@ -133,6 +150,7 @@ void player_think(Entity *player)
 			{
 				//weapon_pep_charge_fire(player);
 				slog("charged Fire");
+				audio_play_sound(player->entitySounds->firing2);
 				player->nextThink = SDL_GetTicks() + player->thinkRate;
 			}
 		}
@@ -167,6 +185,7 @@ void player_update(Entity *player)
 	//if the player's health is less than 1 then kill
 	else if(player->health <= 0)
 	{
+		audio_play_sound(player->entitySounds->death);
 		if(lives == 0)
 		{
 			//game over code here
@@ -183,6 +202,10 @@ void player_update(Entity *player)
 		return;
 	}
 	keys = SDL_GetKeyboardState(NULL);
+	if(keys[SDL_SCANCODE_Q])
+	{
+		player->health--;
+	}
 	if(keys[SDL_SCANCODE_A])
 	{
 		if(!(player->position.x <= player->owner->position.x))

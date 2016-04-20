@@ -9,8 +9,11 @@ static int numSounds = 0;
 static int maxSounds = 0;
 static int numMusics = 0;
 static int maxMusics = 0;
+static int numPaks = 0;
+static int maxPaks = 0;
 static Sound *soundList = NULL;
 static Music *musicList = NULL;
+static SoundPak *pakList = NULL;
 
 void audio_music_free(Music **music)
 {
@@ -110,10 +113,11 @@ void audio_close_lists()
 {
 	audio_close_music();
 	audio_close_sound();
+	audio_close_paks();
 	Mix_CloseAudio();
 }
 
-void audio_initialize(int soundMax, int musicMax)
+void audio_initialize(int soundMax, int musicMax, int pakMax)
 {
 	int flags=MIX_INIT_OGG;
 	if(soundMax <= 0 || musicMax <= 0)
@@ -141,12 +145,15 @@ void audio_initialize(int soundMax, int musicMax)
 
 	musicList = (Music *) malloc (sizeof (Music) * musicMax);
 	soundList = (Sound *) malloc (sizeof (Sound) * soundMax);
+	pakList = (SoundPak *) malloc (sizeof (SoundPak) * pakMax);
 
 	memset(musicList, 0, sizeof (Music) * musicMax);
 	memset(soundList, 0, sizeof (Sound) * soundMax);
+	memset(pakList, 0, sizeof (SoundPak) * pakMax);
 
 	maxMusics = musicMax;
 	maxSounds = soundMax;
+	maxPaks = pakMax;
 }
 
 Music *audio_load_music(char *filename, int loop)
@@ -236,4 +243,105 @@ void audio_play_music(Music *music)
 void audio_play_sound(Sound *sound)
 {
 	Mix_PlayChannel(sound->channel, sound->sound, sound->loop);
+}
+
+void audio_close_paks()
+{
+	int i;
+	SoundPak *soundPak;
+	if(!pakList)
+	{
+		slog("pak List not initialized");
+		return;
+	}
+	for(i = 0; i < maxPaks; i++)
+	{
+		soundPak = &pakList[i];
+		audio_pak_free(&soundPak);
+	}
+	maxPaks = 0;
+	free(pakList); 
+	pakList = NULL;
+}
+
+SoundPak *audio_load_pak(int channel, char *name, char *fire1_file, char *fire2_file, char *death_file, char *moving_fire)
+{
+	int i;
+	SoundPak *pak = NULL;
+
+	if(!pakList)
+	{
+		slog("soundList uninitialized");
+		return NULL;
+	}
+	for(i = 0; i < maxPaks; i++)
+	{
+		if(pakList[i].refCount == 0)
+		{
+			if(pak == NULL)
+				pak = &pakList[i];
+			continue;
+		}
+		if(strncmp(name, pakList[i].name, 80) ==0)
+		{
+			pakList[i].refCount++;
+			return &pakList[i];
+		}
+	}
+	if(numPaks  + 1 > maxPaks)
+	{
+		slog("Maximum paks reached");
+		exit(1);
+	}
+
+	numSounds++;
+
+	strcpy(pak->name, name);
+	pak->firing1 = audio_load_sound(fire1_file, 0, FX_Bullets);
+	pak->firing2 = audio_load_sound(fire2_file, 0, FX_Bullets);
+	pak->death = audio_load_sound(death_file, 0, channel);
+	pak->moving = audio_load_sound(moving_fire, 0, channel);
+	pak->loaded = 1;
+	pak->refCount++;
+	return pak;
+}
+
+void audio_pak_free(SoundPak **pak)
+{
+	SoundPak *target;
+	if(!pak)
+	{
+		return;
+	}
+	else if(!*pak) 
+	{
+		return;
+	}
+	target = *pak;
+	target->loaded--;
+
+	if(target->refCount == 0)
+	{
+		strcpy(target->name,"\0");
+		
+		if(target->moving != NULL)
+		{
+			audio_sound_free(&target->moving); 
+		}
+		if(target->firing1 != NULL)
+		{
+			audio_sound_free(&target->firing1);
+		}
+		if(target->firing2 != NULL)
+		{
+			audio_sound_free(&target->firing2);
+		}
+		if(target->death != NULL)
+		{
+			audio_sound_free(&target->death);
+		}
+		memset(target,0,sizeof(SoundPak));
+		numPaks--;
+	}
+	*pak = NULL;
 }

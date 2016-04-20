@@ -55,11 +55,12 @@ typedef struct Music_s
  */
 typedef struct SoundPak_S
 {
-	char name[80];				/**< name of this SoundPak, used to id this SoundPak */
+	char name[80];			/**< name of this SoundPak, used to id this SoundPak */
 	int loaded;				/**< flag to let the resource manager know if this specific soundPak has been loaded */
 	int refCount;			/**< the number of times this SoundPak has been used */
 	Sound *moving;			/**< sound to be played when the entity moves */
-	Sound *firing;			/**< firing sound to be played when the entity is firing */
+	Sound *firing1;			/**< firing sound to be played when the entity is firing */
+	Sound *firing2;			/**< alternate firing sound to be played when the entity is firing */
 	Sound *death;			/**< sound to be played when the entity dies */
 }SoundPak;
 
@@ -67,8 +68,9 @@ typedef struct SoundPak_S
  * @brief initializes the audio system with given parameters
  * @param soundMax  maximum amount of sounds to be loaded
  * @param musicMax  maximum amount of music to be loaded
+ * @param pakMax	maximum amount of soundPaks that can be loaded
  */
-void audio_initialize(int soundMax, int musicMax);
+void audio_initialize(int soundMax, int musicMax, int pakMax);
 
 /** @brief closes both the musicList and the audioList */
 void audio_close_lists();
@@ -119,6 +121,12 @@ void audio_play_music(Music *music);
  * @param [in] sound  the sound to be played
  */
 void audio_play_sound(Sound *sound);
+
+void audio_close_paks();
+
+SoundPak *audio_load_pak(int channel, char *name, char *fire1_file, char *fire2_file, char *death_file, char *moving_fire);
+
+void audio_pak_free(SoundPak **pak);
 
 
 #endif

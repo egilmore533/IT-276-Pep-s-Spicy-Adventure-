@@ -2,6 +2,7 @@
 #define __ENTITY_H__
 
 #include "sprite.h"
+#include "audio.h"
 
 /** @file	entity.h
  *	@brief	Entity system with resource management and functions to do all: draw, touch, update, and think functions
@@ -16,9 +17,22 @@ typedef enum
 {
 	CAMERA = 0,
 	PLAYER,
-	ENEMY,
-	POWER_UP,
-	PROJECTILE,
+	ENEMY_CLARENCE,
+	ENEMY_MELT,
+	ENEMY_MILK,
+	ENEMY_CELERY,
+	ENEMY_PROFESSOR,
+	POWER_UP_GOO,
+	POWER_UP_SHIELD,
+	POWER_UP_SPREAD,
+	POWER_UP_DOUBLE,
+	POWER_UP_LIFE,
+	POWER_UP_BOMB,
+	PROJECTILE_PEP_SPREAD,
+	PROJECTILE_PEP_CHARGE,
+	PROJECTILE_PEP_BOMB,
+	PROJECTILE_MELT,
+	PROJECTILE_PROFESSOR,
 }ENTITY_TYPES;
 
 
@@ -38,6 +52,8 @@ typedef struct Entity_s
 	
 	Sprite *sprite;													/**< sprite component of the entity */
 	int frameNumber;												/**< frame number the entity is on */
+
+	SoundPak *entitySounds;											/**< The entity's sound files*/
 
 	int health;														/**< the current health of the entity */
 	Uint8  state;													/**< special states for each entity type (ie: stickied enemy, shielded player, goo bullet)*/

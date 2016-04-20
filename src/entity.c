@@ -61,6 +61,30 @@ Entity *entity_new(Uint32 nextThink, Uint32 thinkRate, int health, Vect2d positi
 	return NULL;
 }
 
+/*
+Entity *entity_load(int type)
+{
+	if(type == CAMERA)
+	if(type == PLAYER)
+	if(type == ENEMY_CLARENCE)
+	if(type == ENEMY_MELT)
+	if(type == ENEMY_MILK)
+	if(type == ENEMY_CELERY)
+	if(type == ENEMY_PROFESSOR)
+	if(type == POWER_UP_GOO)
+	if(type == POWER_UP_SHIELD)
+	if(type == POWER_UP_SPREAD)
+	if(type == POWER_UP_DOUBLE)
+	if(type == POWER_UP_LIFE)
+	if(type == POWER_UP_BOMB)
+	if(type == PROJECTILE_PEP_SPREAD)
+	if(type == PROJECTILE_PEP_CHARGE)
+	if(type == PROJECTILE_PEP_BOMB)
+	if(type == PROJECTILE_MELT)
+	if(type == PROJECTILE_PROFESSOR)
+}
+*/
+
 void entity_close_system()
 {
 	int i;

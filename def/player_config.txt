@@ -12,6 +12,13 @@
 			"thinkRate": 200,
 			"health": 1,
 			"vel": "10 10"
+		},
+		"audioPak": {
+			"name": "player_audio",
+			"firing1": "sound/player_fire_spread.ogg",
+			"firing2": "sound/player_charge_shot.ogg",
+			"death": "sound/player_death.ogg",
+			"moving": ""
 		}
 	}
 }}	

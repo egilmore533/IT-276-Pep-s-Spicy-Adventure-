@@ -14,6 +14,6 @@
  * @param pos	the 2d vector of the entity's position
  * @param id	the id number of the entity to be loaded
  */
-Entity *entity_load(int type, Vect2d pos, int id);
+Entity *level_entity_load(int type, int id);
 
 #endif

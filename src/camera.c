@@ -7,9 +7,9 @@
 #include "graphics.h"
 
 static Entity *camera = NULL;
-static Uint8 moving = 0; /**< flag to tell the camera to start and stop moving */
+static Uint8 moving = 1; /**< flag to tell the camera to start and stop moving */
 
-Entity *camera_load(Vect2d position, int id)
+Entity *camera_load(int id)
 {
 	//config file stuff
 	cJSON *json, *root, 
@@ -20,8 +20,8 @@ Entity *camera_load(Vect2d position, int id)
 	char *string;
 
 	//entity info
-	Vect2d pos = position; //camera should always begin at 0,0
-	Vect2d vel = position; //needs to be initialized, doesn't matter for now so re use position
+	Vect2d pos = vect2d_new(0,0); //camera should always begin at 0,0
+	Vect2d vel = pos; //needs to be initialized, doesn't matter for now so re use position
 	Uint32 nextThink, thinkRate;
 	int health, type;
 
@@ -53,13 +53,14 @@ Entity *camera_load(Vect2d position, int id)
 	buf = cJSON_GetObjectItem(obj, "info");
 
 	//reads string that is two floats and sets them to be the two components of vel
-	sscanf(cJSON_GetObjectItem(buf, "vel")->valuestring, "%f %f", &vel.x, &vel.y);
+	sscanf(cJSON_GetObjectItem(buf, "velMax")->valuestring, "%f %f", &vel.x, &vel.y);
 	health = cJSON_GetObjectItem(buf, "health")->valueint;
 	thinkRate = cJSON_GetObjectItem(buf, "thinkRate")->valueint;
 	nextThink = cJSON_GetObjectItem(buf, "nextThink")->valueint;
 
-	camera = entity_new(nextThink, thinkRate, health, pos, vel);
-	camera->bounds = rect(camera->position.x, position.y, WINDOW_WIDTH, WINDOW_HEIGHT);
+	camera = entity_new(nextThink, thinkRate, health, vel);
+	camera->velocity = camera->maxVelocity;
+	camera->bounds = rect(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT);
 	camera->update = &camera_update;
 	camera->free = &entity_free;
 	camera->id = id;

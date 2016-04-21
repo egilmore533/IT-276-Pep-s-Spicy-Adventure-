@@ -82,6 +82,7 @@
     <ClInclude Include="..\include\simple_logger.h" />
     <ClInclude Include="..\include\sprite.h" />
     <ClInclude Include="..\include\vector.h" />
+    <ClInclude Include="..\include\weapon.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\audio.c" />
@@ -98,6 +99,7 @@
     <ClCompile Include="..\src\simple_logger.c" />
     <ClCompile Include="..\src\sprite.c" />
     <ClCompile Include="..\src\vector.c" />
+    <ClCompile Include="..\src\weapon.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

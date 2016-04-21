@@ -607,3 +607,2108 @@ c:\users\user\desktop\it-276\src\game.c:67:
  QUIT GAME 
 
 
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:67: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\player.c:65: spread fire
+c:\users\user\desktop\it-276\src\player.c:65: spread fire
+c:\users\user\desktop\it-276\src\player.c:65: spread fire
+c:\users\user\desktop\it-276\src\game.c:73: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:73: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:73: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:73: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:73: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:73: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:73: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:73: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\player.c:65: spread fire
+c:\users\user\desktop\it-276\src\player.c:65: spread fire
+c:\users\user\desktop\it-276\src\game.c:73: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\game.c:73: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:76: charged Fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\game.c:73: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\game.c:73: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\game.c:73: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\player.c:76: charged Fire
+c:\users\user\desktop\it-276\src\player.c:76: charged Fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:76: charged Fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\player.c:66: spread fire
+c:\users\user\desktop\it-276\src\game.c:73: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:73: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:73: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:73: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:73: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:73: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\game.c:73: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\game.c:73: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\game.c:73: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\game.c:73: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:73: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\weapon.c:168: no other target
+c:\users\user\desktop\it-276\src\game.c:73: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:73: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:73: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:73: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\game.c:73: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\enemy.c:156: 
+
+ hit player 
+
+
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\weapon.c:170: no other target
+c:\users\user\desktop\it-276\src\game.c:73: 
+
+ QUIT GAME 
+
+
+c:\users\user\desktop\it-276\src\graphics.c:61: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:73: 
+
+ QUIT GAME 
+
+

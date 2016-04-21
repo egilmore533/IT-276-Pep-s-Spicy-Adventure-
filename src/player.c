@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 #include "player.h"
+#include "weapon.h"
 #include "camera.h"
 #include "cJSON.h"
 #include "simple_logger.h"
@@ -9,9 +10,6 @@
 
 static Entity	*player = NULL;
 static Uint32	respawn_moment;
-static Uint8	lives = 3;
-static Uint8	bombs = 2;
-static Uint8	spreads = 1;
 
 Entity *player_load(Entity *p)
 {
@@ -41,11 +39,11 @@ void player_think(Entity *player)
 	{
 		if(SDL_GetTicks() >= player->nextThink)
 		{
-			if(bombs > 0)
+			if(player->inventory[BOMBS] > 0)
 			{
-				//weapon_pep_bomb(player);
-				slog("bomb fire");
-				bombs--;
+				audio_play_sound(player->entitySounds->moving); //using moving here for an extra firing sound
+				weapon_pep_bomb(player);
+				player->inventory[BOMBS]--;
 				player->nextThink = SDL_GetTicks() + player->thinkRate;
 			}
 		}
@@ -61,8 +59,7 @@ void player_think(Entity *player)
 		{
 			if(SDL_GetTicks() >= player->nextThink)
 			{
-				//weapon_pep_spread_fire(player);
-				slog("spread fire");
+				weapon_pep_spread_fire(player);
 				audio_play_sound(player->entitySounds->firing1);
 				player->nextThink = SDL_GetTicks() + player->thinkRate;
 			}
@@ -71,8 +68,7 @@ void player_think(Entity *player)
 		{
 			if(SDL_GetTicks() >= player->nextThink)
 			{
-				//weapon_pep_charge_fire(player);
-				slog("charged Fire");
+				weapon_pep_charge_fire(player);
 				audio_play_sound(player->entitySounds->firing2);
 				player->nextThink = SDL_GetTicks() + player->thinkRate;
 			}
@@ -114,17 +110,17 @@ void player_update(Entity *player)
 	else if(player->health <= 0)
 	{
 		audio_play_sound(player->entitySounds->death);
-		if(lives == 0)
+		if(player->inventory[LIVES] == 0)
 		{
 			//game over code here
 			player->free(&player);
 			camera_stop();
 			return;
 		}
-		lives--;
+		player->inventory[LIVES]--;
 		player->health = 3;
 		player->frameNumber = 2;
-		respawn_moment = SDL_GetTicks() + 2000;
+		respawn_moment = SDL_GetTicks() + RESPAWN_RATE;
 		return;
 	}
 	keys = SDL_GetKeyboardState(NULL);
@@ -196,7 +192,7 @@ void player_update(Entity *player)
 
 void player_add_life()
 {
-	lives++;
+	player->inventory[LIVES]++;
 }
 
 Entity *player_get()

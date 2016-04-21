@@ -7,11 +7,6 @@
  *	@brief	Each enemies functions for thinking, updates, touching, and a load function which will set the function pointers accordingly for the enemy
  */
 
-
-#define NORMAL_STATE		0
-#define STICKIED_STATE		1
-
-
 /////////////////////////////CELERY STALKER CODE////////////////////////////////////
 
 /**

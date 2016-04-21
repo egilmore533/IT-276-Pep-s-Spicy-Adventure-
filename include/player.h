@@ -8,10 +8,7 @@
  */
 
 #define CHARGE_RATE			1000
-#define RESPAWN_RATE		1000
-
-#define NORMAL_STATE		0
-#define SHIELDED_STATE		1
+#define RESPAWN_RATE		2000
 
 /**
  * @brief loads a player using config data found in the player_config.txt file setting it to the given position and id

@@ -11,7 +11,7 @@
 #include "cJSON.h"
 #include "simple_logger.h"
 
-Entity *entity_load(int type, Vect2d pos, int id)
+Entity *level_entity_load(int type, int id)
 {
 	//config file stuff
 	cJSON *json, *root, 
@@ -22,7 +22,7 @@ Entity *entity_load(int type, Vect2d pos, int id)
 	char *string;
 
 	//entity info
-	Entity *entity;
+	Entity *entity = NULL;
 	Uint32 nextThink, thinkRate;
 	Vect2d vel;
 	int health;
@@ -68,12 +68,11 @@ Entity *entity_load(int type, Vect2d pos, int id)
 	switch(type)
 	{
 		case CAMERA:
-			entity = camera_load(pos, id);
+			entity = camera_load(id);
 			return entity;
 		case PLAYER:
 			channel = FX_Player;
 			obj = cJSON_GetObjectItem(root, "player");
-			entity = player_load(entity);
 			break;
 		case ENEMY_CLARENCE:
 			channel = FX_Enemy;
@@ -125,7 +124,6 @@ Entity *entity_load(int type, Vect2d pos, int id)
 			channel = FX_Bullets;
 			obj = cJSON_GetObjectItem(root, "pep_spread_shot");
 			break;
-		/*
 		case PROJECTILE_PEP_CHARGE:
 			channel = FX_Bullets;
 			obj = cJSON_GetObjectItem(root, "pep_charge_shot");
@@ -134,6 +132,7 @@ Entity *entity_load(int type, Vect2d pos, int id)
 			channel = FX_Bullets;
 			obj = cJSON_GetObjectItem(root, "pep_bomb");
 			break;
+		/*
 		case PROJECTILE_MELT:
 			channel = FX_Bullets;
 			obj = cJSON_GetObjectItem(root, "melt_shot");
@@ -144,8 +143,8 @@ Entity *entity_load(int type, Vect2d pos, int id)
 			break;
 		*/
 	}
-	buf = cJSON_GetObjectItem(obj, "info");
 
+	buf = cJSON_GetObjectItem(obj, "info");
 	//reads string that is two floats and sets them to be the two components of vel
 	sscanf(cJSON_GetObjectItem(buf, "velMax")->valuestring, "%f %f", &vel.x, &vel.y);
 	health = cJSON_GetObjectItem(buf, "health")->valueint;
@@ -166,15 +165,20 @@ Entity *entity_load(int type, Vect2d pos, int id)
 	death_file = cJSON_GetObjectItem(buf, "death")->valuestring;
 	moving_file = cJSON_GetObjectItem(buf, "moving")->valuestring;
 
-	entity = entity_new(nextThink, thinkRate, health, pos, vel);
+	entity = entity_new(nextThink, thinkRate, health, vel);
 	entity->sprite = sprite_load(filepath, frameSize, fpl, frames);
 	entity->bounds = rect(0, 0, entity->sprite->frameSize.x, entity->sprite->frameSize.y);
 	entity->entitySounds = audio_load_pak(channel, name, fire1_file, fire2_file, death_file, moving_file);
 	entity->frameNumber = frame;
-
+	entity->draw = &sprite_draw;
 	switch(type)
 	{
 		case PLAYER:
+			entity = player_load(entity);
+			buf = cJSON_GetObjectItem(obj, "info");
+			entity->inventory[LIVES] = cJSON_GetObjectItem(buf, "lives")->valueint;
+			entity->inventory[BOMBS] = cJSON_GetObjectItem(buf, "bombs")->valueint;
+			entity->inventory[SPREADS] = cJSON_GetObjectItem(buf, "spreads")->valueint;
 			break;
 		case ENEMY_CLARENCE:
 			entity = clarence_load(entity);
@@ -215,28 +219,6 @@ Entity *entity_load(int type, Vect2d pos, int id)
 		case POWER_UP_BOMB:
 			channel = FX_Enemy;
 			obj = cJSON_GetObjectItem(root, "power_up_extra_bomb");
-			break;
-		*/
-		case PROJECTILE_PEP_SPREAD:
-			//channel = FX_Bullets;
-			//obj = cJSON_GetObjectItem(root, "pep_spread_shot");
-			break;
-		/*
-		case PROJECTILE_PEP_CHARGE:
-			channel = FX_Bullets;
-			obj = cJSON_GetObjectItem(root, "pep_charge_shot");
-			break;
-		case PROJECTILE_PEP_BOMB:
-			channel = FX_Bullets;
-			obj = cJSON_GetObjectItem(root, "pep_bomb");
-			break;
-		case PROJECTILE_MELT:
-			channel = FX_Bullets;
-			obj = cJSON_GetObjectItem(root, "melt_shot");
-			break;
-		case PROJECTILE_PROFESSOR:
-			channel = FX_Bullets;
-			obj = cJSON_GetObjectItem(root, "professor_slice_shot");
 			break;
 		*/
 	}

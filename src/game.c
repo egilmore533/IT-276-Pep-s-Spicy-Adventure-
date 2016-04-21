@@ -29,9 +29,13 @@ int main(int argc, char *argv[])
 	Vect2d player_pos = vect2d_new(200, 200);
 	Vect2d test_pos = vect2d_new(600, 10);
 	Entity *test_ent;
+	Entity *test_player;
+	Entity *cam;
 	//test end
 
 	initialize_all(1);
+	cam = camera_get();
+	cam->position = camera_pos;
 	the_renderer = graphics_get_renderer();
 
 	//test start
@@ -39,8 +43,10 @@ int main(int argc, char *argv[])
 	audio_play_music(background_music); 
 	test = sprite_load("images/pep3.png", test_frame_size, 2, 2);
 	background_pak_new("def/sunny_peps_background_config.txt");
-	entity_load(PLAYER, player_pos, 1);
-	test_ent = entity_load(ENEMY_CELERY, test_pos, 2);
+	test_player = level_entity_load(PLAYER, 1);
+	test_player->position = player_pos;
+	test_ent = level_entity_load(ENEMY_CLARENCE, 2);
+	test_ent->position = test_pos;
 	//test end
 
 	done = 0;
@@ -89,7 +95,7 @@ void initialize_all(Uint8 level_number)
 
 	sprite_initialize_system(MAX_SPRITES);
 	entity_initialize_system(200);
-	entity_load(CAMERA, vect2d_new(0, 0), 0); //test
+	level_entity_load(CAMERA, 0); //test
 
 	background_initialize_system(8);
 }

@@ -4,7 +4,7 @@
 			"nextThink": "0",
 			"thinkRate": "0",
 			"health": "0",
-			"vel": "3 0"
+			"velMax": "3 0"
 		}
 	}
 }}	

@@ -8,6 +8,36 @@
  *	@brief	Entity system with resource management and functions to do all: draw, touch, update, and think functions
  */
 
+////////////////////Inventory/////////////////////
+/** @brief	A macro that defines maximum inventory. */
+#define MAX_INVENTORY	3
+
+/**
+ * @enum INVENTORY_SLOTS
+ * @brief defines the slots inside the player's inventory
+ */
+typedef enum
+{
+	LIVES = 0,	/**< the number of lives the player has */
+	BOMBS,		/**< the number of bombs the player has */
+	SPREADS		/**< the number of times the player has picked up a spread power up */
+}INVENTORY_SLOTS;
+
+//////////////////States//////////////////////////////
+/** @brief bullet is in the normal state*/
+#define NORMAL_SHOT_STATE	10
+
+/** @brief bullet will sticky the enemy it strikes*/
+#define GOO_SHOT_STATE		11
+
+/** @brief the entity is in its normal state */
+#define NORMAL_STATE		0
+
+/** @brief the entity was hit by a goo shot and is sticky (enemies only) */
+#define STICKIED_STATE		1 //enemy only
+
+/** @brief the entity is being shielded (player only) */
+#define SHIELDED_STATE		2 //pep only
 
 /**
  * @enum ENTITY_TYPES
@@ -56,6 +86,7 @@ typedef struct Entity_s
 
 	SoundPak *entitySounds;											/**< The entity's sound files*/
 
+	int inventory[MAX_INVENTORY];									/**< count of how many each item the entity is holding */
 	int health;														/**< the current health of the entity */
 	Uint8  state;													/**< special states for each entity type (ie: stickied enemy, shielded player, goo bullet)*/
 	Uint8  bulletState;												/**< the state an entities bullets will be in*/
@@ -85,11 +116,10 @@ void entity_free(Entity **entity);
  * @param	nextThink		the next time the entity will think
  * @param	thinkRate		the rate at which the entity will think
  * @param	health		  	the starting health of this entity
- * @param	position		2D vector of where the entity will be in the game world
  * @param	velocity		2D vector of how fast the entity could move at max in both directions
  * @return [out] entity		If non-null, the entity.
  */
-Entity *entity_new(Uint32 nextThink, Uint32 thinkRate, int health, Vect2d position, Vect2d velocity);
+Entity *entity_new(Uint32 nextThink, Uint32 thinkRate, int health, Vect2d velocity);
 
 /** 
  *  @brief	closes the entity system by freeing the entire entityList and setting the number   

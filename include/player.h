@@ -15,10 +15,10 @@
 
 /**
  * @brief loads a player using config data found in the player_config.txt file setting it to the given position and id
- * @param position	the position the player will be spawned in
- * @param id		the player's id
+ * @param [in] p	the player entity that is having its function pointers initialized, will also set the player static member to be p for later use
+ * @return a pointer to the player static member
  */
-Entity *player_load(Entity *player, Vect2d position, int id);
+Entity *player_load(Entity *p);
 
 /**
  * @brief	fires by clicking, holding click for a certain amount of time will result in a charged attack, press space to use a
@@ -34,23 +34,12 @@ void player_think(Entity *player);
  */
 void player_update(Entity *player);
 
-/** 
- *  @brief	frees the player's function pointers and then uses entity_free to handle the remaining freeing
- *  @param [in,out]	player	the player entity. 
- */
-void player_free(Entity *player);
-
-/**
- * @brief player's death function, used to respawn the player at the appropriate position
- * @param id		the player's id so it can be refound by the other entities that need to find it
- * @param pos		the pos of the player at the time of its death, only the y is used because if using the x the player could be spawned outside of the level bounds
- */
-void player_death(int id, Vect2d pos);
-
 /** @brief adds an extra life for the player */
 void player_add_life();
 
-/** @brief gets the player entity so it can be used elsewhere in the code like the game loop, defeats the purpose of having a get entity by id, but getting entity by the id could be useful to have elsewhere */
+/** @brief gets the player entity so it can be used elsewhere in the code like the game loop
+ *	@return	a pointer to the player
+ */
 Entity *player_get();
 
 #endif

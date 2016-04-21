@@ -83,7 +83,7 @@ void camera_free_entity_outside_bounds(Entity *ent)
 {
 	if(!entity_intersect(camera, ent))
 	{
-		ent->free(ent);
+		ent->free(&ent);
 	}
 }
 

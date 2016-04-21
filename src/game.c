@@ -27,6 +27,8 @@ int main(int argc, char *argv[])
 	Music *background_music = NULL;
 	Vect2d camera_pos = vect2d_new(0, 0);
 	Vect2d player_pos = vect2d_new(200, 200);
+	Vect2d test_pos = vect2d_new(600, 10);
+	Entity *test_ent;
 	//test end
 
 	initialize_all(1);
@@ -38,6 +40,7 @@ int main(int argc, char *argv[])
 	test = sprite_load("images/pep3.png", test_frame_size, 2, 2);
 	background_pak_new("def/sunny_peps_background_config.txt");
 	entity_load(PLAYER, player_pos, 1);
+	test_ent = entity_load(ENEMY_CELERY, test_pos, 2);
 	//test end
 
 	done = 0;

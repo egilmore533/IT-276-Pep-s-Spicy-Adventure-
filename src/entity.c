@@ -56,7 +56,7 @@ Entity *entity_new(Uint32 nextThink, Uint32 thinkRate, int health, Vect2d positi
 		entityList[i].thinkRate = thinkRate;
 		entityList[i].health = health;
 		entityList[i].position = position;
-		entityList[i].velocity = velocity;
+		entityList[i].maxVelocity = velocity;
 
 		entityNum++;
 

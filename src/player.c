@@ -13,15 +13,15 @@ static Uint8	lives = 3;
 static Uint8	bombs = 2;
 static Uint8	spreads = 1;
 
-Entity *player_load(Entity *player, Vect2d position, int id)
+Entity *player_load(Entity *p)
 {
-	player->bounds = rect(player->position.x, position.y, player->sprite->frameSize.x, player->sprite->frameSize.y);
+	player = p;
 	player->update = &player_update;
 	player->think = &player_think;
 	player->draw = &sprite_draw;
 
 	player->owner = camera_get();
-	player->maxVelocity = vect2d_new(player->velocity.x, player->velocity.y);
+	return player;
 }
 
 void player_think(Entity *player)
@@ -30,9 +30,10 @@ void player_think(Entity *player)
 	const Uint8 *keys;
 	SDL_Event click_event;
 	static Uint8 clicked = 0;
-	if(SDL_GetTicks() < respawn_moment)
+	if(SDL_GetTicks() > respawn_moment && player->health == 3 )
 	{
-		return;
+		player->health = 1;
+		player->frameNumber= 0;
 	}
 	SDL_PollEvent(&click_event);
 	keys = SDL_GetKeyboardState(NULL);
@@ -90,23 +91,24 @@ void player_update(Entity *player)
 		slog("player has no owner");
 		return;
 	}
-	if(SDL_GetTicks() < respawn_moment)
+	if(SDL_GetTicks() < respawn_moment && player->health != 3)
 	{
-		return;
+		player->health = 3;
+		player->frameNumber= 2;
 	}
 	//if the player picked up the shield power up it will get a health of 2
 	//if STATE isn't SHIELDED, but the player health is 2 then the shield needs to be activated
-	if(player->health > 1 && player->state != SHIELDED_STATE)
+	if(player->health == 2 && player->state != SHIELDED_STATE)
 	{
 		player->state = SHIELDED_STATE;
-		player->frameNumber++;
+		player->frameNumber = 1;
 	}
 	//if the player has a SHIELD, but has a health of 1 then they lost their shield
 	//set the state to NORMAL and reset the sprite to be the normal player sprite
 	else if(player->state == SHIELDED_STATE && player->health == 1)
 	{
 		player->state = NORMAL_STATE;
-		player->frameNumber--;
+		player->frameNumber = 0;
 	}
 	//if the player's health is less than 1 then kill
 	else if(player->health <= 0)
@@ -120,9 +122,9 @@ void player_update(Entity *player)
 			return;
 		}
 		lives--;
-		player->health = 100000;
-		player->frameNumber++;
-		respawn_moment = SDL_GetTicks() + 500;
+		player->health = 3;
+		player->frameNumber = 2;
+		respawn_moment = SDL_GetTicks() + 2000;
 		return;
 	}
 	keys = SDL_GetKeyboardState(NULL);
@@ -190,11 +192,6 @@ void player_update(Entity *player)
 		player->position.x = player->owner->position.x;
 	}
 	entity_intersect_all(player);
-}
-
-void player_free(Entity *player)
-{
-	entity_free(&player);
 }
 
 void player_add_life()

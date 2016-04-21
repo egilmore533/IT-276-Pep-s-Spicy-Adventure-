@@ -1,0 +1,392 @@
+{"entity_config": {
+	"player": {
+		"sprite": {
+			"file": "images/pep4.png",
+			"bounds": "128 64",
+			"frame": 0,
+			"fpl": 2,
+			"frames": 3
+		},
+		"info": {
+			"nextThink": 0,
+			"thinkRate": 200,
+			"health": 1,
+			"velMax": "10 10"
+		},
+		"audioPak": {
+			"name": "player_audio",
+			"firing1": "sound/player_fire_spread.ogg",
+			"firing2": "sound/player_charge_shot.ogg",
+			"death": "sound/player_death2.ogg",
+			"moving": ""
+		}
+	},
+	"melt": {
+		"sprite": {
+			"file": "images/melt.png",
+			"bounds": "128 128",
+			"frame": 0,
+			"fpl": 1,
+			"frames": 1
+		},
+		"info": {
+			"type": "MELT",
+			"nextThink": 0,
+			"thinkRate": 800,
+			"health": 3,
+			"velMax": "5 5"
+		},
+		"audioPak": {
+			"name": "melt_audio",
+			"firing1": "",
+			"firing2": "",
+			"death": "sound_enemy_death.ogg",
+			"moving": ""
+		}
+	},
+	"celery_stalker": {
+		"sprite": {
+			"file": "images/celery_stalker.png",
+			"bounds": "128 128",
+			"frame": 0,
+			"fpl": 1,
+			"frames": 1
+		},
+		"info": {
+			"type": "CELERY_STALKER",
+			"nextThink": 0,
+			"thinkRate": 2000,
+			"health": 1,
+			"velMax": "20 20"
+		},
+		"audioPak": {
+			"name": "celery_stalker_audio",
+			"firing1": "",
+			"firing2": "",
+			"death": "sound_enemy_death.ogg",
+			"moving": ""
+		}
+	},
+	"clarence": {
+		"sprite": {
+			"file": "images/clarence.png",
+			"bounds": "128 128",
+			"frame": 0,
+			"fpl": 1,
+			"frames": 1
+		},
+		"info": {
+			"type": "CLARENCE",
+			"nextThink": 0,
+			"thinkRate": 800,
+			"health": 100000,
+			"velMax": "0 20"
+		},
+		"audioPak": {
+			"name": "clarence_audio",
+			"firing1": "",
+			"firing2": "",
+			"death": "sound_enemy_death.ogg",
+			"moving": ""
+		}
+	},
+	"milk_tank": {
+		"sprite": {
+			"file": "images/milk_tank.png",
+			"bounds": "128 128",
+			"frame": 0,
+			"fpl": 1,
+			"frames": 1
+		},
+		"info": {
+			"type": "MILK_TANK",
+			"nextThink": 0,
+			"thinkRate": 2000,
+			"health": 10,
+			"velMax": "4 4"
+		},
+		"audioPak": {
+			"name": "milk_tank_audio",
+			"firing1": "",
+			"firing2": "",
+			"death": "sound_enemy_death.ogg",
+			"moving": ""
+		}
+	},
+	"professor_slice": {
+		"sprite": {
+			"file": "images/professor_slice.png",
+			"bounds": "128 128",
+			"frame": 0,
+			"fpl": 1,
+			"frames": 1
+		},
+		"info": {
+			"type": "PROFESSOR_SLICE",
+			"nextThink": 0,
+			"thinkRate": 800,
+			"health": 5,
+			"velMax": "5 5"
+		},
+		"audioPak": {
+			"name": "professor_slice_audio",
+			"firing1": "",
+			"firing2": "",
+			"death": "sound_enemy_death.ogg",
+			"moving": ""
+		}
+	},
+	"power_up_goo_shot": {
+		"sprite": {
+			"file": "images/professor_slice.png",
+			"bounds": "128 128",
+			"frame": 0,
+			"fpl": 1,
+			"frames": 1
+		},
+		"info": {
+			"type": "PROFESSOR_SLICE",
+			"nextThink": 0,
+			"thinkRate": 800,
+			"health": 5,
+			"velMax": "5 5"
+		},
+		"audioPak": {
+			"name": "professor_slice_audio",
+			"firing1": "",
+			"firing2": "",
+			"death": "sound_enemy_death.ogg",
+			"moving": ""
+		}
+	},
+	"power_up_shield": {
+		"sprite": {
+			"file": "images/professor_slice.png",
+			"bounds": "128 128",
+			"frame": 0,
+			"fpl": 1,
+			"frames": 1
+		},
+		"info": {
+			"type": "PROFESSOR_SLICE",
+			"nextThink": 0,
+			"thinkRate": 800,
+			"health": 5,
+			"velMax": "5 5"
+		},
+		"audioPak": {
+			"name": "professor_slice_audio",
+			"firing1": "",
+			"firing2": "",
+			"death": "sound_enemy_death.ogg",
+			"moving": ""
+		}
+	},
+	"power_up_spread_shot": {
+		"sprite": {
+			"file": "images/professor_slice.png",
+			"bounds": "128 128",
+			"frame": 0,
+			"fpl": 1,
+			"frames": 1
+		},
+		"info": {
+			"type": "PROFESSOR_SLICE",
+			"nextThink": 0,
+			"thinkRate": 800,
+			"health": 5,
+			"velMax": "5 5"
+		},
+		"audioPak": {
+			"name": "professor_slice_audio",
+			"firing1": "",
+			"firing2": "",
+			"death": "sound_enemy_death.ogg",
+			"moving": ""
+		}
+	},
+	"power_up_double_tap": {
+		"sprite": {
+			"file": "images/professor_slice.png",
+			"bounds": "128 128",
+			"frame": 0,
+			"fpl": 1,
+			"frames": 1
+		},
+		"info": {
+			"type": "PROFESSOR_SLICE",
+			"nextThink": 0,
+			"thinkRate": 800,
+			"health": 5,
+			"velMax": "5 5"
+		},
+		"audioPak": {
+			"name": "professor_slice_audio",
+			"firing1": "",
+			"firing2": "",
+			"death": "sound_enemy_death.ogg",
+			"moving": ""
+		}
+	},
+	"power_up_extra_life": {
+		"sprite": {
+			"file": "images/professor_slice.png",
+			"bounds": "128 128",
+			"frame": 0,
+			"fpl": 1,
+			"frames": 1
+		},
+		"info": {
+			"type": "PROFESSOR_SLICE",
+			"nextThink": 0,
+			"thinkRate": 800,
+			"health": 5,
+			"velMax": "5 5"
+		},
+		"audioPak": {
+			"name": "professor_slice_audio",
+			"firing1": "",
+			"firing2": "",
+			"death": "sound_enemy_death.ogg",
+			"moving": ""
+		}
+	},
+	"power_up_extra_bomb": {
+		"sprite": {
+			"file": "images/professor_slice.png",
+			"bounds": "128 128",
+			"frame": 0,
+			"fpl": 1,
+			"frames": 1
+		},
+		"info": {
+			"type": "PROFESSOR_SLICE",
+			"nextThink": 0,
+			"thinkRate": 800,
+			"health": 5,
+			"velMax": "5 5"
+		},
+		"audioPak": {
+			"name": "professor_slice_audio",
+			"firing1": "",
+			"firing2": "",
+			"death": "sound_enemy_death.ogg",
+			"moving": ""
+		}
+	},
+	"pep_spread_shot": {
+		"sprite": {
+			"file": "images/professor_slice.png",
+			"bounds": "128 128",
+			"frame": 0,
+			"fpl": 1,
+			"frames": 1
+		},
+		"info": {
+			"type": "PROFESSOR_SLICE",
+			"nextThink": 0,
+			"thinkRate": 800,
+			"health": 5,
+			"velMax": "5 5"
+		},
+		"audioPak": {
+			"name": "professor_slice_audio",
+			"firing1": "",
+			"firing2": "",
+			"death": "sound_enemy_death.ogg",
+			"moving": ""
+		}
+	},
+	"pep_charge_shot": {
+		"sprite": {
+			"file": "images/professor_slice.png",
+			"bounds": "128 128",
+			"frame": 0,
+			"fpl": 1,
+			"frames": 1
+		},
+		"info": {
+			"type": "PROFESSOR_SLICE",
+			"nextThink": 0,
+			"thinkRate": 800,
+			"health": 5,
+			"velMax": "5 5"
+		},
+		"audioPak": {
+			"name": "professor_slice_audio",
+			"firing1": "",
+			"firing2": "",
+			"death": "sound_enemy_death.ogg",
+			"moving": ""
+		}
+	},
+	"pep_bomb": {
+		"sprite": {
+			"file": "images/professor_slice.png",
+			"bounds": "128 128",
+			"frame": 0,
+			"fpl": 1,
+			"frames": 1
+		},
+		"info": {
+			"type": "PROFESSOR_SLICE",
+			"nextThink": 0,
+			"thinkRate": 800,
+			"health": 5,
+			"velMax": "5 5"
+		},
+		"audioPak": {
+			"name": "professor_slice_audio",
+			"firing1": "",
+			"firing2": "",
+			"death": "sound_enemy_death.ogg",
+			"moving": ""
+		}
+	},
+	"melt_shot": {
+		"sprite": {
+			"file": "images/professor_slice.png",
+			"bounds": "128 128",
+			"frame": 0,
+			"fpl": 1,
+			"frames": 1
+		},
+		"info": {
+			"type": "PROFESSOR_SLICE",
+			"nextThink": 0,
+			"thinkRate": 800,
+			"health": 5,
+			"velMax": "5 5"
+		},
+		"audioPak": {
+			"name": "professor_slice_audio",
+			"firing1": "",
+			"firing2": "",
+			"death": "sound_enemy_death.ogg",
+			"moving": ""
+		}
+	},
+	"professor_slice_shot": {
+		"sprite": {
+			"file": "images/professor_slice.png",
+			"bounds": "128 128",
+			"frame": 0,
+			"fpl": 1,
+			"frames": 1
+		},
+		"info": {
+			"type": "PROFESSOR_SLICE",
+			"nextThink": 0,
+			"thinkRate": 800,
+			"health": 5,
+			"velMax": "5 5"
+		},
+		"audioPak": {
+			"name": "professor_slice_audio",
+			"firing1": "",
+			"firing2": "",
+			"death": "sound_enemy_death.ogg",
+			"moving": ""
+		}
+	},
+}}

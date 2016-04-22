@@ -297,7 +297,7 @@ void background_update(Background *background)
 		background->chaserPosition = vect2d_new(background->mainPosition.x + background->sprite->frameSize.x, 0);
 
 	}
-	if(SDL_GetTicks() > background->nextThink)
+	if(get_time() > background->nextThink)
 	{
 		if(background->frameNumber + 1 < background->sprite->frames)
 		{
@@ -307,6 +307,6 @@ void background_update(Background *background)
 		{
 			background->frameNumber = 0;
 		}
-		background->nextThink = SDL_GetTicks() + background->thinkRate;
+		background->nextThink = get_time() + background->thinkRate;
 	}
 }

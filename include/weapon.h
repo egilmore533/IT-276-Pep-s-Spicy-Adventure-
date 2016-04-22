@@ -89,5 +89,18 @@ void weapon_pep_bomb_touch(Entity *bomb, Entity *other);
 
 //////////////////////////MELT WEAPON CODE//////////////////////////////////
 
+void weapon_melt_cream_fire(Entity *melt);
+
+void weapon_melt_cream_touch(Entity *cream, Entity *other);
+
+
+//////////////////////PROFESSOR SLICE WEAPON CODE///////////////////////////
+
+void weapon_professor_slice_bread_fire(Entity *professor_slice);
+
+void weapon_professor_slice_bread_touch(Entity *bread, Entity *other);
+
+void weapon_professor_slice_bread_think(Entity *bread);
+
 
 #endif

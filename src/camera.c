@@ -9,6 +9,8 @@
 static Entity *camera = NULL;
 static Uint8 moving = 1; /**< flag to tell the camera to start and stop moving */
 
+static Uint32 gametime = 0;
+
 Entity *camera_load(int id)
 {
 	//config file stuff
@@ -64,6 +66,7 @@ Entity *camera_load(int id)
 	camera->update = &camera_update;
 	camera->free = &entity_free;
 	camera->id = id;
+	gametime = SDL_GetTicks();
 	return camera;
 }
 
@@ -73,6 +76,7 @@ void camera_update(Entity *self)
 	{
 		vect2d_add(self->position, self->velocity, self->position);
 	}
+	gametime = SDL_GetTicks();
 }
 
 Entity *camera_get()
@@ -107,4 +111,9 @@ void camera_free(Entity *camera)
 Uint8 camera_get_move()
 {
 	return moving;
+}
+
+Uint32 get_time()
+{
+	return gametime;
 }

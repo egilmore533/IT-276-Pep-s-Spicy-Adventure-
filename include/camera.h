@@ -51,4 +51,10 @@ void camera_free(Entity *free);
  */
 Uint8 camera_get_move();
 
+/**
+ * @brief gets the gametime to use for sin waves and all functions that concerns time
+ * @return	the gametime
+ */
+Uint32 get_time();
+
 #endif

@@ -28,7 +28,7 @@ void player_think(Entity *player)
 	const Uint8 *keys;
 	SDL_Event click_event;
 	static Uint8 clicked = 0;
-	if(SDL_GetTicks() > respawn_moment && player->health == 3 )
+	if(get_time() > respawn_moment && player->health == 3 )
 	{
 		player->health = 1;
 		player->frameNumber= 0;
@@ -37,40 +37,40 @@ void player_think(Entity *player)
 	keys = SDL_GetKeyboardState(NULL);
 	if(keys[SDL_SCANCODE_SPACE])
 	{
-		if(SDL_GetTicks() >= player->nextThink)
+		if(get_time() >= player->nextThink)
 		{
 			if(player->inventory[BOMBS] > 0)
 			{
 				audio_play_sound(player->entitySounds->moving); //using moving here for an extra firing sound
 				weapon_pep_bomb(player);
 				player->inventory[BOMBS]--;
-				player->nextThink = SDL_GetTicks() + player->thinkRate;
+				player->nextThink = get_time() + player->thinkRate;
 			}
 		}
 	}
 	if(click_event.type == SDL_MOUSEBUTTONDOWN)
 	{
 		clicked = 1;
-		full_charge = SDL_GetTicks() + CHARGE_RATE;
+		full_charge = get_time() + CHARGE_RATE;
 	}
 	else if(click_event.type == SDL_MOUSEBUTTONUP && clicked)
 	{
-		if(full_charge >= SDL_GetTicks())
+		if(full_charge >= get_time())
 		{
-			if(SDL_GetTicks() >= player->nextThink)
+			if(get_time() >= player->nextThink)
 			{
 				weapon_pep_spread_fire(player);
 				audio_play_sound(player->entitySounds->firing1);
-				player->nextThink = SDL_GetTicks() + player->thinkRate;
+				player->nextThink = get_time() + player->thinkRate;
 			}
 		}
 		else
 		{
-			if(SDL_GetTicks() >= player->nextThink)
+			if(get_time() >= player->nextThink)
 			{
 				weapon_pep_charge_fire(player);
 				audio_play_sound(player->entitySounds->firing2);
-				player->nextThink = SDL_GetTicks() + player->thinkRate;
+				player->nextThink = get_time() + player->thinkRate;
 			}
 		}
 		clicked = 0;
@@ -87,7 +87,7 @@ void player_update(Entity *player)
 		slog("player has no owner");
 		return;
 	}
-	if(SDL_GetTicks() < respawn_moment && player->health != 3)
+	if(get_time() < respawn_moment && player->health != 3)
 	{
 		player->health = 3;
 		player->frameNumber= 2;
@@ -120,7 +120,7 @@ void player_update(Entity *player)
 		player->inventory[LIVES]--;
 		player->health = 3;
 		player->frameNumber = 2;
-		respawn_moment = SDL_GetTicks() + RESPAWN_RATE;
+		respawn_moment = get_time() + RESPAWN_RATE;
 		return;
 	}
 	keys = SDL_GetKeyboardState(NULL);

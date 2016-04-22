@@ -5,6 +5,7 @@
 #include "sprite.h"
 #include "camera.h"
 #include "background.h"
+#include "particle.h"
 #include "level.h"
 
 #define	MAX_SPRITES		1000
@@ -27,7 +28,7 @@ int main(int argc, char *argv[])
 	Music *background_music = NULL;
 	Vect2d camera_pos = vect2d_new(0, 0);
 	Vect2d player_pos = vect2d_new(200, 200);
-	Vect2d test_pos = vect2d_new(600, 10);
+	Vect2d test_pos = vect2d_new(1220, 200);
 	Entity *test_ent;
 	Entity *test_player;
 	Entity *cam;
@@ -45,8 +46,9 @@ int main(int argc, char *argv[])
 	background_pak_new("def/sunny_peps_background_config.txt");
 	test_player = level_entity_load(PLAYER, 1);
 	test_player->position = player_pos;
-	test_ent = level_entity_load(ENEMY_CLARENCE, 2);
+	test_ent = level_entity_load(ENEMY_MELT, 2);
 	test_ent->position = test_pos;
+	camera_stop();
 	//test end
 
 	done = 0;
@@ -59,6 +61,9 @@ int main(int argc, char *argv[])
 		entity_think_all();
 		entity_update_all();
 		entity_draw_all();
+
+		particle_think_all();
+		particle_draw_all();
 		
 		graphics_next_frame();
 		SDL_PumpEvents();
@@ -94,6 +99,7 @@ void initialize_all(Uint8 level_number)
 	audio_initialize(128, 3, 30);
 
 	sprite_initialize_system(MAX_SPRITES);
+	particle_initialize_system(2000);
 	entity_initialize_system(200);
 	level_entity_load(CAMERA, 0); //test
 

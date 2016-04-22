@@ -1,8 +1,10 @@
 #include <math.h>
+#include <stdlib.h>
 
 #include "weapon.h"
 #include "camera.h"
 #include "level.h"
+#include "particle.h"
 #include "simple_logger.h"
 
 #define PI			3.141589
@@ -12,6 +14,7 @@ Entity *weapon_fire(int type, Entity *owner)
 	Entity *bullet;
 	bullet = level_entity_load(type, -1);
 	bullet->owner = owner;
+	bullet->target = owner->target;
 	bullet->think = &weapon_think;
 	bullet->update = &weapon_update;
 	bullet->draw = &sprite_draw;
@@ -103,13 +106,13 @@ void weapon_pep_think(Entity *spice) //this is used for spread shot and charge s
 	//if the bullet isn't touching the camera free the entity
 	camera_free_entity_outside_bounds(spice);
 
-	if(!(SDL_GetTicks() >= spice->nextThink))
+	if(!(get_time() >= spice->nextThink))
 	{
 		return;
 	}
-	//offset = vect2d_new(-30, -10);
-	//particle_exact_position_load(spice, offset);
-	spice->nextThink = SDL_GetTicks() + spice->thinkRate;
+	offset = vect2d_new(-30, -10);
+	particle_exact_position_load(spice, offset);
+	spice->nextThink = get_time() + spice->thinkRate;
 
 }
 
@@ -145,14 +148,14 @@ void weapon_pep_bomb(Entity *player)
 	Entity *bomb = weapon_fire(PROJECTILE_PEP_BOMB, player);
 	vect2d_set(bomb->position, cam->position.x, cam->position.y);
 	vect2d_set(bomb->velocity, cam->velocity.x, cam->velocity.y);
-	bomb->nextThink = bomb->thinkRate + SDL_GetTicks();
+	bomb->nextThink = bomb->thinkRate + get_time();
 	bomb->think = &weapon_pep_bomb_think;
 	bomb->touch = &weapon_pep_bomb_touch;
 }
 
 void weapon_pep_bomb_think(Entity *bomb)
 {
-	if(SDL_GetTicks() >= bomb->nextThink)
+	if(get_time() >= bomb->nextThink)
 	{
 		bomb->free(&bomb);
 	}
@@ -174,4 +177,80 @@ void weapon_pep_bomb_touch(Entity *bomb, Entity *other)
 	{
 		other->health -= 1000000; //might have to change this if I add bosses
 	}
+}
+
+void weapon_melt_cream_fire(Entity *melt)
+{
+	Entity *cream;
+	Vect2d pos, vel;
+	cream = weapon_fire(PROJECTILE_MELT_CREAM, melt);
+	
+	cream->think = &weapon_pep_think; //temp
+	cream->touch = &weapon_melt_cream_touch;
+	cream->velocity = cream->maxVelocity;
+	vect2d_add(melt->position, vect2d_new(0, 40), cream->position);
+}
+
+void weapon_melt_cream_touch(Entity *cream, Entity *other)
+{
+	if(!cream->target)
+	{
+		slog("no cream target");
+	}
+	if(other == cream->target)
+	{
+		other->health--;
+		cream->free(&cream);
+	}
+}
+
+void weapon_professor_slice_bread_fire(Entity *professor_slice)
+{
+	Entity *bread;
+	Vect2d pos, vel;
+	bread = weapon_fire(PROJECTILE_PROFESSOR_SLICE_BREAD, professor_slice);
+	
+	bread->think = &weapon_professor_slice_bread_think; //temp
+	bread->touch = &weapon_professor_slice_bread_touch;
+	bread->velocity = bread->maxVelocity;
+	bread->thinkRate = rand() % 200;
+	vect2d_add(professor_slice->position, vect2d_new(0, 20), bread->position);
+}
+
+void weapon_professor_slice_bread_touch(Entity *bread, Entity *other)
+{
+	if(!bread->target)
+	{
+		slog("no bread target");
+		return;
+	}
+	if(other == bread->target)
+	{
+		other->health--;
+		bread->free(&bread);
+	}
+}
+
+void weapon_professor_slice_bread_think(Entity *bread)
+{
+	//if the bullet isn't touching the camera free the entity
+	camera_free_entity_outside_bounds(bread);
+	if(bread->velocity.x == 0)
+	{
+		return;
+	}
+	if(!(get_time() >= bread->nextThink))
+	{
+		return;
+	}
+	
+	else if(bread->velocity.x < 0)
+	{
+		bread->velocity.x++;
+		if(bread->velocity.x >= 0)
+		{
+			bread->velocity.x = 0;
+		}
+	}
+	bread->nextThink = get_time() + bread->thinkRate;
 }

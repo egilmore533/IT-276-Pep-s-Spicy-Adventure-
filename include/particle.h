@@ -19,16 +19,15 @@ typedef struct Particle_s
 	Vect2d velocity;								/**< the velocity of the particle (if needed) */
 	Sprite *sprite;									/**< the particle's sprite */
 	int frameNumber;								/**< frame number of the particle, dies after the frame excceds 30 */
-	void (*think) (struct Particle_t *particle);	/**< the think function, if needed of the particle*/
+	void (*think) (struct Particle_s *particle);	/**< the think function, if needed of the particle*/
 }Particle;
 
 typedef struct Particle_p
 {
 	char *name;
-	int refCount;
-	Particle *red;
-	Particle *green;
-	Particle *blue;
+	Sprite *red;
+	Sprite *green;
+	Sprite *blue;
 }ParticlePak;
 
 void particle_free(Particle **particle);
@@ -36,6 +35,8 @@ void particle_free(Particle **particle);
 void particle_close_system();
 
 void particle_initialize_system(int maxParticle);
+
+void particle_pak_initialize(char *pak_config_file, ParticlePak *pak);
 
 Particle *particle_new();
 

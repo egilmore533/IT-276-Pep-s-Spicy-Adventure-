@@ -1,7 +1,11 @@
 #include <stdlib.h>
+#include <math.h>
 
 #include "enemy.h"
+#include "weapon.h"
 #include "camera.h"
+#include "particle.h"
+#include "weapon.h"
 #include "simple_logger.h"
 #include "player.h"
 
@@ -25,7 +29,7 @@ void celery_stalker_think_start(Entity *celery_stalker)
 		slog("No celery_stalker target");
 		return;
 	}
-	if(SDL_GetTicks() >= celery_stalker->nextThink)
+	if(get_time() >= celery_stalker->nextThink)
 	{
 		vect2d_subtract(celery_stalker->target->position, celery_stalker->position, celery_stalker->direction);
 		vect2d_normalize(&celery_stalker->direction);
@@ -51,7 +55,7 @@ void celery_stalker_update(Entity *celery_stalker)
 	entity_intersect_all(celery_stalker);
 	if(celery_stalker->health <= 0)
 	{
-		//particle_bundle_load(celery_stalker, 20);
+		particle_bundle_load(celery_stalker, 20);
 		celery_stalker->free(&celery_stalker);
 	}
 }
@@ -69,7 +73,7 @@ void celerly_stalker_touch(Entity *celery_stalker, Entity *other)
 		{
 			celery_stalker->think = &celery_stalker_think_start;
 			celery_stalker->thinkRate = 2000;
-			celery_stalker->nextThink = SDL_GetTicks() + celery_stalker->thinkRate;
+			celery_stalker->nextThink = get_time() + celery_stalker->thinkRate;
 		}
 	}
 	else if(other == celery_stalker->target)
@@ -132,7 +136,7 @@ void clarence_update(Entity *clarence)
 	entity_intersect_all(clarence);
 	if(clarence->health <= 0)
 	{
-		//particle_bundle_load(clarence, 40);
+		particle_bundle_load(clarence, 40);
 		clarence->free(&clarence);
 	}
 }
@@ -178,17 +182,16 @@ void melt_think(Entity *melt)
 		slog("no melt target");
 		return;
 	}
-	//camera_free_entity_outside_bounds(melt);
-	vect2d_subtract(melt->target->position, melt->position, melt->direction);
-	vect2d_normalize(&melt->direction);
-	vect2d_set(melt->direction, -1, melt->direction.y);
-	vect2d_mutiply(melt->velocity, melt->direction, melt->velocity);
-	if(!(SDL_GetTicks() >= melt->nextThink))
+	camera_free_entity_outside_bounds(melt);
+	melt->velocity.y = melt->maxVelocity.y * sin((float)get_time());
+	melt->velocity.x = melt->velocity.x;
+	vect2d_negate(melt->velocity, melt->velocity);
+	if(!(get_time() >= melt->nextThink))
 	{
 		return;
 	}
-	//weapon_melt_fire(melt);
-	melt->nextThink = SDL_GetTicks() + melt->thinkRate;
+	weapon_melt_cream_fire(melt);
+	melt->nextThink = get_time() + melt->thinkRate;
 }
 
 void melt_update(Entity *melt)
@@ -201,7 +204,7 @@ void melt_update(Entity *melt)
 	entity_intersect_all(melt);
 	if(melt->health <= 0)
 	{
-		//particle_bundle_load(melt, 40);
+		particle_bundle_load(melt, 40);
 		melt->free(&melt);
 	}
 }
@@ -252,10 +255,10 @@ void milk_tank_think(Entity *milk_tank)
 		milk_tank->think = &milk_tank_stickied_think;
 		vect2d_set(milk_tank->velocity, 0, 0);
 		milk_tank->thinkRate = 2000;
-		milk_tank->nextThink = SDL_GetTicks() + milk_tank->thinkRate;
+		milk_tank->nextThink = get_time() + milk_tank->thinkRate;
 		return;
 	}
-	if(!(SDL_GetTicks() >= milk_tank->nextThink))
+	if(!(get_time() >= milk_tank->nextThink))
 	{
 		return;
 	}
@@ -268,14 +271,14 @@ void milk_tank_think(Entity *milk_tank)
 void milk_tank_stickied_think(Entity *milk_tank)
 {
 	vect2d_set(milk_tank->velocity, 0, 0);
-	if(!(SDL_GetTicks() >= milk_tank->nextThink))
+	if(!(get_time() >= milk_tank->nextThink))
 	{
 		return;
 	}
 	milk_tank->state = NORMAL_STATE;
 	milk_tank->think = &milk_tank_think;
 	milk_tank->thinkRate = 40;
-	milk_tank->nextThink = milk_tank->thinkRate + SDL_GetTicks();
+	milk_tank->nextThink = milk_tank->thinkRate + get_time();
 }
 
 void milk_tank_update(Entity *milk_tank)
@@ -288,7 +291,7 @@ void milk_tank_update(Entity *milk_tank)
 	entity_intersect_all(milk_tank);
 	if(milk_tank->health <= 0)
 	{
-		//particle_bundle_load(milk_tank, 40);
+		particle_bundle_load(milk_tank, 40);
 		milk_tank->free(&milk_tank);
 	}
 	
@@ -336,10 +339,10 @@ void professor_slice_think(Entity *professor_slice)
 	{
 		professor_slice->think = &professor_slice_stickied_think;
 		vect2d_set(professor_slice->velocity, 0, 0);
-		professor_slice->nextThink = SDL_GetTicks() + professor_slice->thinkRate;
+		professor_slice->nextThink = get_time() + professor_slice->thinkRate;
 		return;
 	}
-	if(!(SDL_GetTicks() >= professor_slice->nextThink))
+	if(!(get_time() >= professor_slice->nextThink))
 	{
 		return;
 	}
@@ -349,14 +352,14 @@ void professor_slice_think(Entity *professor_slice)
 	vect2d_normalize(&professor_slice->direction);
 	vect2d_negate(professor_slice->direction, professor_slice->direction);
 	vect2d_mutiply(professor_slice->velocity, professor_slice->direction, professor_slice->velocity);
-	//weapon_professor_slice_fire(professor_slice);
-	professor_slice->nextThink = SDL_GetTicks() + professor_slice->thinkRate;
+	weapon_professor_slice_bread_fire(professor_slice);
+	professor_slice->nextThink = get_time() + professor_slice->thinkRate;
 }
 
 void professor_slice_stickied_think(Entity *professor_slice)
 {
 	vect2d_set(professor_slice->velocity, 0, 0);
-	if(!(SDL_GetTicks() >= professor_slice->nextThink))
+	if(!(get_time() >= professor_slice->nextThink))
 	{
 		return;
 	}
@@ -393,7 +396,7 @@ void professor_slice_update(Entity *professor_slice)
 	entity_intersect_all(professor_slice);
 	if(professor_slice->health <= 0)
 	{
-		//particle_bundle_load(professor_slice, 40);
+		particle_bundle_load(professor_slice, 40);
 		professor_slice->free(&professor_slice);
 	}
 }

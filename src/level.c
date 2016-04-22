@@ -132,16 +132,14 @@ Entity *level_entity_load(int type, int id)
 			channel = FX_Bullets;
 			obj = cJSON_GetObjectItem(root, "pep_bomb");
 			break;
-		/*
-		case PROJECTILE_MELT:
+		case PROJECTILE_MELT_CREAM:
 			channel = FX_Bullets;
-			obj = cJSON_GetObjectItem(root, "melt_shot");
+			obj = cJSON_GetObjectItem(root, "melt_cream");
 			break;
-		case PROJECTILE_PROFESSOR:
+		case PROJECTILE_PROFESSOR_SLICE_BREAD:
 			channel = FX_Bullets;
-			obj = cJSON_GetObjectItem(root, "professor_slice_shot");
+			obj = cJSON_GetObjectItem(root, "professor_slice_bread");
 			break;
-		*/
 	}
 
 	buf = cJSON_GetObjectItem(obj, "info");

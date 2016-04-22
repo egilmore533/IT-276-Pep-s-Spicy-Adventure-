@@ -3,6 +3,7 @@
 #include "graphics.h"
 #include "sprite.h"
 #include "simple_logger.h"
+#include "camera.h"
 
 static SDL_Window   *   g_graphics_main_window = NULL;
 static SDL_Renderer *   g_graphics_renderer = NULL;
@@ -65,13 +66,13 @@ void graphics_frame_delay()
 {
 	Uint32 diff;
 	g_graphics_then = g_graphics_now;
-    g_graphics_now = SDL_GetTicks();
+    g_graphics_now = get_time();
     diff = (g_graphics_now - g_graphics_then);
     if (diff < g_graphics_frame_delay)
     {
         SDL_Delay(g_graphics_frame_delay - diff);
     }
-    g_graphics_fps = 1000.0/MAX(SDL_GetTicks() - g_graphics_then,0.001);
+    g_graphics_fps = 1000.0/MAX(get_time() - g_graphics_then,0.001);
     if (g_graphics_print_fps)
     {
         printf("FPS: %f\n",g_graphics_fps); //printf so the log isn't filled with frame rate

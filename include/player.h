@@ -11,11 +11,10 @@
 #define RESPAWN_RATE		2000
 
 /**
- * @brief loads a player using config data found in the player_config.txt file setting it to the given position and id
- * @param [in] p	the player entity that is having its function pointers initialized, will also set the player static member to be p for later use
+ * @brief loads a player using config data found in the player_config.txt file and returning the player to have its position and id set
  * @return a pointer to the player static member
  */
-Entity *player_load(Entity *p);
+Entity *player_load();
 
 /**
  * @brief	fires by clicking, holding click for a certain amount of time will result in a charged attack, press space to use a

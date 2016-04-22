@@ -1,0 +1,67 @@
+{"weapon_config":{
+	"pep_spread_shot": {
+		"sprite": {
+			"file": "images/spice.png",
+			"bounds": "32 16",
+			"frame": 0,
+			"fpl": 1,
+			"frames": 1
+		},
+		"info": {
+			"thinkRate": 30,
+			"velMax": "15 15"
+		}
+	},
+	"pep_charge_shot": {
+		"sprite": {
+			"file": "images/pep_charge_shot.png",
+			"bounds": "64 64",
+			"frame": 0,
+			"fpl": 1,
+			"frames": 1
+		},
+		"info": {
+			"thinkRate": 30,
+			"velMax": "20 0"
+		}
+	},
+	"pep_bomb": {
+		"sprite": {
+			"file": "images/pep_bomb.png",
+			"bounds": "1366 768",
+			"frame": 0,
+			"fpl": 1,
+			"frames": 1
+		},
+		"info": {
+			"thinkRate": 300,
+			"velMax": "0 0"
+		}
+	},
+	"melt_cream": {
+		"sprite": {
+			"file": "images/cream.png",
+			"bounds": "32 16",
+			"frame": 0,
+			"fpl": 1,
+			"frames": 1
+		},
+		"info": {
+			"thinkRate": 30,
+			"velMax": "-15 0"
+		}
+	},
+	"professor_slice_bread": {
+		"sprite": {
+			"file": "images/bread_crumb.png",
+			"bounds": "32 32",
+			"frame": 0,
+			"fpl": 1,
+			"frames": 1
+		},
+		"info": {
+			"thinkRate": 50,
+			"velMax": "-15 0"
+		}
+	}
+}}

@@ -1,24 +1,105 @@
 #include <math.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 #include "weapon.h"
 #include "camera.h"
 #include "level.h"
 #include "particle.h"
 #include "simple_logger.h"
+#include "cJSON.h"
 
 #define PI			3.141589
 
 Entity *weapon_fire(int type, Entity *owner)
 {
-	Entity *bullet;
-	bullet = level_entity_load(type, -1);
+	//config file stuff
+	cJSON *json, *root, 
+		*obj,  *buf;
+	FILE *weapon_config_file;
+	long length;
+	char *data;
+	char *string;
+
+	//entity info
+	Entity *bullet = NULL;
+	Uint32 thinkRate;
+	Vect2d vel;
+
+	//sprite info
+	char *filepath;
+	Vect2d frameSize;
+	int frame;
+	int fpl;
+	int frames;
+
+	weapon_config_file = fopen("def/weapon_config.txt","r");
+	if(!weapon_config_file)
+	{
+		slog("No file found: %s", "def/weapon_config.txt");
+		return;
+	}
+	//get the length of the file
+	fseek(weapon_config_file, 0, SEEK_END);
+	length = ftell(weapon_config_file);
+	//reset position to start of the file and allocate data to be the length of the file + 1
+	fseek(weapon_config_file, 0, SEEK_SET);
+	data = (char*) malloc(length + 1);
+	//store the contents of the file in data, and close the file
+	fread(data, 1, length, weapon_config_file);
+	fclose(weapon_config_file);
+
+	json = cJSON_Parse(data);
+	root = cJSON_GetObjectItem(json,"weapon_config");
+	if(!root)
+	{
+		slog("error parseing the file, file not the weapon_config");
+		return;
+	}
+
+	switch(type)
+	{
+		case PROJECTILE_PEP_SPREAD:
+			obj = cJSON_GetObjectItem(root, "pep_spread_shot");
+			break;
+		case PROJECTILE_PEP_CHARGE:
+			obj = cJSON_GetObjectItem(root, "pep_charge_shot");
+			break;
+		case PROJECTILE_PEP_BOMB:
+			obj = cJSON_GetObjectItem(root, "pep_bomb");
+			break;
+		case PROJECTILE_MELT_CREAM:
+			obj = cJSON_GetObjectItem(root, "melt_cream");
+			break;
+		case PROJECTILE_PROFESSOR_SLICE_BREAD:
+			obj = cJSON_GetObjectItem(root, "professor_slice_bread");
+			break;
+	}
+
+	buf = cJSON_GetObjectItem(obj, "info");
+	//reads string that is two floats and sets them to be the two components of vel
+	sscanf(cJSON_GetObjectItem(buf, "velMax")->valuestring, "%f %f", &vel.x, &vel.y);
+	thinkRate = cJSON_GetObjectItem(buf, "thinkRate")->valueint;
+
+	buf = cJSON_GetObjectItem(obj, "sprite");
+	filepath = cJSON_GetObjectItem(buf, "file")->valuestring;
+	sscanf(cJSON_GetObjectItem(buf, "bounds")->valuestring, "%f %f", &frameSize.x, &frameSize.y);
+	frame = cJSON_GetObjectItem(buf, "frame")->valueint;
+	fpl = cJSON_GetObjectItem(buf, "fpl")->valueint;
+	frames = cJSON_GetObjectItem(buf, "frames")->valueint;
+
+	bullet = entity_new(thinkRate, 0, vel);
+	bullet->sprite = sprite_load(filepath, frameSize, fpl, frames);
+	bullet->bounds = rect(0, 0, bullet->sprite->frameSize.x, bullet->sprite->frameSize.y);
+	bullet->frameNumber = frame;
+	bullet->nextThink = get_time() + bullet->thinkRate;
+
 	bullet->owner = owner;
 	bullet->target = owner->target;
 	bullet->think = &weapon_think;
 	bullet->update = &weapon_update;
 	bullet->draw = &sprite_draw;
-	if(owner->state == GOO_SHOT_STATE)
+	if(owner->bulletState == GOO_SHOT_STATE)
 	{
 		bullet->state = GOO_SHOT_STATE;
 	}

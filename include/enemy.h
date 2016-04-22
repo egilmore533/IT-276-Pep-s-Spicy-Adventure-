@@ -7,6 +7,8 @@
  *	@brief	Each enemies functions for thinking, updates, touching, and a load function which will set the function pointers accordingly for the enemy
  */
 
+Entity *enemy_load(int type, Entity *enemy);
+
 /////////////////////////////CELERY STALKER CODE////////////////////////////////////
 
 /**
@@ -89,6 +91,8 @@ Entity *melt_load(Entity *melt);
  *  @param	melt	the melt
  */
 void melt_think(Entity *melt);
+
+void melt_stickied_think(Entity *melt);
 
 /** 
  *  @brief	adds melt's velocity to its position, kills melt if not touching the camera

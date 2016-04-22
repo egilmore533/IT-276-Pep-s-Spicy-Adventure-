@@ -29,7 +29,9 @@ int main(int argc, char *argv[])
 	Vect2d camera_pos = vect2d_new(0, 0);
 	Vect2d player_pos = vect2d_new(200, 200);
 	Vect2d test_pos = vect2d_new(1220, 200);
+	Vect2d test_pos2 = vect2d_new(1220, 500);
 	Entity *test_ent;
+	Entity *test_ent2;
 	Entity *test_player;
 	Entity *cam;
 	//test end
@@ -48,7 +50,8 @@ int main(int argc, char *argv[])
 	test_player->position = player_pos;
 	test_ent = level_entity_load(ENEMY_MELT, 2);
 	test_ent->position = test_pos;
-	camera_stop();
+	test_ent2 = level_entity_load(ENEMY_MELT, 3);
+	test_ent2->position = test_pos2;
 	//test end
 
 	done = 0;

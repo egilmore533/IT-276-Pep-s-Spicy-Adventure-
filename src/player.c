@@ -11,12 +11,98 @@
 static Entity	*player = NULL;
 static Uint32	respawn_moment;
 
-Entity *player_load(Entity *p)
+Entity *player_load()
 {
-	player = p;
+	//config file stuff
+	cJSON *json, *root, 
+		*obj,  *buf;
+	FILE *player_config_file;
+	long length;
+	char *data;
+	char *string;
+
+	//entity info
+	Uint32 thinkRate;
+	Vect2d vel;
+	int health;
+	int lives, bombs, spreads;
+
+	//sprite info
+	char *filepath;
+	Vect2d frameSize;
+	int frame;
+	int fpl;
+	int frames;
+
+	//audioPak info
+	char *name;
+	char *fire1_file;
+	char *fire2_file;
+	char *death_file;
+	char *moving_file;
+	int channel = FX_Enemy;
+
+	player_config_file = fopen("def/player_config.txt","r");
+	if(!player_config_file)
+	{
+		slog("No file found: %s", "def/player_config.txt");
+		return;
+	}
+	//get the length of the file
+	fseek(player_config_file, 0, SEEK_END);
+	length = ftell(player_config_file);
+	//reset position to start of the file and allocate data to be the length of the file + 1
+	fseek(player_config_file, 0, SEEK_SET);
+	data = (char*) malloc(length + 1);
+	//store the contents of the file in data, and close the file
+	fread(data, 1, length, player_config_file);
+	fclose(player_config_file);
+
+	json = cJSON_Parse(data);
+	root = cJSON_GetObjectItem(json,"player_config");
+	if(!root)
+	{
+		slog("error parseing the file, file not the player_config");
+		return;
+	}
+	obj = cJSON_GetObjectItem(root, "player");
+	buf = cJSON_GetObjectItem(obj, "info");
+	//reads string that is two floats and sets them to be the two components of vel
+	sscanf(cJSON_GetObjectItem(buf, "velMax")->valuestring, "%f %f", &vel.x, &vel.y);
+	health = cJSON_GetObjectItem(buf, "health")->valueint;
+	thinkRate = cJSON_GetObjectItem(buf, "thinkRate")->valueint;
+	lives = cJSON_GetObjectItem(buf, "lives")->valueint;
+	bombs = cJSON_GetObjectItem(buf, "bombs")->valueint;
+	spreads = cJSON_GetObjectItem(buf, "spreads")->valueint;
+
+	buf = cJSON_GetObjectItem(obj, "sprite");
+	filepath = cJSON_GetObjectItem(buf, "file")->valuestring;
+	sscanf(cJSON_GetObjectItem(buf, "bounds")->valuestring, "%f %f", &frameSize.x, &frameSize.y);
+	frame = cJSON_GetObjectItem(buf, "frame")->valueint;
+	fpl = cJSON_GetObjectItem(buf, "fpl")->valueint;
+	frames = cJSON_GetObjectItem(buf, "frames")->valueint;
+
+	buf = cJSON_GetObjectItem(obj, "audioPak");
+	name = cJSON_GetObjectItem(buf, "name")->valuestring;
+	fire1_file = cJSON_GetObjectItem(buf, "firing1")->valuestring;
+	fire2_file = cJSON_GetObjectItem(buf, "firing2")->valuestring;
+	death_file = cJSON_GetObjectItem(buf, "death")->valuestring;
+	moving_file = cJSON_GetObjectItem(buf, "moving")->valuestring;
+
+	player = entity_new(thinkRate, health, vel);
+	player->sprite = sprite_load(filepath, frameSize, fpl, frames);
+	player->bounds = rect(0, 0, player->sprite->frameSize.x, player->sprite->frameSize.y);
+	player->entitySounds = audio_load_pak(channel, name, fire1_file, fire2_file, death_file, moving_file);
+	player->frameNumber = frame;
+	player->nextThink = get_time() + player->thinkRate;
+
 	player->update = &player_update;
 	player->think = &player_think;
 	player->draw = &sprite_draw;
+
+	player->inventory[LIVES] = lives;
+	player->inventory[BOMBS] = bombs;
+	player->inventory[SPREADS] = spreads;
 
 	player->owner = camera_get();
 	return player;

@@ -57,6 +57,9 @@
     <ClInclude Include="..\include\weapon.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\power_up.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\audio.c">
@@ -102,6 +105,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\src\weapon.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\power_up.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

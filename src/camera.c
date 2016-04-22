@@ -60,11 +60,12 @@ Entity *camera_load(int id)
 	thinkRate = cJSON_GetObjectItem(buf, "thinkRate")->valueint;
 	nextThink = cJSON_GetObjectItem(buf, "nextThink")->valueint;
 
-	camera = entity_new(nextThink, thinkRate, health, vel);
+	camera = entity_new(thinkRate, health, vel);
 	camera->velocity = camera->maxVelocity;
 	camera->bounds = rect(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT);
 	camera->update = &camera_update;
 	camera->free = &entity_free;
+	camera->nextThink = get_time() + camera->thinkRate;
 	camera->id = id;
 	gametime = SDL_GetTicks();
 	return camera;

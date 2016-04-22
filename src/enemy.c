@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include <math.h>
 
 #include "enemy.h"
@@ -7,7 +8,134 @@
 #include "particle.h"
 #include "weapon.h"
 #include "simple_logger.h"
+#include "cJSON.h"
 #include "player.h"
+
+Entity *enemy_load(int type, Entity *enemy)
+{
+	//config file stuff
+	cJSON *json, *root, 
+		*obj,  *buf;
+	FILE *enemy_config_file;
+	long length;
+	char *data;
+	char *string;
+
+	//entity info
+	Uint32 thinkRate;
+	Vect2d vel;
+	int health;
+
+	//sprite info
+	char *filepath;
+	Vect2d frameSize;
+	int frame;
+	int fpl;
+	int frames;
+
+	//audioPak info
+	char *name;
+	char *fire1_file;
+	char *fire2_file;
+	char *death_file;
+	char *moving_file;
+	int channel = FX_Enemy;
+
+	enemy_config_file = fopen("def/enemy_config.txt","r");
+	if(!enemy_config_file)
+	{
+		slog("No file found: %s", "def/enemy_config.txt");
+		return;
+	}
+	//get the length of the file
+	fseek(enemy_config_file, 0, SEEK_END);
+	length = ftell(enemy_config_file);
+	//reset position to start of the file and allocate data to be the length of the file + 1
+	fseek(enemy_config_file, 0, SEEK_SET);
+	data = (char*) malloc(length + 1);
+	//store the contents of the file in data, and close the file
+	fread(data, 1, length, enemy_config_file);
+	fclose(enemy_config_file);
+
+	json = cJSON_Parse(data);
+	root = cJSON_GetObjectItem(json,"enemy_config");
+	if(!root)
+	{
+		slog("error parseing the file, file not the enemy_config");
+		return;
+	}
+
+	switch(type)
+	{
+	case ENEMY_CLARENCE:
+		obj = cJSON_GetObjectItem(root, "clarence");
+		break;
+	case ENEMY_MELT:
+		obj = cJSON_GetObjectItem(root, "melt");
+		break;
+	case ENEMY_MILK:
+		obj = cJSON_GetObjectItem(root, "milk_tank");
+		break;
+	case ENEMY_CELERY:
+		obj = cJSON_GetObjectItem(root, "celery_stalker");
+		break;
+	case ENEMY_PROFESSOR:
+		obj = cJSON_GetObjectItem(root, "professor_slice");
+		break;
+	}
+
+	buf = cJSON_GetObjectItem(obj, "info");
+	//reads string that is two floats and sets them to be the two components of vel
+	sscanf(cJSON_GetObjectItem(buf, "velMax")->valuestring, "%f %f", &vel.x, &vel.y);
+	health = cJSON_GetObjectItem(buf, "health")->valueint;
+	thinkRate = cJSON_GetObjectItem(buf, "thinkRate")->valueint;
+
+	buf = cJSON_GetObjectItem(obj, "sprite");
+	filepath = cJSON_GetObjectItem(buf, "file")->valuestring;
+	sscanf(cJSON_GetObjectItem(buf, "bounds")->valuestring, "%f %f", &frameSize.x, &frameSize.y);
+	frame = cJSON_GetObjectItem(buf, "frame")->valueint;
+	fpl = cJSON_GetObjectItem(buf, "fpl")->valueint;
+	frames = cJSON_GetObjectItem(buf, "frames")->valueint;
+
+	buf = cJSON_GetObjectItem(obj, "audioPak");
+	name = cJSON_GetObjectItem(buf, "name")->valuestring;
+	fire1_file = cJSON_GetObjectItem(buf, "firing1")->valuestring;
+	fire2_file = cJSON_GetObjectItem(buf, "firing2")->valuestring;
+	death_file = cJSON_GetObjectItem(buf, "death")->valuestring;
+	moving_file = cJSON_GetObjectItem(buf, "moving")->valuestring;
+
+	enemy = entity_new(thinkRate, health, vel);
+	enemy->sprite = sprite_load(filepath, frameSize, fpl, frames);
+	enemy->bounds = rect(0, 0, enemy->sprite->frameSize.x, enemy->sprite->frameSize.y);
+	enemy->entitySounds = audio_load_pak(channel, name, fire1_file, fire2_file, death_file, moving_file);
+	enemy->frameNumber = frame;
+	enemy->nextThink = get_time() + enemy->thinkRate;
+
+	switch(type)
+	{
+	case ENEMY_CLARENCE:
+		enemy = clarence_load(enemy);
+		break;
+	case ENEMY_MELT:
+		enemy = melt_load(enemy);
+		break;
+	case ENEMY_MILK:
+		enemy = milk_tank_load(enemy);
+		break;
+	case ENEMY_CELERY:
+		enemy = celery_stalker_load(enemy);
+		break;
+	case ENEMY_PROFESSOR:
+		enemy = professor_slice_load(enemy);
+		break;
+	}
+
+	enemy->draw = &sprite_draw;
+	enemy->free = &entity_free;
+	enemy->state = NORMAL_STATE;
+	enemy->target = player_get();
+	return enemy;
+}
 
 
 /////////////////////////////CELERY STALKER CODE////////////////////////////////////
@@ -16,9 +144,6 @@ Entity *celery_stalker_load(Entity *celery_stalker)
 {
 	celery_stalker->update = &celery_stalker_update;
 	celery_stalker->touch = &celerly_stalker_touch;
-	celery_stalker->draw = &sprite_draw;
-	celery_stalker->state = NORMAL_STATE;
-	celery_stalker->target = player_get();
 	return celery_stalker;
 }
 
@@ -89,9 +214,6 @@ Entity *clarence_load(Entity *clarence)
 {
 	clarence->touch = &clarence_touch;
 	clarence->update = &clarence_update;
-	clarence->draw = &sprite_draw;
-	clarence->state = NORMAL_STATE;
-	clarence->target = player_get();
 	return clarence;
 }
 
@@ -169,9 +291,6 @@ Entity *melt_load(Entity *melt)
 {
 	melt->touch = &melt_touch;
 	melt->update = &melt_update;
-	melt->draw = &sprite_draw;
-	melt->state = NORMAL_STATE;
-	melt->target = player_get();
 	return melt;
 }
 
@@ -182,16 +301,37 @@ void melt_think(Entity *melt)
 		slog("no melt target");
 		return;
 	}
+	if(melt->state == STICKIED_STATE)
+	{
+		melt->think = &melt_stickied_think;
+		vect2d_set(melt->velocity, 0, 0);
+		melt->thinkRate = 2000;
+		melt->nextThink = get_time() + melt->thinkRate;
+		return;
+	}
 	camera_free_entity_outside_bounds(melt);
-	melt->velocity.y = melt->maxVelocity.y * sin((float)get_time());
-	melt->velocity.x = melt->velocity.x;
-	vect2d_negate(melt->velocity, melt->velocity);
 	if(!(get_time() >= melt->nextThink))
 	{
 		return;
 	}
+	melt->velocity.y = melt->maxVelocity.y * sin((float)get_time());
+	melt->velocity.x = melt->velocity.x;
+	vect2d_negate(melt->velocity, melt->velocity);
 	weapon_melt_cream_fire(melt);
 	melt->nextThink = get_time() + melt->thinkRate;
+}
+
+void melt_stickied_think(Entity *melt)
+{
+	vect2d_set(melt->velocity, 0, 0);
+	if(!(get_time() >= melt->nextThink))
+	{
+		return;
+	}
+	melt->state = NORMAL_STATE;
+	melt->think = &melt_think;
+	melt->thinkRate = 40;
+	melt->nextThink = melt->thinkRate + get_time();
 }
 
 void melt_update(Entity *melt)
@@ -199,7 +339,6 @@ void melt_update(Entity *melt)
 	if(melt->think)
 	{
 		vect2d_add(melt->position, melt->velocity, melt->position);
-		vect2d_copy(melt->velocity, melt->maxVelocity);
 	}
 	entity_intersect_all(melt);
 	if(melt->health <= 0)
@@ -236,10 +375,6 @@ Entity *milk_tank_load(Entity *milk_tank)
 {
 	milk_tank->touch = &milk_tank_touch;
 	milk_tank->update = &milk_tank_update;
-	milk_tank->target = player_get();
-	milk_tank->draw = &sprite_draw;
-	milk_tank->state = NORMAL_STATE;
-	milk_tank->target = player_get();
 	return milk_tank;
 }
 
@@ -319,12 +454,8 @@ void milk_tank_touch(Entity *milk_tank, Entity *other)
 
 Entity *professor_slice_load(Entity *professor_slice)
 {
-	professor_slice->target = player_get();
 	professor_slice->update = &professor_slice_update;
 	professor_slice->touch = &professor_slice_touch;
-	professor_slice->draw = &sprite_draw;
-	professor_slice->state = NORMAL_STATE;
-	professor_slice->target = player_get();
 	return professor_slice;
 }
 

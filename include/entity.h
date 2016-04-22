@@ -119,7 +119,7 @@ void entity_free(Entity **entity);
  * @param	velocity		2D vector of how fast the entity could move at max in both directions
  * @return [out] entity		If non-null, the entity.
  */
-Entity *entity_new(Uint32 nextThink, Uint32 thinkRate, int health, Vect2d velocity);
+Entity *entity_new(Uint32 thinkRate, int health, Vect2d velocity);
 
 /** 
  *  @brief	closes the entity system by freeing the entire entityList and setting the number   

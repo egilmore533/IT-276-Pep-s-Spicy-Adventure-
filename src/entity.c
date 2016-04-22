@@ -31,7 +31,7 @@ void entity_free(Entity **entity)
 	*entity = NULL;
 }
 
-Entity *entity_new(Uint32 nextThink, Uint32 thinkRate, int health, Vect2d velocity)
+Entity *entity_new(Uint32 thinkRate, int health, Vect2d velocity)
 {
 	int i;
 	/*makesure we have the room for a new sprite*/
@@ -52,11 +52,10 @@ Entity *entity_new(Uint32 nextThink, Uint32 thinkRate, int health, Vect2d veloci
 		memset(&entityList[i],0,sizeof(Entity));
 
 		entityList[i].alive = 1;
-		entityList[i].nextThink = nextThink;
 		entityList[i].thinkRate = thinkRate;
 		entityList[i].health = health;
 		entityList[i].maxVelocity = velocity;
-
+		entityList[i].free = &entity_free; // this is the default free function
 		entityNum++;
 
 		return &entityList[i];

@@ -113,10 +113,7 @@ Entity *weapon_fire(int type, Entity *owner)
 void weapon_think(Entity *shot)
 {
 	//if the bullet isn't touching the camera free the entity
-	if(!entity_intersect(shot, camera_get()))
-	{
-		shot->free(&shot);
-	}
+	camera_free_entity_outside_bounds(shot);
 }
 
 void weapon_update(Entity *shot)
@@ -181,11 +178,10 @@ Entity *make_spread_bullet(Entity *owner)
 	return spread_bullet;
 }
 
-void weapon_pep_think(Entity *spice) //this is used for spread shot and charge shot so all spiciness 
+void weapon_pep_think(Entity *spice)
 {
 	Vect2d offset;
 	//if the bullet isn't touching the camera free the entity
-	camera_free_entity_outside_bounds(spice);
 
 	if(!(get_time() >= spice->nextThink))
 	{
@@ -194,7 +190,7 @@ void weapon_pep_think(Entity *spice) //this is used for spread shot and charge s
 	offset = vect2d_new(-30, -10);
 	particle_exact_position_load(spice, offset);
 	spice->nextThink = get_time() + spice->thinkRate;
-
+	camera_free_entity_outside_bounds(spice);
 }
 
 void weapon_pep_charge_fire(Entity *player)
@@ -203,11 +199,24 @@ void weapon_pep_charge_fire(Entity *player)
 	Vect2d pos, vel;
 	spice = weapon_fire(PROJECTILE_PEP_CHARGE, player);
 	
-	spice->think = &weapon_pep_think;
+	spice->think = &weapon_pep_charge_think;
 	spice->touch = &weapon_pep_charge_touch;
 	spice->velocity = spice->maxVelocity;
 	vect2d_add(player->position, vect2d_new(128, 20), spice->position);
 	vect2d_add(player->position, vect2d_new(-64, 0), player->position);
+}
+
+void weapon_pep_charge_think(Entity *spice)
+{
+	if(!(get_time() >= spice->nextThink))
+	{
+		return;
+	}
+	particle_moving_load(spice);
+	particle_moving_load(spice);
+	spice->nextThink = get_time() + spice->thinkRate;
+	//if the bullet isn't touching the camera free the entity
+	camera_free_entity_outside_bounds(spice);
 }
 
 void weapon_pep_charge_touch(Entity *spice, Entity *other)
@@ -314,8 +323,6 @@ void weapon_professor_slice_bread_touch(Entity *bread, Entity *other)
 
 void weapon_professor_slice_bread_think(Entity *bread)
 {
-	//if the bullet isn't touching the camera free the entity
-	camera_free_entity_outside_bounds(bread);
 	if(bread->velocity.x == 0)
 	{
 		return;
@@ -334,4 +341,6 @@ void weapon_professor_slice_bread_think(Entity *bread)
 		}
 	}
 	bread->nextThink = get_time() + bread->thinkRate;
+	//if the bullet isn't touching the camera free the entity
+	camera_free_entity_outside_bounds(bread);
 }

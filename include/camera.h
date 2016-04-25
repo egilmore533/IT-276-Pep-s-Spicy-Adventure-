@@ -9,14 +9,16 @@
  */
 
 /**
- * @brief	initializes the camera entity with given information, needs to be initialized after
+ * @brief	initializes the camera entity with cJSON and a predefined def file, needs to be initialized after
  * 			all the systems are started, but before the level is loaded.
  * @param	id		  	The camera entity's identifier.
  */
 Entity *camera_load(int id);
 
 /**
- * @brief	moves the camera, performs the intersect all to check what entities are inside the camera's bounds, then camera_touch will draw them, be sure to remove camera_touch after runnign intersect all that way nothing is drawn twice.
+ * @brief	moves the camera, performs the intersect all to check what entities are inside the camera's bounds, 
+ *          then camera_touch will draw them, be sure to remove camera_touch after runnign intersect all that way 
+ *          nothing is drawn twice.
  * @param [in,out]	self	If non-null, the camera entity.
  */
 void camera_update(Entity *self);

@@ -7,15 +7,6 @@
  *	@brief	Parallax Scrolling system used to contain and handle backgrounds
  */
 
-typedef enum 
-{
-	BACK = 0,
-	MIDDLE,
-	FRONT,
-	FLAIR
-}BACKGROUND_TYPES;
-
-
 /** @struct Background structure
  *	@brief the struct for background layers so that they can be drawn infinitely at a unique speed 
  */

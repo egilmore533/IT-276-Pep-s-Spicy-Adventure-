@@ -9,7 +9,8 @@
 
 
 /**
- * @brief parses the entity_config file for data to load each entity from then sets the entity up accordingly, needs to be given a type, position and an id
+ * @brief parses the entity_config file for data to load each entity from then sets the entity up accordingly, needs to be 
+ *        given a type, position and an id
  * @param type	the type of entity to load (enumerated in entity.h)
  * @param pos	the 2d vector of the entity's position
  * @param id	the id number of the entity to be loaded

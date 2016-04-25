@@ -8,9 +8,9 @@
 			"frames": 1
 		},
 		"info": {
-			"thinkRate": 800,
+			"thinkRate": 400,
 			"health": 3,
-			"velMax": "5 5"
+			"velMax": "2 2"
 		},
 		"audioPak": {
 			"name": "melt_audio",

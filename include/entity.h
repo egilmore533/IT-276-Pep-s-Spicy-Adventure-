@@ -149,7 +149,8 @@ void entity_draw_all();
 void entity_draw(Entity *entity);
 
 /**
- * @brief	go through all active entities checking if the given entity is colliding with any others, perfroming touch functions if either entity has them.
+ * @brief	go through all active entities checking if the given entity is colliding with any others, perfroming touch functions if 
+ *          either entity has them.
  * @param [in,out]	entity	If non-null, the Entity to process.
  */
 void entity_intersect_all(Entity *entity);

@@ -28,10 +28,6 @@ void particle_free(Particle **particle)
 	self->alive--;
 	particleNum--;
 	// do not free sprite because each particle is using the same sprites
-	if(self->sprite != NULL) //test
-	{
-		sprite_free(&self->sprite);
-	}
 	memset(self, 0, sizeof (Particle));
 }
 
@@ -172,7 +168,6 @@ Particle *particle_new()
 		}
 		memset(&particleList[i],0,sizeof(Particle));
 		particleList[i].alive = 1;
-		particleList[i].think = &particle_think;
 		particleNum++;
 		return &particleList[i];
 	}
@@ -230,6 +225,13 @@ Particle *particle_assumed_position_load(Entity *generator)
 	return particle;
 }
 
+Particle *particle_moving_load(Entity *generator)
+{
+	Particle *particle = particle_assumed_position_load(generator);
+	particle->think = &particle_think;
+	return particle;
+}
+
 void particle_bundle_load(Entity *generator, int numParticles)
 {
 	Particle *particle;
@@ -243,7 +245,7 @@ void particle_bundle_load(Entity *generator, int numParticles)
 
 void particle_think(Particle *particle)
 {
-	if(particle->velocity.x == 0 && particle->velocity.y)
+	if(particle->velocity.x == 0 && particle->velocity.y == 0)
 	{
 		particle->velocity = vect2d_new(rand() % 10, rand() % 10);
 		switch(rand() % 3)

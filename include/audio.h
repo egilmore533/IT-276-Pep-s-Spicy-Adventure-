@@ -122,10 +122,25 @@ void audio_play_music(Music *music);
  */
 void audio_play_sound(Sound *sound);
 
+/** @brief closes the pakList, called by audio_close_lists */
 void audio_close_paks();
 
+/**
+ * @brief loads an SoundPak into the pakList with the given information, checks to see if there are any paks in the pakList that already match the one being loaded and references that instead
+ * @param channel			the channel that the SoundPak's sounds will belong to
+ * @param [in]	name		the name of SoundPak, used to id others
+ * @param [in]	fire1_file	the path for the fire1 sound
+ * @param [in]	fire2_file	the path for the fire2 sound
+ * @param [in]	death_file	the path for the death sound
+ * @param [in]	moving_file	the path for the moving sound
+ * @return the SoundPak
+ */
 SoundPak *audio_load_pak(int channel, char *name, char *fire1_file, char *fire2_file, char *death_file, char *moving_fire);
 
+/**
+ * @brief frees a reference of the given SoundPak, if the only reference in pakList it will free the SoundPak from the pakList as well
+ * @param [in,out] pak	double pointer to the pak to be freed
+ */
 void audio_pak_free(SoundPak **pak);
 
 

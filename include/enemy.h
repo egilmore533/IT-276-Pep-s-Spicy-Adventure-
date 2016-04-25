@@ -4,7 +4,8 @@
 #include "entity.h"
 
 /** @file	enemy.h
- *	@brief	Each enemies functions for thinking, updates, touching, and a load function which will set the function pointers accordingly for the enemy
+ *	@brief	Each enemies functions for thinking, updates, touching, and a load function which will set the function pointers 
+ *          accordingly for the enemy
  */
 
 Entity *enemy_load(int type, Entity *enemy);
@@ -38,7 +39,8 @@ void celery_stalker_update(Entity *celery_stalker);
 
 /** 
  *  @brief checks if the celery_stalker touches the camera, the player, or the player's attacks performs the appropriate actions for each,
- *			if the celery_stalker hasn't touched the camera yet it needs to begin thinking, player needs to get hurt, or the celery_stalker needs to get hurt
+ *			if the celery_stalker hasn't touched the camera yet it needs to begin thinking, player needs to get hurt, or the celery_stalker 
+ *          needs to get hurt
  *  @param celery_stalker	the entity that is assumed to be a celery_stalker
  *  @param other 			the entity that collided with the celery_stalker
  */
@@ -54,7 +56,8 @@ void celerly_stalker_touch(Entity *celery_stalker, Entity *other);
 Entity *clarence_load(Entity *clarence);
 
 /** 
- *  @brief  checks if clarence's target is directly below him, if so then sets the direction to be straight down and change to the other think, also allow clarence to die
+ *  @brief  checks if clarence's target is directly below him, if so then sets the direction to be straight down and change to the other think, 
+ *          also allow clarence to die
  *  @param	clarence	the clarence
  */
 void clarence_think_start(Entity *clarence);
@@ -158,7 +161,8 @@ void milk_tank_touch(Entity *milk_tank, Entity *other);
 Entity *professor_slice_load(Entity *professor_slice);
 
 /** 
- *  @brief  fires projectiles according at the think rate and sets the professor_slice's direction and velocity to be away from the player, kills professor_slice if not touching the camera
+ *  @brief  fires projectiles according at the think rate and sets the professor_slice's direction and velocity to be away from the player, 
+ *          kills professor_slice if not touching the camera
  *  @param	professor_slice	the professor_slice
  */
 void professor_slice_think(Entity *professor_slice);

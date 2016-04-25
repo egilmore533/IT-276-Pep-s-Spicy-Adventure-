@@ -21,7 +21,7 @@
 			"frames": 1
 		},
 		"info": {
-			"thinkRate": 30,
+			"thinkRate": 10,
 			"velMax": "20 0"
 		}
 	},

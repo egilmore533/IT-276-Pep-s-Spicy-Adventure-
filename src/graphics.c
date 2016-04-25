@@ -72,7 +72,7 @@ void graphics_frame_delay()
     {
         SDL_Delay(g_graphics_frame_delay - diff);
     }
-    g_graphics_fps = 1000.0/MAX(get_time() - g_graphics_then,0.001);
+    g_graphics_fps = 1000.0/MAX(SDL_GetTicks() - g_graphics_then,0.001);
     if (g_graphics_print_fps)
     {
         printf("FPS: %f\n",g_graphics_fps); //printf so the log isn't filled with frame rate

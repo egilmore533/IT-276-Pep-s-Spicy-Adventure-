@@ -50,8 +50,6 @@ int main(int argc, char *argv[])
 	test_player->position = player_pos;
 	test_ent = level_entity_load(ENEMY_MELT, 2);
 	test_ent->position = test_pos;
-	test_ent2 = level_entity_load(ENEMY_MELT, 3);
-	test_ent2->position = test_pos2;
 	//test end
 
 	done = 0;
@@ -66,6 +64,7 @@ int main(int argc, char *argv[])
 		entity_draw_all();
 
 		particle_think_all();
+		particle_check_all_dead();
 		particle_draw_all();
 		
 		graphics_next_frame();

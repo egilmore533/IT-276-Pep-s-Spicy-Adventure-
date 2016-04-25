@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <math.h>
 
+#include "graphics.h"
 #include "enemy.h"
 #include "weapon.h"
 #include "camera.h"
@@ -305,20 +306,22 @@ void melt_think(Entity *melt)
 	{
 		melt->think = &melt_stickied_think;
 		vect2d_set(melt->velocity, 0, 0);
-		melt->thinkRate = 2000;
-		melt->nextThink = get_time() + melt->thinkRate;
+		melt->nextThink = get_time() + 2000;
 		return;
 	}
-	camera_free_entity_outside_bounds(melt);
 	if(!(get_time() >= melt->nextThink))
 	{
 		return;
 	}
 	melt->velocity.y = melt->maxVelocity.y * sin((float)get_time());
-	melt->velocity.x = melt->velocity.x;
+	melt->velocity.x = melt->maxVelocity.x;
 	vect2d_negate(melt->velocity, melt->velocity);
-	weapon_melt_cream_fire(melt);
+	if(rand() % 2) 
+	{ 
+		weapon_melt_cream_fire(melt); 
+	}
 	melt->nextThink = get_time() + melt->thinkRate;
+	camera_free_entity_outside_bounds(melt);
 }
 
 void melt_stickied_think(Entity *melt)
@@ -330,14 +333,29 @@ void melt_stickied_think(Entity *melt)
 	}
 	melt->state = NORMAL_STATE;
 	melt->think = &melt_think;
-	melt->thinkRate = 40;
 	melt->nextThink = melt->thinkRate + get_time();
 }
 
 void melt_update(Entity *melt)
 {
+	Entity *cam = camera_get();
 	if(melt->think)
 	{
+		if(melt->position.y <= cam->bounds.x)
+		{
+			if(melt->velocity.y < 0)
+			{
+				melt->velocity.y = 0;
+			}
+		}
+
+		if(melt->position.y + melt->sprite->frameSize.y >= cam->bounds.x + cam->bounds.h)
+		{
+			if(melt->velocity.y > 0)
+			{
+				melt->velocity.y = 0;
+			}
+		}
 		vect2d_add(melt->position, melt->velocity, melt->position);
 	}
 	entity_intersect_all(melt);
@@ -389,12 +407,7 @@ void milk_tank_think(Entity *milk_tank)
 	{
 		milk_tank->think = &milk_tank_stickied_think;
 		vect2d_set(milk_tank->velocity, 0, 0);
-		milk_tank->thinkRate = 2000;
-		milk_tank->nextThink = get_time() + milk_tank->thinkRate;
-		return;
-	}
-	if(!(get_time() >= milk_tank->nextThink))
-	{
+		milk_tank->nextThink = get_time() + 2000;
 		return;
 	}
 	vect2d_subtract(milk_tank->target->position, milk_tank->position, milk_tank->direction);
@@ -412,8 +425,6 @@ void milk_tank_stickied_think(Entity *milk_tank)
 	}
 	milk_tank->state = NORMAL_STATE;
 	milk_tank->think = &milk_tank_think;
-	milk_tank->thinkRate = 40;
-	milk_tank->nextThink = milk_tank->thinkRate + get_time();
 }
 
 void milk_tank_update(Entity *milk_tank)
@@ -478,13 +489,13 @@ void professor_slice_think(Entity *professor_slice)
 		return;
 	}
 	vect2d_copy(professor_slice->velocity, professor_slice->maxVelocity);
-	camera_free_entity_outside_bounds(professor_slice);
 	vect2d_subtract(professor_slice->target->position, professor_slice->position, professor_slice->direction);
 	vect2d_normalize(&professor_slice->direction);
 	vect2d_negate(professor_slice->direction, professor_slice->direction);
 	vect2d_mutiply(professor_slice->velocity, professor_slice->direction, professor_slice->velocity);
 	weapon_professor_slice_bread_fire(professor_slice);
 	professor_slice->nextThink = get_time() + professor_slice->thinkRate;
+	camera_free_entity_outside_bounds(professor_slice);
 }
 
 void professor_slice_stickied_think(Entity *professor_slice)

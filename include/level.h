@@ -7,6 +7,14 @@
  *	@brief	level storage, loading and config parsing, most important function being entity_load
  */
 
+typedef struct {
+	BackgroundPak *background;
+	Music *backgroundMusic;
+	Entity *cam;
+	Entity *player;
+	char *level_def_file;
+	int end;
+}Level;
 
 /**
  * @brief parses the entity_config file for data to load each entity from then sets the entity up accordingly, needs to be 
@@ -16,5 +24,9 @@
  * @param id	the id number of the entity to be loaded
  */
 Entity *level_entity_load(int type, int id);
+
+void level_free(Level **level);
+
+Level *level_load(int levelNumber, char *level_def_file);
 
 #endif

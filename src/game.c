@@ -22,35 +22,8 @@ int main(int argc, char *argv[])
 	const Uint8 *keys;
 	SDL_Renderer *the_renderer;
 
-	//test start
-	Vect2d test_frame_size = vect2d_new(128, 64);
-	Sprite *test = NULL;
-	Music *background_music = NULL;
-	Vect2d camera_pos = vect2d_new(0, 0);
-	Vect2d player_pos = vect2d_new(200, 200);
-	Vect2d test_pos = vect2d_new(1220, 200);
-	Vect2d test_pos2 = vect2d_new(1220, 500);
-	Entity *test_ent;
-	Entity *test_ent2;
-	Entity *test_player;
-	Entity *cam;
-	//test end
-
-	initialize_all(1);
-	cam = camera_get();
-	cam->position = camera_pos;
+	initialize_all(0);
 	the_renderer = graphics_get_renderer();
-
-	//test start
-	background_music = audio_load_music("sound/HotSalsa.ogg", -1);
-	audio_play_music(background_music); 
-	test = sprite_load("images/pep3.png", test_frame_size, 2, 2);
-	background_pak_new("def/sunny_peps_background_config.txt");
-	test_player = level_entity_load(PLAYER, 1);
-	test_player->position = player_pos;
-	test_ent = level_entity_load(ENEMY_MELT, 2);
-	test_ent->position = test_pos;
-	//test end
 
 	done = 0;
 	do
@@ -103,9 +76,9 @@ void initialize_all(Uint8 level_number)
 	sprite_initialize_system(MAX_SPRITES);
 	particle_initialize_system(2000);
 	entity_initialize_system(200);
-	level_entity_load(CAMERA, 0); //test
 
 	background_initialize_system(8);
+	level_load(0, "def/melt_level.txt");
 }
 
 void initialize_next_level(Uint8 level_number)

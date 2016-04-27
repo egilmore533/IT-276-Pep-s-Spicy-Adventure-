@@ -61,6 +61,8 @@ void background_close_system();
  */
 void background_initialize_system(int maxBackground);
 
+void background_pak_free(BackgroundPak *pak);
+
 /**
  * @brief	returns the first availabe backround in the backgroundList and sets it to be alive
  * @param	moveFactor		the factor at which the background will move in relation to the camera

@@ -52,4 +52,6 @@ Sprite *sprite_load(char *filename, Vect2d frameSize, int fpl, int frames);
  */
 void sprite_draw(Sprite *sprite, int frame, Vect2d drawPos);
 
+void sprite_empty_list();
+
 #endif

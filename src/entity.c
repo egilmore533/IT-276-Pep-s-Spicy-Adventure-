@@ -253,3 +253,27 @@ Entity *entity_get_by_id(Uint32 id)
 	}
 	return NULL;
 }
+
+void entity_empty_list()
+{
+	int i;
+	Entity *entity = NULL;
+	if(!entityList)
+	{
+		slog("entityList not initialized");
+		return;
+	}
+	for(i = 0; i < entityMax; ++i)
+	{
+		entity = &entityList[i];
+		entity_free(&entity);
+	}
+	memset(entityList, 0, sizeof(Entity) * entityMax);
+	for(i = 0; i < entityMax; i++)
+	{
+		entityList[i].sprite = NULL;
+		entityList[i].owner = NULL;
+		entityList[i].target = NULL;
+	}
+	entityNum = 0;
+}

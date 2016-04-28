@@ -5,6 +5,7 @@
 #include "simple_logger.h"
 #include "camera.h"
 #include "graphics.h"
+#include "files.h"
 
 static Entity *camera = NULL;
 static Uint8 moving = 1; /**< flag to tell the camera to start and stop moving */
@@ -27,10 +28,10 @@ Entity *camera_load(int id)
 	Uint32 nextThink, thinkRate;
 	int health, type;
 
-	camera_config_file = fopen("def/camera_config.txt","r");
+	camera_config_file = fopen(CAMERA_CONFIG,"r");
 	if(!camera_config_file)
 	{
-		slog("No file found: %s", "def/camera_config.txt");
+		slog("No file found: %s", CAMERA_CONFIG);
 		return;
 	}
 	//get the length of the file

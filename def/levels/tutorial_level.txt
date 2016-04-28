@@ -1,0 +1,70 @@
+{"level":{
+	"camera": {
+		"position": "0 0"
+	},
+	"music": {
+		"file": "sound/HotSalsa.ogg",
+		"loop": -1
+	},
+	"background": {
+		"file": "def/backgrounds/sunny_peps_config.txt"
+	},
+	"player": {
+		"id": 1,
+		"position": "0 400"
+	},
+	"melts": {
+		"number": 3,
+		"position0": "1500 400",
+		"position1": "5700 550",
+		"position2": "5700 700"
+	},
+	"milk_tanks": {
+		"number": 3,
+		"position0": "3000 400",
+		"position1": "10500 200",
+		"position2": "10500 400"
+	},
+	"clarences": {
+		"number": 2,
+		"position0": "7500 10",
+		"position1": "7700 10"
+	},
+	"celery_stalkers": {
+		"number": 1,
+		"position0": "4500 100"
+	},
+	"professor_slices": {
+		"number": 2,
+		"position0": "9000 400",
+		"position1": "800 100"
+	},
+	"heat_shields": {
+		"number": 1,
+		"position0": "3000 200"
+	},
+	"goo_shots": {
+		"number": 1,
+		"position0": "7800 100"
+	},
+	"spread_shots": {
+		"number": 2,
+		"position0": "4500 200",
+		"position1": "5500 600"
+	},
+	"double_taps": {
+		"number": 0
+	},
+	"extra_lifes": {
+		"number": 1,
+		"position0": "11500 400"
+	},
+	"bomb_pickups": {
+		"number": 1,
+		"position0": "11500 500"
+	},
+	"info":{
+		"end": 13000
+	}
+}}	
+

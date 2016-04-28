@@ -11,6 +11,7 @@
 #include "simple_logger.h"
 #include "cJSON.h"
 #include "player.h"
+#include "files.h"
 
 Entity *enemy_load(int type, Entity *enemy)
 {
@@ -42,10 +43,10 @@ Entity *enemy_load(int type, Entity *enemy)
 	char *moving_file;
 	int channel = FX_Enemy;
 
-	enemy_config_file = fopen("def/enemy_config.txt","r");
+	enemy_config_file = fopen(ENEMY_CONFIG,"r");
 	if(!enemy_config_file)
 	{
-		slog("No file found: %s", "def/enemy_config.txt");
+		slog("No file found: %s", ENEMY_CONFIG);
 		return;
 	}
 	//get the length of the file

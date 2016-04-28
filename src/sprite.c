@@ -180,3 +180,25 @@ void sprite_draw(Sprite *sprite, int frame, Vect2d drawPos)
 	destination.h = sprite->frameSize.y;
 	SDL_RenderCopy(renderer, sprite->image, &source, &destination);
 }
+
+void sprite_empty_list()
+{
+	int i;
+	Sprite *sprite = NULL;
+	if(!spriteList)
+	{
+		slog("spriteList not initialized");
+		return;
+	}
+	for(i = 0; i < spriteMax; ++i)
+	{
+		sprite = &spriteList[i];
+		sprite_free(&sprite);
+	}
+	memset(spriteList, 0, sizeof(Sprite) * spriteMax);
+	for(i = 0; i < spriteMax; ++i)
+	{
+		spriteList[i].image = NULL;
+	}
+	spriteNum = 0;
+}

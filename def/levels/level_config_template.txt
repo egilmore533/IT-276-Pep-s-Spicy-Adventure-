@@ -1,0 +1,53 @@
+{"level":{
+	"camera": {
+		"position": "0 0"
+	},
+	"music": {
+		"file": "sound/HotSalsa.ogg",
+		"loop": -1
+	},
+	"background": {
+		"file": "def/backgrounds/sunny_peps_config.txt"
+	},
+	"player": {
+		"id": 1,
+		"position": "0 400"
+	},
+	"melts": {
+		"number": 0
+	},
+	"milk_tanks": {
+		"number": 0
+	},
+	"clarences": {
+		"number": 0
+	},
+	"celery_stalkers": {
+		"number": 0
+	},
+	"professor_slices": {
+		"number": 0
+	},
+	"heat_shields": {
+		"number": 0
+	},
+	"goo_shots": {
+		"number": 0
+	},
+	"spread_shots": {
+		"number": 0
+	},
+	"double_taps": {
+		"number": 0
+	},
+	"extra_lifes": {
+		"number": 0
+	},
+	"bomb_pickups": {
+		"number": 0
+	},
+	"info":{
+		"end": 13000
+	}
+}}	
+

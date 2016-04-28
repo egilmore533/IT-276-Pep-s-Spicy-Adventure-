@@ -5,6 +5,7 @@
 #include "player.h"
 #include "simple_logger.h"
 #include "cJSON.h"
+#include "files.h"
 
 Entity *power_up_load(int type, Entity *power_up)
 {
@@ -23,10 +24,10 @@ Entity *power_up_load(int type, Entity *power_up)
 	int fpl;
 	int frames;
 
-	power_up_config_file = fopen("def/power_up_config.txt","r");
+	power_up_config_file = fopen(POWER_UP_CONFIG,"r");
 	if(!power_up_config_file)
 	{
-		slog("No file found: %s", "def/power_up_config.txt");
+		slog("No file found: %s", POWER_UP_CONFIG);
 		return;
 	}
 	//get the length of the file

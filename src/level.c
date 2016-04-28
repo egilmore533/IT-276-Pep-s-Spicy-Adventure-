@@ -85,18 +85,18 @@ void level_free(Level **level)
 	{
 		audio_music_free(&self->backgroundMusic);
 	}
-	if(self->player != NULL)
+	if(self->player != NULL && self->player->free)
 	{
 		self->player->free(&self->player);
 	}
-	if(self->cam != NULL)
+	if(self->cam != NULL && self->cam->free)
 	{
 		self->cam->free(&self->cam);
 	}
 	*level = NULL;
 }
 
-Level *level_load(int levelNumber, char *level_def_file)
+Level *level_load(char *level_def_file)
 {
 	Level *newLevel = NULL;
 
@@ -285,4 +285,21 @@ Level *level_load(int levelNumber, char *level_def_file)
 	newLevel->end = cJSON_GetObjectItem(obj, "end")->valueint;
 	newLevel->level_def_file = level_def_file;
 	return newLevel;
+}
+
+Uint8 level_end_reached(Level *level)
+{
+	if(level->player->position.x > level->end)
+	{
+		return 1;
+	}
+	return 0;
+}
+
+void level_purge_systems()
+{
+	player_save_info();
+	entity_empty_list();
+	background_empty_list();
+	audio_empty_list();
 }

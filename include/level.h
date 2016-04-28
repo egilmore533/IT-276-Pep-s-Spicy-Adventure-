@@ -27,6 +27,10 @@ Entity *level_entity_load(int type, int id);
 
 void level_free(Level **level);
 
-Level *level_load(int levelNumber, char *level_def_file);
+Level *level_load(char *level_def_file);
+
+Uint8 level_end_reached(Level *level);
+
+void level_purge_systems();
 
 #endif

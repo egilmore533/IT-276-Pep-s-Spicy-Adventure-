@@ -38,4 +38,10 @@ void player_add_life();
  */
 Entity *player_get();
 
+void player_save_info();
+
+void player_saved_load_on();
+
+void player_saved_load_off();
+
 #endif

@@ -8,6 +8,7 @@
 #include "particle.h"
 #include "simple_logger.h"
 #include "cJSON.h"
+#include "files.h"
 
 #define PI			3.141589
 
@@ -33,10 +34,10 @@ Entity *weapon_fire(int type, Entity *owner)
 	int fpl;
 	int frames;
 
-	weapon_config_file = fopen("def/weapon_config.txt","r");
+	weapon_config_file = fopen(WEAPON_CONFIG,"r");
 	if(!weapon_config_file)
 	{
-		slog("No file found: %s", "def/weapon_config.txt");
+		slog("No file found: %s", WEAPON_CONFIG);
 		return;
 	}
 	//get the length of the file

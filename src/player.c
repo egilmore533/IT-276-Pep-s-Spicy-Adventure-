@@ -7,8 +7,10 @@
 #include "cJSON.h"
 #include "simple_logger.h"
 #include "audio.h"
+#include "files.h"
 
 static Entity	*player = NULL;
+static Uint8	player_saved_load = 0;
 static Uint32	respawn_moment;
 
 Entity *player_load()
@@ -19,7 +21,7 @@ Entity *player_load()
 	FILE *player_config_file;
 	long length;
 	char *data;
-	char *string;
+	char *def_file_path;
 
 	//entity info
 	Uint32 thinkRate;
@@ -42,10 +44,18 @@ Entity *player_load()
 	char *moving_file;
 	int channel = FX_Enemy;
 
-	player_config_file = fopen("def/player_config.txt","r");
+	if(!player_saved_load)
+	{
+		def_file_path = PLAYER_CONFIG;
+	}
+	else
+	{
+		def_file_path = PLAYER_SAVE_CONFIG;
+	}
+	player_config_file = fopen(def_file_path,"r");
 	if(!player_config_file)
 	{
-		slog("No file found: %s", "def/player_config.txt");
+		slog("No file found: %s", PLAYER_CONFIG);
 		return;
 	}
 	//get the length of the file
@@ -199,7 +209,8 @@ void player_update(Entity *player)
 		if(player->inventory[LIVES] == 0)
 		{
 			//game over code here
-			player->free(&player);
+			player->state = GAME_OVER_STATE;
+			player_saved_load_off();
 			camera_stop();
 			return;
 		}
@@ -214,6 +225,12 @@ void player_update(Entity *player)
 	{
 		player->health--;
 	}
+	/////////////////test//////////////////
+	if(keys[SDL_SCANCODE_Q])
+	{
+		player->position.x = 20000;
+	}
+	////////////////////////////////
 	if(keys[SDL_SCANCODE_A])
 	{
 		if(!(player->position.x <= player->owner->position.x))
@@ -276,6 +293,70 @@ void player_update(Entity *player)
 	entity_intersect_all(player);
 }
 
+void player_save_info()
+{
+	FILE *player_save_config_file;
+	cJSON *json, *root, 
+		*obj,  *buf;
+	char *data;
+	char temp[100];
+	int i;
+
+	if(!player_saved_load)
+	{
+		return;
+	}
+	if(player == NULL)
+	{
+		slog("cannot save player data if player not loaded");
+		return;
+	}
+	json = cJSON_CreateObject();
+	cJSON_AddItemToObject(json, "player_config", root=cJSON_CreateObject());
+	cJSON_AddItemToObject(root, "player", obj = cJSON_CreateObject());
+
+	cJSON_AddItemToObject(obj, "sprite", buf = cJSON_CreateObject());
+	cJSON_AddStringToObject(buf, "file", player->sprite->filename);
+	memset(&temp[0], 0, sizeof(temp));
+	sprintf(temp, "%d %d", player->bounds.w, player->bounds.h);
+	cJSON_AddStringToObject(buf, "bounds", temp);
+	cJSON_AddNumberToObject(buf, "frame", player->frameNumber);
+	cJSON_AddNumberToObject(buf, "fpl", player->sprite->fpl);
+	cJSON_AddNumberToObject(buf, "frames", player->sprite->frames);
+
+	cJSON_AddItemToObject(obj, "info", buf = cJSON_CreateObject());
+	cJSON_AddNumberToObject(buf, "thinkRate", player->thinkRate);
+	cJSON_AddNumberToObject(buf, "health", player->health);
+	memset(&temp[0], 0, sizeof(temp));
+	sprintf(temp, "%f %f", player->maxVelocity.x, player->maxVelocity.y);
+	cJSON_AddStringToObject(buf, "velMax", temp);
+	cJSON_AddNumberToObject(buf, "lives", player->inventory[LIVES]);
+	cJSON_AddNumberToObject(buf, "bombs", player->inventory[BOMBS]);
+	cJSON_AddNumberToObject(buf, "spreads", player->inventory[SPREADS]);
+
+	cJSON_AddItemToObject(obj, "audioPak", buf = cJSON_CreateObject());
+	cJSON_AddStringToObject(buf, "name", player->entitySounds->name);
+	cJSON_AddStringToObject(buf, "firing1", player->entitySounds->firing1->filename);
+	cJSON_AddStringToObject(buf, "firing2", player->entitySounds->firing2->filename);
+	cJSON_AddStringToObject(buf, "death", player->entitySounds->death->filename);
+	cJSON_AddStringToObject(buf, "moving", player->entitySounds->moving->filename);
+
+	data = cJSON_Print(json);
+	cJSON_Delete(json);
+
+	player_save_config_file = fopen(PLAYER_SAVE_CONFIG, "w");
+
+	if (player_save_config_file == NULL) {
+	  fprintf(stderr, "Can't open output file %s!\n",
+			  PLAYER_SAVE_CONFIG);
+	  return;
+	}
+
+	fprintf(player_save_config_file, data);
+
+	fclose(player_save_config_file);
+}
+
 void player_add_life()
 {
 	player->inventory[LIVES]++;
@@ -285,3 +366,14 @@ Entity *player_get()
 {
 	return player;
 }
+
+void player_saved_load_on()
+{
+	player_saved_load = 1;
+}
+
+void player_saved_load_off()
+{
+	player_saved_load = 0;
+}
+

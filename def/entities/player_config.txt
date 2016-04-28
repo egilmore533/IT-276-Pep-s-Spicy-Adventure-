@@ -1,0 +1,26 @@
+{"player_config":{
+	"player": {
+		"sprite": {
+			"file": "images/pep4.png",
+			"bounds": "128 64",
+			"frame": 0,
+			"fpl": 3,
+			"frames": 3
+		},
+		"info": {
+			"thinkRate": 200,
+			"health": 1,
+			"velMax": "10 10",
+			"lives": 2,
+			"bombs": 2,
+			"spreads": 0
+		},
+		"audioPak": {
+			"name": "player_audio",
+			"firing1": "sound/player_fire_spread.ogg",
+			"firing2": "sound/player_charge_shot.ogg",
+			"death": "sound/player_death2.ogg",
+			"moving": "sound/player_bomb.ogg"
+		}
+	}
+}}

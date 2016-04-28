@@ -39,6 +39,9 @@ typedef enum
 /** @brief the entity is being shielded (player only) */
 #define SHIELDED_STATE		2 //pep only
 
+/** @brief the entity has no lives remaining (player only) */
+#define GAME_OVER_STATE		3//pep only
+
 /**
  * @enum ENTITY_TYPES
  * @brief the different entities that could be created, seperated by file
@@ -170,6 +173,7 @@ int entity_intersect(Entity *entity, Entity *other);
  */
 Entity *entity_get_by_id(Uint32 id);
 
+void entity_empty_list();
 
 
 #endif

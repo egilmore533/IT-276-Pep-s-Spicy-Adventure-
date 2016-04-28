@@ -1,1048 +1,268 @@
 c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
 
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\game.c:78: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\game.c:78: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:78: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:78: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:78: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:78: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:78: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:78: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:78: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:78: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:80: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:80: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:81: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:81: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:81: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:81: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:81: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:81: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:81: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:81: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\particle.c:164: Maximum Particle's Reached.
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:81: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:81: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:81: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\weapon.c:173: no other target
-c:\users\user\desktop\it-276\src\game.c:81: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:81: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:81: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:80: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:80: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:80: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:77: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:77: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:77: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:77: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:77: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:77: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:77: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:81: 
+c:\users\user\desktop\it-276\src\game.c:51: QUIT GAME 
 
- QUIT GAME 
+========================================================
 
 
 c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
 
+c:\users\user\desktop\it-276\src\player.c:291: cannot save player data if player not loaded
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:79: 
-
- QUIT GAME 
-
-
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
 c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
 
+c:\users\user\desktop\it-276\src\player.c:291: cannot save player data if player not loaded
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:80: 
+c:\users\user\desktop\it-276\src\game.c:51: QUIT GAME 
 
- QUIT GAME 
+========================================================
 
 
 c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
 
+c:\users\user\desktop\it-276\src\player.c:291: cannot save player data if player not loaded
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:80: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:80: 
+c:\users\user\desktop\it-276\src\game.c:51: QUIT GAME 
 
- QUIT GAME 
+========================================================
 
 
 c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
 
+c:\users\user\desktop\it-276\src\player.c:297: cannot save player data if player not loaded
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:80: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:79: 
+c:\users\user\desktop\it-276\src\game.c:51: QUIT GAME 
 
- QUIT GAME 
+========================================================
 
 
 c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
 
+c:\users\user\desktop\it-276\src\player.c:297: cannot save player data if player not loaded
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:79: 
+c:\users\user\desktop\it-276\src\game.c:51: QUIT GAME 
 
- QUIT GAME 
+========================================================
 
 
 c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
 
+c:\users\user\desktop\it-276\src\player.c:297: cannot save player data if player not loaded
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:79: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:79: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:79: 
-
- QUIT GAME 
-
-
 c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
 
+c:\users\user\desktop\it-276\src\player.c:297: cannot save player data if player not loaded
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\particle.c:164: Maximum Particle's Reached.
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:80: 
+c:\users\user\desktop\it-276\src\game.c:51: QUIT GAME 
 
- QUIT GAME 
+========================================================
 
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
 
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\particle.c:164: Maximum Particle's Reached.
 c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
 
+c:\users\user\desktop\it-276\src\player.c:307: cannot save player data if player not loaded
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:80: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:81: 
+c:\users\user\desktop\it-276\src\game.c:52: QUIT GAME 
 
- QUIT GAME 
+========================================================
 
 
 c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
 
+c:\users\user\desktop\it-276\src\player.c:307: cannot save player data if player not loaded
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:81: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:81: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:81: 
-
- QUIT GAME 
-
-
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
 c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
 
+c:\users\user\desktop\it-276\src\player.c:307: cannot save player data if player not loaded
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:81: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:81: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:81: 
-
- QUIT GAME 
-
-
 c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
 
+c:\users\user\desktop\it-276\src\player.c:307: cannot save player data if player not loaded
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:81: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\game.c:81: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\game.c:80: 
-
- QUIT GAME 
-
-
 c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
 
+c:\users\user\desktop\it-276\src\player.c:307: cannot save player data if player not loaded
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:80: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\weapon.c:251: no other target
-c:\users\user\desktop\it-276\src\game.c:80: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:80: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
+c:\users\user\desktop\it-276\src\player.c:307: cannot save player data if player not loaded
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:80: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:80: 
+c:\users\user\desktop\it-276\src\game.c:52: QUIT GAME 
 
- QUIT GAME 
+========================================================
 
 
 c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
 
+c:\users\user\desktop\it-276\src\player.c:308: cannot save player data if player not loaded
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:80: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:80: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:80: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
+c:\users\user\desktop\it-276\src\player.c:308: cannot save player data if player not loaded
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:80: 
+c:\users\user\desktop\it-276\src\game.c:52: QUIT GAME 
 
- QUIT GAME 
+========================================================
 
 
 c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
 
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:80: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:80: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:80: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:80: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:80: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:80: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:80: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:80: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\game.c:53: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\game.c:53: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
-c:\users\user\desktop\it-276\src\game.c:53: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\enemy.c:283: 
-
- hit player 
-
-
-c:\users\user\desktop\it-276\src\enemy.c:283: 
-
- hit player 
-
-
-c:\users\user\desktop\it-276\src\game.c:53: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\enemy.c:283: 
-
- hit player 
-
-
-c:\users\user\desktop\it-276\src\enemy.c:283: 
-
- hit player 
-
-
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\game.c:53: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+c:\users\user\desktop\it-276\src\game.c:52: QUIT GAME 
 
-c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\game.c:53: 
-
- QUIT GAME 
+========================================================
 
 
 c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
 
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\game.c:53: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\enemy.c:283: 
-
- hit player 
-
-
-c:\users\user\desktop\it-276\src\game.c:53: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:53: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\weapon.c:263: no other target
-c:\users\user\desktop\it-276\src\game.c:53: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:53: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:53: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:53: 
-
- QUIT GAME 
-
-
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
-
 c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
-c:\users\user\desktop\it-276\src\game.c:53: 
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\weapon.c:264: no other target
+c:\users\user\desktop\it-276\src\game.c:52: QUIT GAME 
 
- QUIT GAME 
+========================================================
 
 

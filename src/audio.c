@@ -345,3 +345,79 @@ void audio_pak_free(SoundPak **pak)
 	}
 	*pak = NULL;
 }
+
+void audio_empty_list()
+{
+	audio_empty_pak_list();
+	audio_empty_music_list();
+	audio_empty_sound_list();
+}
+
+void audio_empty_music_list()
+{
+	int i;
+	Music *music = NULL;
+	if(!musicList)
+	{
+		slog("musicList not initialized");
+		return;
+	}
+	for(i = 0; i < maxMusics; ++i)
+	{
+		music = &musicList[i];
+		audio_music_free(&music);
+	}
+	memset(musicList, 0, sizeof(Music) * maxMusics);
+	for(i = 0; i < maxMusics; ++i)
+	{
+		musicList[i].music = NULL;
+	}
+	numMusics = 0;
+}
+
+void audio_empty_sound_list()
+{
+	int i;
+	Sound *sound = NULL;
+	if(!soundList)
+	{
+		slog("soundList not initialized");
+		return;
+	}
+	for(i = 0; i < maxSounds; ++i)
+	{
+		sound = &soundList[i];
+		audio_sound_free(&sound);
+	}
+	memset(soundList, 0, sizeof(Sound) * maxSounds);
+	for(i = 0; i < maxSounds; ++i)
+	{
+		soundList[i].sound = NULL;
+	}
+	numSounds = 0;
+}
+
+void audio_empty_pak_list()
+{
+	int i;
+	SoundPak *pak = NULL;
+	if(!pakList)
+	{
+		slog("pakList not initialized");
+		return;
+	}
+	for(i = 0; i < maxPaks; ++i)
+	{
+		pak = &pakList[i];
+		audio_pak_free(&pak);
+	}
+	memset(pakList, 0, sizeof(SoundPak) * maxPaks);
+	for(i = 0; i < maxPaks; ++i)
+	{
+		pakList[i].moving = NULL;
+		pakList[i].firing1 = NULL;
+		pakList[i].firing2 = NULL;
+		pakList[i].death = NULL;
+	}
+	numPaks = 0;
+}

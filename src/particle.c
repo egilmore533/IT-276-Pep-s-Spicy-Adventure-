@@ -5,6 +5,7 @@
 #include "simple_logger.h"
 #include "cJSON.h"
 #include "camera.h"
+#include "files.h"
 
 static Particle *particleList = NULL;	/**< the list of active particles */
 static int particleMax;					/**< the maximum number of particles allowed for the game */
@@ -71,7 +72,7 @@ void particle_initialize_system(int maxParticle)
 
 	//initialize the particlePaks that are global here
 	Dust = (ParticlePak *) malloc (sizeof (ParticlePak));
-	particle_pak_initialize("def/particle_pak_config_dust.txt", Dust);
+	particle_pak_initialize(DUST_PAK_CONFIG, Dust);
 
 
 	atexit(particle_close_system);

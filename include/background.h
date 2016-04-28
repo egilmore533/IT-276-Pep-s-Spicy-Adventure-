@@ -96,4 +96,6 @@ void background_update_all();
  */
 void background_update(Background *background);
 
+void background_empty_list();
+
 #endif

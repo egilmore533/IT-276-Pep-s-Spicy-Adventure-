@@ -36,11 +36,11 @@ void background_pak_free(BackgroundPak *pak)
 {
 	if(pak->front && pak->front->free)
 		pak->front->free(&pak->front);
-	if(pak->front && pak->front->free)
+	if(pak->middle && pak->middle->free)
 		pak->middle->free(&pak->middle);
-	if(pak->front && pak->front->free)
+	if(pak->back && pak->back->free)
 		pak->back->free(&pak->back);
-	if(pak->front && pak->front->free)
+	if(pak->flair && pak->flair->free)
 		pak->flair->free(&pak->flair);
 }
 
@@ -162,11 +162,11 @@ BackgroundPak *background_pak_new(char *file)
 	fclose(background_pak_config_file);
 
 	json = cJSON_Parse(data);
-	root = cJSON_GetObjectItem(json,"sunny_peps_background_config");
+	root = cJSON_GetObjectItem(json,"background_config");
 
 	if(!root)
 	{
-		slog("error parseing the file, file not the sunny_peps_background_config");
+		slog("error parseing the file, file not a background_config");
 		return NULL;
 	}
 
@@ -309,4 +309,26 @@ void background_update(Background *background)
 		}
 		background->nextThink = get_time() + background->thinkRate;
 	}
+}
+
+void background_empty_list()
+{
+	int i;
+	Background *background = NULL;
+	if(!backgroundList)
+	{
+		slog("backgroundList not initialized");
+		return;
+	}
+	for(i = 0; i < backgroundMax; ++i)
+	{
+		background = &backgroundList[i];
+		background_free(&background);
+	}
+	memset(backgroundList, 0, sizeof(Background) * backgroundMax);
+	for(i = 0; i < backgroundMax; ++i)
+	{
+		backgroundList[i].sprite = NULL;
+	}
+	backgroundNum = 0;
 }

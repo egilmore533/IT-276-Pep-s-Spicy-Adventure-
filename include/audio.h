@@ -143,5 +143,13 @@ SoundPak *audio_load_pak(int channel, char *name, char *fire1_file, char *fire2_
  */
 void audio_pak_free(SoundPak **pak);
 
+void audio_empty_list();
+
+void audio_empty_music_list();
+
+void audio_empty_sound_list();
+
+void audio_empty_pak_list();
+
 
 #endif

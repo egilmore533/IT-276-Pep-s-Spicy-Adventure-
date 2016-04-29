@@ -54,4 +54,6 @@ void sprite_draw(Sprite *sprite, int frame, Vect2d drawPos);
 
 void sprite_empty_list();
 
+void sprite_bloom_effect_draw(Sprite *bloom, int frame, Vect2d position);
+
 #endif

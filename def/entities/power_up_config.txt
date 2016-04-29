@@ -1,7 +1,7 @@
 {"power_up_config":{
 	"power_up_goo_shot": {
 		"sprite": {
-			"file": "images/goo_shot.png",
+			"file": "images/power_ups/goo_shot.png",
 			"bounds": "32 32",
 			"frame": 0,
 			"fpl": 1,
@@ -10,7 +10,7 @@
 	},
 	"power_up_shield": {
 		"sprite": {
-			"file": "images/heat_shield.png",
+			"file": "images/power_ups/heat_shield.png",
 			"bounds": "32 32",
 			"frame": 0,
 			"fpl": 1,
@@ -19,7 +19,7 @@
 	},
 	"power_up_spread_shot": {
 		"sprite": {
-			"file": "images/spread_pickup.png",
+			"file": "images/power_ups/spread_pickup.png",
 			"bounds": "32 32",
 			"frame": 0,
 			"fpl": 1,
@@ -28,7 +28,7 @@
 	},
 	"power_up_double_tap": {
 		"sprite": {
-			"file": "images/double_tap.png",
+			"file": "images/power_ups/double_tap.png",
 			"bounds": "32 32",
 			"frame": 0,
 			"fpl": 1,
@@ -37,7 +37,7 @@
 	},
 	"power_up_extra_life": {
 		"sprite": {
-			"file": "images/life_pickup.png",
+			"file": "images/power_ups/life_pickup.png",
 			"bounds": "32 32",
 			"frame": 0,
 			"fpl": 1,
@@ -46,7 +46,7 @@
 	},
 	"power_up_extra_bomb": {
 		"sprite": {
-			"file": "images/bomb_pickup.png",
+			"file": "images/power_ups/bomb_pickup.png",
 			"bounds": "32 32",
 			"frame": 0,
 			"fpl": 1,

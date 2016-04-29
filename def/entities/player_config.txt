@@ -1,11 +1,11 @@
 {"player_config":{
 	"player": {
 		"sprite": {
-			"file": "images/pep4.png",
+			"file": "images/player/pep_no_shield.png",
 			"bounds": "128 64",
 			"frame": 0,
-			"fpl": 3,
-			"frames": 3
+			"fpl": 4,
+			"frames": 4
 		},
 		"info": {
 			"thinkRate": 200,

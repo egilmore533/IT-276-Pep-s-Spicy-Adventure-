@@ -2,18 +2,18 @@
 	"player_config":	{
 		"player":	{
 			"sprite":	{
-				"file":	"images/pep4.png",
+				"file":	"images/player/pep_no_shield.png",
 				"bounds":	"128 64",
-				"frame":	2,
-				"fpl":	3,
-				"frames":	3
+				"frame":	0,
+				"fpl":	4,
+				"frames":	4
 			},
 			"info":	{
 				"thinkRate":	200,
-				"health":	2,
+				"health":	1,
 				"velMax":	"10.000000 10.000000",
 				"lives":	1,
-				"bombs":	2,
+				"bombs":	3,
 				"spreads":	0
 			},
 			"audioPak":	{

@@ -1,16 +1,16 @@
 {"enemy_config":{
 	"melt": {
 		"sprite": {
-			"file": "images/melt.png",
+			"file": "images/enemies/melt.png",
 			"bounds": "128 128",
 			"frame": 0,
 			"fpl": 1,
 			"frames": 1
 		},
 		"info": {
-			"thinkRate": 400,
+			"thinkRate": 1000,
 			"health": 3,
-			"velMax": "2 2"
+			"velMax": "5 5"
 		},
 		"audioPak": {
 			"name": "melt_audio",
@@ -22,7 +22,7 @@
 	},
 	"celery_stalker": {
 		"sprite": {
-			"file": "images/celery_stalker.png",
+			"file": "images/enemies/celery_stalker.png",
 			"bounds": "128 128",
 			"frame": 0,
 			"fpl": 1,
@@ -43,7 +43,7 @@
 	},
 	"clarence": {
 		"sprite": {
-			"file": "images/clarence.png",
+			"file": "images/enemies/clarence.png",
 			"bounds": "128 128",
 			"frame": 0,
 			"fpl": 1,
@@ -64,7 +64,7 @@
 	},
 	"milk_tank": {
 		"sprite": {
-			"file": "images/milk_tank.png",
+			"file": "images/enemies/milk_tank.png",
 			"bounds": "128 128",
 			"frame": 0,
 			"fpl": 1,
@@ -85,7 +85,7 @@
 	},
 	"professor_slice": {
 		"sprite": {
-			"file": "images/professor_slice.png",
+			"file": "images/enemies/professor_slice.png",
 			"bounds": "128 128",
 			"frame": 0,
 			"fpl": 1,
@@ -94,7 +94,7 @@
 		"info": {
 			"thinkRate": 800,
 			"health": 5,
-			"velMax": "3 3"
+			"velMax": "3 1"
 		},
 		"audioPak": {
 			"name": "professor_slice_audio",

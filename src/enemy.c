@@ -310,17 +310,14 @@ void melt_think(Entity *melt)
 		melt->nextThink = get_time() + 2000;
 		return;
 	}
+	melt->velocity.y = melt->maxVelocity.y * sin(get_time() * 2 * 3.14 / 2000);
+	melt->velocity.x = melt->maxVelocity.x;
+	vect2d_negate(melt->velocity, melt->velocity);
 	if(!(get_time() >= melt->nextThink))
 	{
 		return;
 	}
-	melt->velocity.y = melt->maxVelocity.y * sin((float)get_time());
-	melt->velocity.x = melt->maxVelocity.x;
-	vect2d_negate(melt->velocity, melt->velocity);
-	if(rand() % 2) 
-	{ 
-		weapon_melt_cream_fire(melt); 
-	}
+	weapon_melt_cream_fire(melt);
 	melt->nextThink = get_time() + melt->thinkRate;
 	camera_free_entity_outside_bounds(melt);
 }
@@ -485,15 +482,17 @@ void professor_slice_think(Entity *professor_slice)
 		professor_slice->nextThink = get_time() + professor_slice->thinkRate;
 		return;
 	}
-	if(!(get_time() >= professor_slice->nextThink))
-	{
-		return;
-	}
+
 	vect2d_copy(professor_slice->velocity, professor_slice->maxVelocity);
+
 	vect2d_subtract(professor_slice->target->position, professor_slice->position, professor_slice->direction);
 	vect2d_normalize(&professor_slice->direction);
 	vect2d_negate(professor_slice->direction, professor_slice->direction);
 	vect2d_mutiply(professor_slice->velocity, professor_slice->direction, professor_slice->velocity);
+	if(!(get_time() >= professor_slice->nextThink))
+	{
+		return;
+	}
 	weapon_professor_slice_bread_fire(professor_slice);
 	professor_slice->nextThink = get_time() + professor_slice->thinkRate;
 	camera_free_entity_outside_bounds(professor_slice);
@@ -517,6 +516,7 @@ void professor_slice_update(Entity *professor_slice)
 	{
 		return;
 	}
+
 	if(professor_slice->think)
 	{
 		if(professor_slice->position.y <= cam->bounds.x)

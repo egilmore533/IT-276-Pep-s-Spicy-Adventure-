@@ -12,6 +12,8 @@
 static Entity	*player = NULL;
 static Uint8	player_saved_load = 0;
 static Uint32	respawn_moment;
+static Uint32	thinkRateMin = 200;
+static Sprite	*shield = NULL;
 
 Entity *player_load()
 {
@@ -56,7 +58,7 @@ Entity *player_load()
 	if(!player_config_file)
 	{
 		slog("No file found: %s", PLAYER_CONFIG);
-		return;
+		return NULL;
 	}
 	//get the length of the file
 	fseek(player_config_file, 0, SEEK_END);
@@ -73,7 +75,7 @@ Entity *player_load()
 	if(!root)
 	{
 		slog("error parseing the file, file not the player_config");
-		return;
+		return NULL;
 	}
 	obj = cJSON_GetObjectItem(root, "player");
 	buf = cJSON_GetObjectItem(obj, "info");
@@ -115,6 +117,10 @@ Entity *player_load()
 	player->inventory[SPREADS] = spreads;
 
 	player->owner = camera_get();
+
+	//shield bloom effect stuff
+	shield = sprite_load("images/ball.png", vect2d_new(200, 200), 1, 1);
+	SDL_SetTextureBlendMode(shield->image, SDL_BLENDMODE_ADD);
 	return player;
 }
 
@@ -124,11 +130,6 @@ void player_think(Entity *player)
 	const Uint8 *keys;
 	SDL_Event click_event;
 	static Uint8 clicked = 0;
-	if(get_time() > respawn_moment && player->health == 3 )
-	{
-		player->health = 1;
-		player->frameNumber= 0;
-	}
 	SDL_PollEvent(&click_event);
 	keys = SDL_GetKeyboardState(NULL);
 	if(keys[SDL_SCANCODE_SPACE])
@@ -144,10 +145,15 @@ void player_think(Entity *player)
 			}
 		}
 	}
+	if(clicked && full_charge <= get_time())
+	{
+		player->frameNumber = 2;
+	}
 	if(click_event.type == SDL_MOUSEBUTTONDOWN)
 	{
 		clicked = 1;
 		full_charge = get_time() + CHARGE_RATE;
+		player->frameNumber = 1;
 	}
 	else if(click_event.type == SDL_MOUSEBUTTONUP && clicked)
 	{
@@ -170,6 +176,7 @@ void player_think(Entity *player)
 			}
 		}
 		clicked = 0;
+		player->frameNumber = 0;
 	}
 }
 
@@ -183,27 +190,37 @@ void player_update(Entity *player)
 		slog("player has no owner");
 		return;
 	}
-	if(get_time() < respawn_moment && player->health != 3)
+
+	
+	// special player states handled here
+	if(player->state == SHIELDED_STATE)
 	{
-		player->health = 3;
-		player->frameNumber= 2;
+		if(player->health <= 1)
+		{
+			player->state = NORMAL_STATE;
+		}
+		else
+		{
+			tempPos = vect2d_new(player->position.x - 30, player->position.y - 50);
+			sprite_bloom_effect_draw(shield, 0, tempPos);
+		}
 	}
-	//if the player picked up the shield power up it will get a health of 2
-	//if STATE isn't SHIELDED, but the player health is 2 then the shield needs to be activated
-	if(player->health == 2 && player->state != SHIELDED_STATE)
+	else if(player->state == DEAD_STATE)
 	{
-		player->state = SHIELDED_STATE;
-		player->frameNumber = 1;
+		if(respawn_moment < get_time())
+		{
+			player->state = NORMAL_STATE;
+			player->health = 1;
+		}
+		else
+		{
+			sprite_bloom_effect_draw(player->sprite, player->frameNumber, player->position);
+		}
 	}
-	//if the player has a SHIELD, but has a health of 1 then they lost their shield
-	//set the state to NORMAL and reset the sprite to be the normal player sprite
-	else if(player->state == SHIELDED_STATE && player->health == 1)
-	{
-		player->state = NORMAL_STATE;
-		player->frameNumber = 0;
-	}
-	//if the player's health is less than 1 then kill
-	else if(player->health <= 0)
+
+
+	//check if player has died, acts accordingly
+	if(player->state == NORMAL_STATE && player->health <= 0)
 	{
 		audio_play_sound(player->entitySounds->death);
 		if(player->inventory[LIVES] == 0)
@@ -214,23 +231,22 @@ void player_update(Entity *player)
 			camera_stop();
 			return;
 		}
+		player->state = DEAD_STATE;
 		player->inventory[LIVES]--;
-		player->health = 3;
-		player->frameNumber = 2;
+		player->inventory[SPREADS] = 0;
+		player->thinkRate = thinkRateMin;
 		respawn_moment = get_time() + RESPAWN_RATE;
 		return;
 	}
+
+
+
+	//movement input 
 	keys = SDL_GetKeyboardState(NULL);
 	if(keys[SDL_SCANCODE_Q])
 	{
 		player->health--;
 	}
-	/////////////////test//////////////////
-	if(keys[SDL_SCANCODE_Q])
-	{
-		player->position.x = 20000;
-	}
-	////////////////////////////////
 	if(keys[SDL_SCANCODE_A])
 	{
 		if(!(player->position.x <= player->owner->position.x))
@@ -285,11 +301,15 @@ void player_update(Entity *player)
 		player->velocity.y = 0;
 	}
 
+
+	//now that movement has been calculated, add it to the player's position, reset the player to be in the camera's bounds, if they are out
 	vect2d_add(player->position, player->velocity, player->position);
 	if(player->position.x < player->owner->position.x)
 	{
 		player->position.x = player->owner->position.x;
 	}
+
+	//check if player is touching anything
 	entity_intersect_all(player);
 }
 

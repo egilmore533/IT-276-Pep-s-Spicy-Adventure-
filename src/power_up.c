@@ -138,6 +138,7 @@ void power_up_heat_shield_touch(Entity *heat_shield, Entity *other)
 	}
 	if(other == heat_shield->target)
 	{
+		other->state = SHIELDED_STATE;
 		other->health = 2;
 		heat_shield->free(&heat_shield);
 	}

@@ -34,13 +34,16 @@ typedef enum
 #define NORMAL_STATE		0
 
 /** @brief the entity was hit by a goo shot and is sticky (enemies only) */
-#define STICKIED_STATE		1 //enemy only
+#define STICKIED_STATE		1
 
-/** @brief the entity is being shielded (player only) */
-#define SHIELDED_STATE		2 //pep only
+/** @brief the player is being shielded */
+#define SHIELDED_STATE		2 
 
-/** @brief the entity has no lives remaining (player only) */
-#define GAME_OVER_STATE		3//pep only
+/** @brief the player's state after having a health of 0 and dying, but having another life state */
+#define DEAD_STATE			3
+
+/** @brief the player has no lives remaining and died */
+#define GAME_OVER_STATE		4
 
 /**
  * @enum ENTITY_TYPES

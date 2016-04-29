@@ -69,6 +69,7 @@ Entity *camera_load(int id)
 	camera->nextThink = get_time() + camera->thinkRate;
 	camera->id = id;
 	gametime = SDL_GetTicks();
+	camera_move();
 	return camera;
 }
 

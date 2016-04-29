@@ -1,7 +1,7 @@
 {"weapon_config":{
 	"pep_spread_shot": {
 		"sprite": {
-			"file": "images/spice.png",
+			"file": "images/weapons/spice.png",
 			"bounds": "32 16",
 			"frame": 0,
 			"fpl": 1,
@@ -14,7 +14,7 @@
 	},
 	"pep_charge_shot": {
 		"sprite": {
-			"file": "images/pep_charge_shot.png",
+			"file": "images/weapons/pep_charge_shot.png",
 			"bounds": "64 64",
 			"frame": 0,
 			"fpl": 1,
@@ -27,7 +27,7 @@
 	},
 	"pep_bomb": {
 		"sprite": {
-			"file": "images/pep_bomb.png",
+			"file": "images/weapons/pep_bomb.png",
 			"bounds": "1366 768",
 			"frame": 0,
 			"fpl": 1,
@@ -40,7 +40,7 @@
 	},
 	"melt_cream": {
 		"sprite": {
-			"file": "images/cream.png",
+			"file": "images/weapons/cream.png",
 			"bounds": "32 16",
 			"frame": 0,
 			"fpl": 1,
@@ -53,7 +53,7 @@
 	},
 	"professor_slice_bread": {
 		"sprite": {
-			"file": "images/bread_crumb.png",
+			"file": "images/weapons/bread_crumb.png",
 			"bounds": "32 32",
 			"frame": 0,
 			"fpl": 1,

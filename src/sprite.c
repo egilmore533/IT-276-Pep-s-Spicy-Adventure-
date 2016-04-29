@@ -163,7 +163,14 @@ void sprite_draw(Sprite *sprite, int frame, Vect2d drawPos)
 	SDL_Rect source, destination;
 	SDL_Renderer *renderer = graphics_get_renderer();
 	cam = camera_get();
-	vect2d_subtract(drawPos, cam->position, positionRelative); 
+	if(cam)
+	{
+		vect2d_subtract(drawPos, cam->position, positionRelative); 
+	}
+	else
+	{
+		positionRelative = drawPos;
+	}
 	if(!sprite)
 	{
 		slog("sprite doesn't point to anything");
@@ -201,4 +208,44 @@ void sprite_empty_list()
 		spriteList[i].image = NULL;
 	}
 	spriteNum = 0;
+}
+
+void sprite_bloom_effect_draw(Sprite *bloom, int frame, Vect2d position)
+{
+	int i;
+	int size_factor, offset_factor_x, offset_factor_y;
+	Vect2d positionRelative; // remove = drawPos after entity and camera are up
+	Entity *cam;
+	SDL_Rect source, destination;
+	SDL_Renderer *renderer = graphics_get_renderer();
+	cam = camera_get();
+	if(cam)
+	{
+		vect2d_subtract(position, cam->position, positionRelative); 
+	}
+	else
+	{
+		positionRelative = position;
+	}
+	source.x = frame % bloom->fpl * bloom->frameSize.x;
+	source.y = frame / bloom->fpl * bloom->frameSize.y;
+	source.w = bloom->frameSize.x;
+	source.h = bloom->frameSize.y;
+	
+	for(i = 0; i < 10;i++)
+	{
+		size_factor = rand() % 60;	
+		offset_factor_x = rand() % 10 - 5;
+		offset_factor_y = rand() % 10 - 5;
+		destination.x = positionRelative.x - size_factor / 2 + offset_factor_x;
+		destination.y = positionRelative.y - size_factor / 2 + offset_factor_y;
+		destination.w = bloom->frameSize.x + size_factor;
+		destination.h = bloom->frameSize.y + size_factor;
+		SDL_SetTextureAlphaMod(bloom->image, 30);
+		SDL_SetTextureColorMod(bloom->image, 255, 255 - (offset_factor_x + offset_factor_y) * 100, 255 - (offset_factor_x + offset_factor_y) * 100);
+			
+		SDL_RenderCopy(renderer, bloom->image, &source, &destination);	
+	}
+	SDL_SetTextureAlphaMod(bloom->image, 255);
+	SDL_SetTextureColorMod(bloom->image, 255, 255, 255);
 }

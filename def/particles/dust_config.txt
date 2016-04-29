@@ -1,7 +1,7 @@
 {"particle_pak_config": {
 	"red": {
 		"sprite": {
-			"file": "images/redSpark.png",
+			"file": "images/particles/redSpark.png",
 			"bounds": "32 32",
 			"frame": 1,
 			"fpl": 16,
@@ -10,7 +10,7 @@
 	},
 	"blue": {
 		"sprite": {
-			"file": "images/blueSpark.png",
+			"file": "images/particles/blueSpark.png",
 			"bounds": "32 32",
 			"frame": 1,
 			"fpl": 16,
@@ -19,7 +19,7 @@
 	},
 	"green": {
 		"sprite": {
-			"file": "images/greenSpark.png",
+			"file": "images/particles/greenSpark.png",
 			"bounds": "32 32",
 			"frame": 1,
 			"fpl": 6,

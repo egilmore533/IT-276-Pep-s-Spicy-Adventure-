@@ -1,29 +1,29 @@
 {"particle_pak_config": {
 	"red": {
 		"sprite": {
-			"file": "images/particles/redSpark.png",
+			"file": "images/particles/red_fireball.png",
 			"bounds": "32 32",
-			"frame": 1,
+			"frame": 0,
 			"fpl": 16,
-			"frames": 32
+			"frames": 16
 		}
 	},
 	"blue": {
 		"sprite": {
-			"file": "images/particles/blueSpark.png",
+			"file": "images/particles/blue_fireball.png",
 			"bounds": "32 32",
-			"frame": 1,
+			"frame": 0,
 			"fpl": 16,
-			"frames": 32
+			"frames": 16
 		}
 	},
 	"green": {
 		"sprite": {
-			"file": "images/particles/greenSpark.png",
+			"file": "images/particles/green_fireball.png",
 			"bounds": "32 32",
-			"frame": 1,
-			"fpl": 6,
-			"frames": 32
+			"frame": 0,
+			"fpl": 16,
+			"frames": 16
 		}
 	}
 }}

@@ -185,12 +185,11 @@ Particle *particle_exact_position_load(Entity *generator, Vect2d offsets)
 	particle = particle_new();
 	particle->position.x = (generator->position.x - 5 + ( rand() % 25)) + offsets.x;
 	particle->position.y = (generator->position.y - 5 + ( rand() % 25)) + offsets.y;
-	particle->frameNumber = (rand() % 30); // make this number higher to make it appear slightly more random, and better looking overall, still need to slow down the generation in the think functions
 
 	switch( rand() % 3 )
 	{
 		case 1:
-			particle->sprite = Dust->red; // this should be what it always is for pep's spice but why not do something dumb for no reason
+			particle->sprite = Dust->red; 
 			break;
 		case 2:
 			particle->sprite = Dust->green;
@@ -199,6 +198,7 @@ Particle *particle_exact_position_load(Entity *generator, Vect2d offsets)
 			particle->sprite = Dust->blue;
 			break;
 	}
+	particle->frameNumber = (rand() % particle->sprite->frames - 2); 
 
 	return particle;
 }
@@ -272,7 +272,7 @@ int particle_dead(Particle *particle)
 		slog("particle doesn't point to anything");
 		return NULL;
 	}
-	if(particle->frameNumber >= 30)
+	if(particle->frameNumber >= particle->sprite->frames)
 	{
 		return 1;
 	}

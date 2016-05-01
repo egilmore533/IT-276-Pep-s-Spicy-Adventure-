@@ -23,6 +23,10 @@ typedef enum
 	SPREADS		/**< the number of times the player has picked up a spread power up */
 }INVENTORY_SLOTS;
 
+#define MAX_LIVES			5
+
+#define MAX_BOMBS			3
+
 //////////////////States//////////////////////////////
 /** @brief bullet is in the normal state*/
 #define NORMAL_SHOT_STATE	10

@@ -140,6 +140,7 @@ void power_up_heat_shield_touch(Entity *heat_shield, Entity *other)
 	{
 		other->state = SHIELDED_STATE;
 		other->health = 2;
+		SDL_SetTextureAlphaMod(other->sprite->image, 255);
 		heat_shield->free(&heat_shield);
 	}
 }
@@ -153,7 +154,7 @@ void power_up_bomb_pickup_touch(Entity *bomb, Entity *other)
 	}
 	if(other == bomb->target)
 	{
-		other->inventory[BOMBS]++;
+		player_add_bomb();
 		bomb->free(&bomb);
 	}
 }

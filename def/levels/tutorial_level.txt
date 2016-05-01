@@ -37,7 +37,7 @@
 	"professor_slices": {
 		"number": 2,
 		"position0": "9000 400",
-		"position1": "800 100"
+		"position1": "2200 300"
 	},
 	"heat_shields": {
 		"number": 1,

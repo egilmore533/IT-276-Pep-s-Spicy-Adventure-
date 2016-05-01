@@ -63,6 +63,9 @@
     <ClInclude Include="..\include\files.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\hud.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\audio.c">
@@ -114,6 +117,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\src\files.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hud.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

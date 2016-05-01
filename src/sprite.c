@@ -234,15 +234,15 @@ void sprite_bloom_effect_draw(Sprite *bloom, int frame, Vect2d position)
 	
 	for(i = 0; i < 10;i++)
 	{
-		size_factor = rand() % 60;	
+		size_factor = rand() % 25;	
 		offset_factor_x = rand() % 10 - 5;
 		offset_factor_y = rand() % 10 - 5;
 		destination.x = positionRelative.x - size_factor / 2 + offset_factor_x;
 		destination.y = positionRelative.y - size_factor / 2 + offset_factor_y;
 		destination.w = bloom->frameSize.x + size_factor;
 		destination.h = bloom->frameSize.y + size_factor;
-		SDL_SetTextureAlphaMod(bloom->image, 30);
-		SDL_SetTextureColorMod(bloom->image, 255, 255 - (offset_factor_x + offset_factor_y) * 100, 255 - (offset_factor_x + offset_factor_y) * 100);
+		SDL_SetTextureAlphaMod(bloom->image, 40);
+		SDL_SetTextureColorMod(bloom->image, 255 - (offset_factor_x + offset_factor_y) * 10, 255 - (offset_factor_x + offset_factor_y) * 10, 255);
 			
 		SDL_RenderCopy(renderer, bloom->image, &source, &destination);	
 	}

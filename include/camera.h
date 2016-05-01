@@ -8,6 +8,9 @@
  *			camera is used in draw all to check if the entity is on screen (if not it sin't drawn)
  */
 
+
+#define HUD_HEIGHT		618
+
 /**
  * @brief	initializes the camera entity with cJSON and a predefined def file, needs to be initialized after
  * 			all the systems are started, but before the level is loaded.

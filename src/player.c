@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 #include "player.h"
 #include "weapon.h"
@@ -119,7 +120,7 @@ Entity *player_load()
 	player->owner = camera_get();
 
 	//shield bloom effect stuff
-	shield = sprite_load("images/ball.png", vect2d_new(200, 200), 1, 1);
+	shield = sprite_load("images/ball.png", vect2d_new(144, 144), 1, 1);
 	SDL_SetTextureBlendMode(shield->image, SDL_BLENDMODE_ADD);
 	return player;
 }
@@ -145,15 +146,23 @@ void player_think(Entity *player)
 			}
 		}
 	}
+
+
+	if(clicked && player->frameNumber == 0)
+	{
+		player->frameNumber = 1;
+	}
 	if(clicked && full_charge <= get_time())
 	{
 		player->frameNumber = 2;
 	}
+
+
+
 	if(click_event.type == SDL_MOUSEBUTTONDOWN)
 	{
 		clicked = 1;
 		full_charge = get_time() + CHARGE_RATE;
-		player->frameNumber = 1;
 	}
 	else if(click_event.type == SDL_MOUSEBUTTONUP && clicked)
 	{
@@ -201,7 +210,7 @@ void player_update(Entity *player)
 		}
 		else
 		{
-			tempPos = vect2d_new(player->position.x - 30, player->position.y - 50);
+			tempPos = vect2d_new(player->position.x - 10, player->position.y - 37);
 			sprite_bloom_effect_draw(shield, 0, tempPos);
 		}
 	}
@@ -210,11 +219,12 @@ void player_update(Entity *player)
 		if(respawn_moment < get_time())
 		{
 			player->state = NORMAL_STATE;
+			SDL_SetTextureAlphaMod(player->sprite->image, 255);
 			player->health = 1;
 		}
 		else
 		{
-			sprite_bloom_effect_draw(player->sprite, player->frameNumber, player->position);
+			SDL_SetTextureAlphaMod(player->sprite->image, 100 * (1 + sin(get_time() * 2 * 3.14 / 500)));
 		}
 	}
 
@@ -223,7 +233,7 @@ void player_update(Entity *player)
 	if(player->state == NORMAL_STATE && player->health <= 0)
 	{
 		audio_play_sound(player->entitySounds->death);
-		if(player->inventory[LIVES] == 0)
+		if(player->inventory[LIVES] == 1)
 		{
 			//game over code here
 			player->state = GAME_OVER_STATE;
@@ -245,7 +255,7 @@ void player_update(Entity *player)
 	keys = SDL_GetKeyboardState(NULL);
 	if(keys[SDL_SCANCODE_Q])
 	{
-		player->health--;
+		player_add_bomb();
 	}
 	if(keys[SDL_SCANCODE_A])
 	{
@@ -287,7 +297,7 @@ void player_update(Entity *player)
 	else if(keys[SDL_SCANCODE_S])
 	{
 		//add player's sprite height to make it perfect
-		if(!(player->position.y + player->sprite->frameSize.y > player->owner->position.y + player->owner->bounds.h)) // keeps pep from moving below camera, adds camera's y (0) to its height to get the position of the bottom of the camera
+		if(!(player->position.y + player->sprite->frameSize.y > player->owner->position.y + HUD_HEIGHT)) // keeps pep from moving below camera, adds camera's y (0) to its height to get the position of the bottom of the camera
 		{
 			player->velocity.y = player->maxVelocity.y;
 		}
@@ -299,6 +309,11 @@ void player_update(Entity *player)
 	else
 	{
 		player->velocity.y = 0;
+	}
+
+	if(player->inventory[LIVES] > 5)
+	{
+		player->inventory[LIVES] = 5;
 	}
 
 
@@ -379,7 +394,18 @@ void player_save_info()
 
 void player_add_life()
 {
-	player->inventory[LIVES]++;
+	if(player->inventory[LIVES] < MAX_LIVES)
+	{
+		player->inventory[LIVES]++;
+	}
+}
+
+void player_add_bomb()
+{
+	if(player->inventory[BOMBS] < MAX_BOMBS)
+	{
+		player->inventory[BOMBS]++;
+	}
 }
 
 Entity *player_get()

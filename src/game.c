@@ -9,8 +9,11 @@
 #include "level.h"
 #include "files.h"
 #include "player.h"
+#include "hud.h"
 
 #define	MAX_SPRITES		1000
+
+HUD *hud;
 
 void initialize_all_systems();
 void clean_up_all();
@@ -31,12 +34,13 @@ int main(int argc, char *argv[])
 
 	//init main menu
 	//loop until player selects next game mode
+	sprite = sprite_load("images/ball.png", vect2d_new(144, 144), 1, 1);
 	the_renderer = graphics_get_renderer();
 	do
 	{
 		SDL_RenderClear(the_renderer);
-
-		sprite_draw(sprite, 0, vect2d_new(0, 0));
+		sprite_bloom_effect_draw(sprite, 0, vect2d_new(0, 0));
+		//sprite_draw(sprite, 0, vect2d_new(0, 0));
 		graphics_next_frame();
 		SDL_PumpEvents();
 
@@ -108,6 +112,7 @@ Uint8 arcade_mode()
 	the_renderer = graphics_get_renderer();
 	level_path = files_get_level(level_num++);
 	level = level_load(level_path);
+	hud = hud_initialize();
 	player_saved_load_on();
 	done = 0;
 	do
@@ -126,6 +131,7 @@ Uint8 arcade_mode()
 			else
 			{
 				level = level_load(level_path);
+				hud = hud_initialize();
 			}
 		}
 		if(level->player->state == GAME_OVER_STATE)
@@ -146,6 +152,8 @@ Uint8 arcade_mode()
 		particle_think_all();
 		particle_check_all_dead();
 		particle_draw_all();
+
+		hud_draw(hud);
 		
 		graphics_next_frame();
 		SDL_PumpEvents();

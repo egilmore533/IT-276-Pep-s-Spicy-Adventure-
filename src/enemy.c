@@ -199,7 +199,6 @@ void celerly_stalker_touch(Entity *celery_stalker, Entity *other)
 		if(other == camera_get())
 		{
 			celery_stalker->think = &celery_stalker_think_start;
-			celery_stalker->thinkRate = 2000;
 			celery_stalker->nextThink = get_time() + celery_stalker->thinkRate;
 		}
 	}
@@ -347,7 +346,7 @@ void melt_update(Entity *melt)
 			}
 		}
 
-		if(melt->position.y + melt->sprite->frameSize.y >= cam->bounds.x + cam->bounds.h)
+		if(melt->position.y + melt->sprite->frameSize.y >= cam->position.y + HUD_HEIGHT)
 		{
 			if(melt->velocity.y > 0)
 			{
@@ -527,7 +526,7 @@ void professor_slice_update(Entity *professor_slice)
 			}
 		}
 
-		if(professor_slice->position.y + professor_slice->sprite->frameSize.y >= cam->bounds.x + cam->bounds.h)
+		if(professor_slice->position.y + professor_slice->sprite->frameSize.y >= cam->position.y + HUD_HEIGHT)
 		{
 			if(professor_slice->velocity.y > 0)
 			{

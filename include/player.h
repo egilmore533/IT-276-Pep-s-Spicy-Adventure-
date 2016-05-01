@@ -33,6 +33,8 @@ void player_update(Entity *player);
 /** @brief adds an extra life for the player */
 void player_add_life();
 
+void player_add_bomb();
+
 /** @brief gets the player entity so it can be used elsewhere in the code like the game loop
  *	@return	a pointer to the player
  */

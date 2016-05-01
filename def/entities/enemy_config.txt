@@ -29,7 +29,7 @@
 			"frames": 1
 		},
 		"info": {
-			"thinkRate": 2000,
+			"thinkRate": 1125,
 			"health": 1,
 			"velMax": "20 20"
 		},
@@ -94,7 +94,7 @@
 		"info": {
 			"thinkRate": 800,
 			"health": 5,
-			"velMax": "3 1"
+			"velMax": "1 3"
 		},
 		"audioPak": {
 			"name": "professor_slice_audio",

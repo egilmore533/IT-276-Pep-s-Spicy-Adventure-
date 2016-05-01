@@ -84,6 +84,7 @@
     <ClInclude Include="..\include\entity.h" />
     <ClInclude Include="..\include\files.h" />
     <ClInclude Include="..\include\graphics.h" />
+    <ClInclude Include="..\include\hud.h" />
     <ClInclude Include="..\include\level.h" />
     <ClInclude Include="..\include\particle.h" />
     <ClInclude Include="..\include\player.h" />
@@ -103,6 +104,7 @@
     <ClCompile Include="..\src\files.c" />
     <ClCompile Include="..\src\game.c" />
     <ClCompile Include="..\src\graphics.c" />
+    <ClCompile Include="..\src\hud.c" />
     <ClCompile Include="..\src\level.c" />
     <ClCompile Include="..\src\particle.c" />
     <ClCompile Include="..\src\player.c" />

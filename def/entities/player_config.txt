@@ -11,7 +11,7 @@
 			"thinkRate": 200,
 			"health": 1,
 			"velMax": "10 10",
-			"lives": 2,
+			"lives": 3,
 			"bombs": 2,
 			"spreads": 0
 		},

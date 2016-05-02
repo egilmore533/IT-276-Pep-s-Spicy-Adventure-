@@ -183,6 +183,7 @@ void celery_stalker_update(Entity *celery_stalker)
 	if(celery_stalker->health <= 0)
 	{
 		particle_bundle_load(celery_stalker, 20);
+		audio_play_sound(celery_stalker->entitySounds->death);
 		celery_stalker->free(&celery_stalker);
 	}
 }
@@ -205,6 +206,7 @@ void celerly_stalker_touch(Entity *celery_stalker, Entity *other)
 	else if(other == celery_stalker->target)
 	{
 		other->health--;
+		audio_play_sound(celery_stalker->entitySounds->death);
 		celery_stalker->free(&celery_stalker);
 	}
 }
@@ -260,6 +262,7 @@ void clarence_update(Entity *clarence)
 	if(clarence->health <= 0)
 	{
 		particle_bundle_load(clarence, 40);
+		audio_play_sound(clarence->entitySounds->death);
 		clarence->free(&clarence);
 	}
 }
@@ -280,8 +283,8 @@ void clarence_touch(Entity *clarence, Entity *other)
 	}
 	if(other == clarence->target)
 	{
-		slog("\n\n hit player \n\n");
 		other->health--;
+		audio_play_sound(clarence->entitySounds->death);
 		clarence->free(&clarence);
 	}
 }
@@ -359,6 +362,7 @@ void melt_update(Entity *melt)
 	if(melt->health <= 0)
 	{
 		particle_bundle_load(melt, 40);
+		audio_play_sound(melt->entitySounds->death);
 		melt->free(&melt);
 	}
 }
@@ -380,6 +384,7 @@ void melt_touch(Entity *melt, Entity *other)
 	else if(other == melt->target)
 	{
 		other->health--;
+		audio_play_sound(melt->entitySounds->death);
 		melt->free(&melt);
 	}
 }
@@ -435,6 +440,7 @@ void milk_tank_update(Entity *milk_tank)
 	if(milk_tank->health <= 0)
 	{
 		particle_bundle_load(milk_tank, 40);
+		audio_play_sound(milk_tank->entitySounds->death);
 		milk_tank->free(&milk_tank);
 	}
 	
@@ -450,6 +456,7 @@ void milk_tank_touch(Entity *milk_tank, Entity *other)
 	if(other == milk_tank->target)
 	{
 		other->health--;
+		audio_play_sound(milk_tank->entitySounds->death);
 		milk_tank->free(&milk_tank);
 	}
 	else if(!milk_tank->think && other == camera_get())
@@ -539,6 +546,7 @@ void professor_slice_update(Entity *professor_slice)
 	if(professor_slice->health <= 0)
 	{
 		particle_bundle_load(professor_slice, 40);
+		audio_play_sound(professor_slice->entitySounds->death);
 		professor_slice->free(&professor_slice);
 	}
 }
@@ -561,6 +569,7 @@ void professor_slice_touch(Entity *professor_slice, Entity *other)
 	else if(other == professor_slice->target)
 	{
 		other->health--;
+		audio_play_sound(professor_slice->entitySounds->death);
 		professor_slice->free(&professor_slice);
 	}
 }

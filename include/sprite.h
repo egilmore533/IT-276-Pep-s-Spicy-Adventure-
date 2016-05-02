@@ -2,6 +2,7 @@
 #define __SPRITE_H__
 
 #include "SDL_image.h"
+#include "SDL_ttf.h"
 #include "vector.h"
 
 /** @file	sprite.h
@@ -55,5 +56,9 @@ void sprite_draw(Sprite *sprite, int frame, Vect2d drawPos);
 void sprite_empty_list();
 
 void sprite_bloom_effect_draw(Sprite *bloom, int frame, Vect2d position);
+
+void sprite_text_draw(Sprite *text_sprite, Vect2d drawPos);
+
+Sprite* sprite_load_text(TTF_Font *font, char *text, SDL_Color color);
 
 #endif

@@ -224,7 +224,7 @@ void player_update(Entity *player)
 		}
 		else
 		{
-			SDL_SetTextureAlphaMod(player->sprite->image, 100 * (1 + sin(get_time() * 2 * 3.14 / 500)));
+			SDL_SetTextureAlphaMod(player->sprite->image, 100 * (1 + sin(get_time() * 2 * 3.14 / 250)));
 		}
 	}
 
@@ -297,7 +297,7 @@ void player_update(Entity *player)
 	else if(keys[SDL_SCANCODE_S])
 	{
 		//add player's sprite height to make it perfect
-		if(!(player->position.y + player->sprite->frameSize.y > player->owner->position.y + HUD_HEIGHT)) // keeps pep from moving below camera, adds camera's y (0) to its height to get the position of the bottom of the camera
+		if(!(player->position.y + 5 + player->sprite->frameSize.y > player->owner->position.y + HUD_HEIGHT)) // keeps pep from moving below camera, adds camera's y (0) to its height to get the position of the bottom of the camera
 		{
 			player->velocity.y = player->maxVelocity.y;
 		}

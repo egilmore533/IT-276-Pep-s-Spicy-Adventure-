@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <math.h>
+#include "SDL_ttf.h"
 #include "graphics.h"
 #include "audio.h"
 #include "simple_logger.h"
@@ -15,9 +17,13 @@
 
 HUD *hud;
 
+TTF_Font *font;
+SDL_Color textColor = {255, 210 ,4};
+
 void initialize_all_systems();
 void clean_up_all();
 void initialize_next_level(Uint8 level_number);
+void main_menu();
 Uint8 arcade_mode();
 void editor_mode();
 
@@ -29,38 +35,37 @@ int main(int argc, char *argv[])
 	SDL_Renderer *the_renderer;
 	int done = 0;
 	Sprite *sprite = NULL;
-
+	Sprite *text_start_menu = NULL;
 	initialize_all_systems();
 
-	//init main menu
-	//loop until player selects next game mode
-	sprite = sprite_load("images/ball.png", vect2d_new(144, 144), 1, 1);
+	//init title card, loop until player enters main menu
+	sprite = sprite_load("images/Title.png", vect2d_new(1366, 768), 1, 1);
+	text_start_menu = sprite_load_text(font, "Press Space to Start", textColor);
+
 	the_renderer = graphics_get_renderer();
 	do
 	{
 		SDL_RenderClear(the_renderer);
-		sprite_bloom_effect_draw(sprite, 0, vect2d_new(0, 0));
-		//sprite_draw(sprite, 0, vect2d_new(0, 0));
+
+		sprite_draw(sprite, 0, vect2d_new(0, 0));
+		sprite_text_draw(text_start_menu, vect2d_new(550, 500));
+		SDL_SetTextureAlphaMod(text_start_menu->image, 100 * (1 + sin(SDL_GetTicks() * 2 * 3.14 / 1000)));
+
 		graphics_next_frame();
 		SDL_PumpEvents();
 
 		keys = SDL_GetKeyboardState(NULL);
-		if(keys[SDL_SCANCODE_A])
+		if(keys[SDL_SCANCODE_SPACE])
 		{
-			if(arcade_mode())
+			main_menu();
+			if(!sprite)
 			{
-				//you win screen, go over points and look at high scores
-				sprite = sprite_load("images/win_screen_message.png", vect2d_new(1366, 768), 1, 1);
+				sprite = sprite_load("images/Title.png", vect2d_new(1366, 768), 1, 1);
 			}
-			else
+			if(!text_start_menu)
 			{
-				//game over screen, go over points and look at high scores, try again button
-				sprite = sprite_load("images/lose_screen_message.png", vect2d_new(1366, 768), 1, 1);
+				text_start_menu = sprite_load_text(font, "Press Space to Start", textColor);
 			}
-		}
-		else if(keys[SDL_SCANCODE_E])
-		{
-			editor_mode();
 		}
 		else if(keys[SDL_SCANCODE_ESCAPE])
 		{
@@ -83,10 +88,18 @@ void clean_up_all()
 	sprite_close_system();
 	audio_close_lists();
 	graphics_close();
+	TTF_CloseFont( font );
 }
 
 void initialize_all_systems()
 {
+	if(TTF_Init() == -1)
+	{
+		slog("error TTF_Init");
+		exit(2);
+	}
+	font = TTF_OpenFont("fonts/font1.ttf", 28);
+
 	init_logger(LOG_FILE); //init simple logger from DJ's source code
 	
 	graphics_initialize("Pep's Spicy Adventure", WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_WIDTH, WINDOW_HEIGHT, 0);
@@ -97,6 +110,7 @@ void initialize_all_systems()
 	entity_initialize_system(200);
 
 	background_initialize_system(8);
+
 }
 
 Uint8 arcade_mode()
@@ -174,4 +188,54 @@ Uint8 arcade_mode()
 void editor_mode()
 {
 
+}
+
+
+void main_menu()
+{
+	const Uint8 *keys = NULL;
+	SDL_Renderer *the_renderer;
+	int done = 0;
+	Sprite *sprite = NULL;
+
+	//init main menu
+	//loop until player selects next game mode
+	sprite = sprite_load("images/main_menu.png", vect2d_new(1366, 768), 1, 1);
+
+	the_renderer = graphics_get_renderer();
+	do
+	{
+		SDL_RenderClear(the_renderer);
+		sprite_draw(sprite, 0, vect2d_new(0, 0));
+		graphics_next_frame();
+		SDL_PumpEvents();
+
+		keys = SDL_GetKeyboardState(NULL);
+		if(keys[SDL_SCANCODE_A])
+		{
+			if(arcade_mode())
+			{
+				//you win screen, go over points and look at high scores
+				sprite = sprite_load("images/win_screen_message.png", vect2d_new(1366, 768), 1, 1);
+			}
+			else
+			{
+				//game over screen, go over points and look at high scores, try again button
+				sprite = sprite_load("images/lose_screen_message.png", vect2d_new(1366, 768), 1, 1);
+			}
+		}
+		else if(keys[SDL_SCANCODE_E])
+		{
+			editor_mode();
+		}
+		else if(keys[SDL_SCANCODE_ESCAPE])
+		{
+			done = 1;
+		}
+	}while(!done);
+}
+
+void title_text_draw(char *text)
+{
+	
 }

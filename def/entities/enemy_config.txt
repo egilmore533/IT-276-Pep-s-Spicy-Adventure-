@@ -16,8 +16,8 @@
 			"name": "melt_audio",
 			"firing1": "",
 			"firing2": "",
-			"death": "sound_enemy_death.ogg",
-			"moving": ""
+			"death": "sound/enemy_death.ogg",
+			"moving": "sound/enemy_hit.ogg"
 		}
 	},
 	"celery_stalker": {
@@ -37,8 +37,8 @@
 			"name": "celery_stalker_audio",
 			"firing1": "",
 			"firing2": "",
-			"death": "sound_enemy_death.ogg",
-			"moving": ""
+			"death": "sound/enemy_death.ogg",
+			"moving": "sound/enemy_hit.ogg"
 		}
 	},
 	"clarence": {
@@ -58,8 +58,8 @@
 			"name": "clarence_audio",
 			"firing1": "",
 			"firing2": "",
-			"death": "sound_enemy_death.ogg",
-			"moving": ""
+			"death": "sound/enemy_death.ogg",
+			"moving": "sound/enemy_hit.ogg"
 		}
 	},
 	"milk_tank": {
@@ -79,8 +79,8 @@
 			"name": "milk_tank_audio",
 			"firing1": "",
 			"firing2": "",
-			"death": "sound_enemy_death.ogg",
-			"moving": ""
+			"death": "sound/enemy_death.ogg",
+			"moving": "sound/enemy_hit.ogg"
 		}
 	},
 	"professor_slice": {
@@ -100,8 +100,8 @@
 			"name": "professor_slice_audio",
 			"firing1": "",
 			"firing2": "",
-			"death": "sound_enemy_death.ogg",
-			"moving": ""
+			"death": "sound/enemy_death.ogg",
+			"moving": "sound/enemy_hit.ogg"
 		}
 	}
 }}

@@ -237,11 +237,20 @@ Sound *audio_load_sound(char *filename, int loop, int channel)
 
 void audio_play_music(Music *music)
 {
+	if(!music)
+	{
+		slog("No Music");
+		return;
+	}
 	Mix_PlayMusic(music->music, music->loop);
 }
 
 void audio_play_sound(Sound *sound)
 {
+	if(!sound)
+	{
+		return;
+	}
 	Mix_PlayChannel(sound->channel, sound->sound, sound->loop);
 }
 

@@ -7,10 +7,17 @@
 typedef struct 
 {
 	Entity	*player;
+	Entity	*camera;
 	Sprite	*background;
+
 	Sprite	*lives;
-	Sprite * bombs;
-	Vect2d	livesPosition;
+	Sprite	*livesLabel;
+
+	Sprite  *bombs;
+	Sprite  *bombsLabel;
+
+	Sprite	*pointsText;
+	Sprite	*pointsLabel;
 }HUD;
 
 

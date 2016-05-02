@@ -3,6 +3,7 @@
 #include <stdlib.h>
 
 #include "SDL_image.h"
+#include "SDL_ttf.h"
 #include "sprite.h"
 #include "simple_logger.h"
 #include "graphics.h"
@@ -157,7 +158,6 @@ Sprite *sprite_load(char *filename, Vect2d frameSize, int fpl, int frames)
 
 void sprite_draw(Sprite *sprite, int frame, Vect2d drawPos)
 {
-	
 	Vect2d positionRelative; // remove = drawPos after entity and camera are up
 	Entity *cam;
 	SDL_Rect source, destination;
@@ -248,4 +248,111 @@ void sprite_bloom_effect_draw(Sprite *bloom, int frame, Vect2d position)
 	}
 	SDL_SetTextureAlphaMod(bloom->image, 255);
 	SDL_SetTextureColorMod(bloom->image, 255, 255, 255);
+}
+
+
+Sprite* sprite_load_text(TTF_Font *font, char *text, SDL_Color color)
+{
+	int i;
+	Sprite *sprite = NULL;
+	SDL_Surface* textSurface = NULL;
+	SDL_Texture* textTexture = NULL;
+	SDL_Renderer *renderer = graphics_get_renderer();
+
+	if(!font)
+	{
+		slog("font doesn't point to anything");
+		return NULL;
+	}
+	if(!text)
+	{
+		slog("no text to load");
+		return NULL;
+	}
+
+	if(!spriteList)
+	{
+		slog("spriteList uninitialized");
+		return NULL;
+	}
+	/*first search to see if the requested sprite image is alreday loaded*/
+	for(i = 0; i < spriteMax; i++)
+	{
+		if(spriteList[i].refCount == 0)
+		{
+			//this makes it so that the next sprite available in the list will be used if no sprite is found to match this one
+			if(sprite == NULL)
+				sprite = &spriteList[i];
+			continue;
+		}
+		if(strncmp(text, spriteList[i].filename, 128) ==0)
+		{
+			spriteList[i].refCount++;
+			return &spriteList[i];
+		}
+	}
+	/*makesure we have the room for a new sprite*/
+	if(spriteNum + 1 > spriteMax)
+	{
+		slog("Maximum Sprites Reached.");
+		exit(1);
+	}
+
+	textSurface = TTF_RenderText_Blended(font, text, color);
+	if(!textSurface)
+	{
+		slog("error loading text as surface");
+		return NULL;
+	}
+	else
+	{
+		textTexture = SDL_CreateTextureFromSurface(renderer, textSurface);
+	}
+	if(!textTexture)
+	{
+		slog("error loading text surface to a texture");
+		return NULL;
+	}
+
+	/*then copy the given information to the sprite*/
+	sprite->image = textTexture;
+	sprite->filename = text;
+	sprite->frameSize.x = textSurface->w;
+	sprite->frameSize.y = textSurface->w;
+	sprite->refCount++;
+	SDL_FreeSurface(textSurface);
+	return sprite;
+}
+
+void sprite_text_draw(Sprite *text_sprite, Vect2d drawPos)
+{
+	Vect2d positionRelative; // remove = drawPos after entity and camera are up
+	Entity *cam;
+	SDL_Rect source, destination;
+	SDL_Renderer *renderer = graphics_get_renderer();
+	cam = camera_get();
+	if(cam)
+	{
+		vect2d_subtract(drawPos, cam->position, positionRelative); 
+	}
+	else
+	{
+		positionRelative = drawPos;
+	}
+	if(!text_sprite)
+	{
+		slog("text_sprite doesn't point to anything");
+		return;
+	}
+	source.x = 0;
+	source.y = 0;
+	source.w = text_sprite->frameSize.x;
+	source.h = text_sprite->frameSize.y;
+	
+	destination.x = positionRelative.x;
+	destination.y = positionRelative.y;
+	destination.w = text_sprite->frameSize.x;
+	destination.h = text_sprite->frameSize.y;
+	SDL_RenderCopy(renderer, text_sprite->image, &source, &destination);
+	
 }

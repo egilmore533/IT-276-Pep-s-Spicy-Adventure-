@@ -159,6 +159,10 @@ void weapon_pep_spread_touch(Entity *spread, Entity *other)//
 {
 	if(other->target == spread->owner)
 	{
+		if(other->entitySounds)
+		{
+			audio_play_sound(other->entitySounds->moving);
+		}
 		other->health--; // one damage for normal bullets
 		if(spread->state == GOO_SHOT_STATE)
 		{
@@ -224,6 +228,10 @@ void weapon_pep_charge_touch(Entity *spice, Entity *other)
 {
 	if(other->target == spice->owner)
 	{
+		if(other->entitySounds)
+		{
+			audio_play_sound(other->entitySounds->moving);
+		}
 		other->health -= 5; //five damage is fairly big considering most enemies only have 1 health
 		if(spice->state == GOO_SHOT_STATE)
 		{
@@ -261,11 +269,14 @@ void weapon_pep_bomb_touch(Entity *bomb, Entity *other)
 	}
 	else if(!other->target)
 	{
-		slog("no other target");
 		return;
 	}
 	if(other->target == bomb->owner)//if other is an enemy deplete its health, if its a power_up nothing will happen to it, but enemies will die
 	{
+		if(other->entitySounds)
+		{
+			audio_play_sound(other->entitySounds->moving);
+		}
 		other->health -= 1000000; //might have to change this if I add bosses
 	}
 }

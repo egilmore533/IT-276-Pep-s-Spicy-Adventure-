@@ -318,7 +318,7 @@ Sprite* sprite_load_text(TTF_Font *font, char *text, SDL_Color color)
 	sprite->image = textTexture;
 	sprite->filename = text;
 	sprite->frameSize.x = textSurface->w;
-	sprite->frameSize.y = textSurface->w;
+	sprite->frameSize.y = textSurface->h;
 	sprite->refCount++;
 	SDL_FreeSurface(textSurface);
 	return sprite;

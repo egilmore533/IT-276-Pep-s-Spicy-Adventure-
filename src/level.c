@@ -295,11 +295,3 @@ Uint8 level_end_reached(Level *level)
 	}
 	return 0;
 }
-
-void level_purge_systems()
-{
-	player_save_info();
-	entity_empty_list();
-	background_empty_list();
-	audio_empty_list();
-}

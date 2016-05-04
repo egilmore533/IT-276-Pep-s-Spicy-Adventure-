@@ -2,31 +2,31 @@
 #include "SDL_ttf.h"
 #include "player.h"
 #include "camera.h"
+#include "simple_logger.h"
 
+HUD *hud = NULL;
 TTF_Font	*hudFont = NULL;
 SDL_Color	hudFontColor = {0, 0, 0};
 
-HUD *hud_initialize()
+void hud_initialize()
 {
-	HUD *temp = NULL;
-
-	hudFont = TTF_OpenFont("fonts/font1.ttf", 16);
+	hudFont = TTF_OpenFont("fonts/HussarPrintASpicyAdventure.ttf", 16);
 	
-	temp = (HUD *)malloc(sizeof(HUD));
+	hud = (HUD *)malloc(sizeof(HUD));
+	memset(hud, 0, sizeof (HUD));
 
-	temp->player = player_get();
-	temp->camera = camera_get();
+	hud->player = player_get();
+	hud->camera = camera_get();
 
-	temp->background = sprite_load("images/hud_background_bar.png", vect2d_new(1366, 150), 1, 1);
-	temp->lives = sprite_load("images/life2.png",vect2d_new(64, 96), 1, 1);
-	temp->bombs = sprite_load("images/hud_bomb.png", vect2d_new(96, 96), 1, 1);
+	hud->background = sprite_load("images/hud_background_bar.png", vect2d_new(1366, 150), 1, 1);
+	hud->lives = sprite_load("images/life2.png",vect2d_new(64, 96), 1, 1);
+	hud->bombs = sprite_load("images/hud_bomb.png", vect2d_new(96, 96), 1, 1);
 	
-	temp->livesLabel = sprite_load_text(hudFont, "Lives", hudFontColor);
-	temp->bombsLabel = sprite_load_text(hudFont, "Bombs", hudFontColor);
-	return temp;
+	hud->livesLabel = sprite_load_text(hudFont, "Lives", hudFontColor);
+	hud->bombsLabel = sprite_load_text(hudFont, "Bombs", hudFontColor);
 }
 
-void hud_draw(HUD *hud)
+void hud_draw()
 {
 	int i;
 	Vect2d drawPos;
@@ -37,11 +37,11 @@ void hud_draw(HUD *hud)
 	sprite_draw(hud->background, 0, drawPos);
 	
 	drawPos.x = hud->camera->position.x + 160;
-	drawPos.y = hud_height + 10 + hud->lives->frameSize.y;
+	drawPos.y = hud_height + 20 + hud->lives->frameSize.y;
 	sprite_text_draw(hud->livesLabel, drawPos);
 
 	drawPos.x = hud->camera->position.x + 525;
-	drawPos.y = hud_height + 7 + hud->bombs->frameSize.y;
+	drawPos.y = hud_height + 20 + hud->bombs->frameSize.y;
 	sprite_text_draw(hud->bombsLabel, drawPos);
 
 	vect2d_set(drawPos, hud->camera->position.x, hud_height);
@@ -58,4 +58,62 @@ void hud_draw(HUD *hud)
 		drawPos.x = hud->camera->position.x + 400 + (11 * i) + hud->bombs->frameSize.x * i;
 		sprite_draw(hud->bombs, 0, drawPos);
 	}
+}
+
+void hud_free()
+{
+	if(!hud)
+	{
+		slog("hud not initialized");
+		return;
+	}
+
+	if(hud->player)
+	{
+		hud->player = NULL;
+	}
+	if(hud->camera)
+	{
+		hud->camera = NULL;
+	}
+	
+	if(hud->background)
+	{
+		sprite_free(&hud->background);
+	}
+
+	if(hud->lives)
+	{
+		sprite_free(&hud->lives);
+	}
+	if(hud->livesLabel)
+	{
+		sprite_free(&hud->livesLabel);
+	}
+
+	if(hud->bombs)
+	{
+		sprite_free(&hud->bombs);
+	}
+	if(hud->bombsLabel)
+	{
+		sprite_free(&hud->bombsLabel);
+	}
+
+	if(hud->pointsText)
+	{
+		sprite_free(&hud->pointsText);
+	}
+	if(hud->pointsLabel)
+	{
+		sprite_free(&hud->pointsLabel);
+	}
+}
+
+HUD *hud_get()
+{
+	if(hud)
+		return hud;
+	else
+		return NULL;
 }

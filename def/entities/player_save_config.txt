@@ -12,9 +12,9 @@
 				"thinkRate":	200,
 				"health":	1,
 				"velMax":	"10.000000 10.000000",
-				"lives":	4,
-				"bombs":	2,
-				"spreads":	2
+				"lives":	3,
+				"bombs":	1,
+				"spreads":	0
 			},
 			"audioPak":	{
 				"name":	"player_audio",

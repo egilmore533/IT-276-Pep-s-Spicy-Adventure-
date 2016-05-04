@@ -7,6 +7,10 @@
  *	@brief	level storage, loading and config parsing, most important function being entity_load
  */
 
+/**
+ * @struct Level
+ * @brief used to check if the end of the level has been reached by the player
+ */
 typedef struct {
 	BackgroundPak *background;
 	Music *backgroundMusic;
@@ -17,20 +21,30 @@ typedef struct {
 }Level;
 
 /**
- * @brief parses the entity_config file for data to load each entity from then sets the entity up accordingly, needs to be 
- *        given a type, position and an id
+ * @brief determines which entity type to load, loads everything for that entity (excluding position), and sets the id, then returns the new entity so its position can be set
  * @param type	the type of entity to load (enumerated in entity.h)
- * @param pos	the 2d vector of the entity's position
  * @param id	the id number of the entity to be loaded
+ * @return	the new entity
  */
 Entity *level_entity_load(int type, int id);
 
+/** 
+ * @brief frees the level from memory
+ * @param [in,out]	level	double pointer that will be freed
+ */
 void level_free(Level **level);
 
+/**
+ * @brief parses the def file for what music, BackgroundPak def file, end flag, and entities to load, saving the player, entity, end flag, music, and backgroundPak and the level def file's name
+ * @param	[in]	level_def_file	the level's def file
+ * @return	the fully loaded level
+ */
 Level *level_load(char *level_def_file);
 
+/**
+ * @brief checks if the player is past the end flag for the level
+ * @return 1 if player past the end, else 0
+ */
 Uint8 level_end_reached(Level *level);
-
-void level_purge_systems();
 
 #endif

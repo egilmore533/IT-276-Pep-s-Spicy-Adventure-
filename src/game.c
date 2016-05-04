@@ -1,26 +1,32 @@
 #include <stdio.h>
 #include <math.h>
+
 #include "SDL_ttf.h"
+
+#include "simple_logger.h"
+
+#include "files.h"
 #include "graphics.h"
 #include "audio.h"
-#include "simple_logger.h"
 #include "sprite.h"
-#include "camera.h"
+
+#include "hud.h"
+#include "button.h"
 #include "background.h"
 #include "particle.h"
 #include "level.h"
-#include "files.h"
+
+#include "camera.h"
 #include "player.h"
-#include "hud.h"
+
 
 #define	MAX_SPRITES		1000
-
-HUD *hud;
 
 TTF_Font *font;
 SDL_Color textColor = {255, 210 ,4};
 
 void initialize_all_systems();
+void purge_systems();
 void clean_up_all();
 void initialize_next_level(Uint8 level_number);
 void main_menu();
@@ -48,7 +54,7 @@ int main(int argc, char *argv[])
 		SDL_RenderClear(the_renderer);
 
 		sprite_draw(sprite, 0, vect2d_new(0, 0));
-		sprite_text_draw(text_start_menu, vect2d_new(550, 500));
+		sprite_text_draw(text_start_menu, vect2d_new(550, 650));
 		SDL_SetTextureAlphaMod(text_start_menu->image, 100 * (1 + sin(SDL_GetTicks() * 2 * 3.14 / 1000)));
 
 		graphics_next_frame();
@@ -98,7 +104,7 @@ void initialize_all_systems()
 		slog("error TTF_Init");
 		exit(2);
 	}
-	font = TTF_OpenFont("fonts/font1.ttf", 28);
+	font = TTF_OpenFont("fonts/HussarPrintASpicyAdventure.ttf", 28);
 
 	init_logger(LOG_FILE); //init simple logger from DJ's source code
 	
@@ -111,6 +117,8 @@ void initialize_all_systems()
 
 	background_initialize_system(8);
 
+	button_initialize_system(10);
+
 }
 
 Uint8 arcade_mode()
@@ -122,11 +130,11 @@ Uint8 arcade_mode()
 	Level *level = NULL;
 	char *level_path = NULL;
 
-	level_purge_systems();
+	purge_systems();
 	the_renderer = graphics_get_renderer();
 	level_path = files_get_level(level_num++);
 	level = level_load(level_path);
-	hud = hud_initialize();
+	hud_initialize();
 	player_saved_load_on();
 	done = 0;
 	do
@@ -134,7 +142,7 @@ Uint8 arcade_mode()
 		SDL_RenderClear(the_renderer);
 		if(level_end_reached(level))
 		{
-			level_purge_systems();
+			purge_systems();
 			level_free(&level);
 			level_path = files_get_level(level_num++);
 			if(level_path == 0)
@@ -145,13 +153,13 @@ Uint8 arcade_mode()
 			else
 			{
 				level = level_load(level_path);
-				hud = hud_initialize();
+				hud_initialize();
 			}
 		}
 		if(level->player->state == GAME_OVER_STATE)
 		{
 			player_saved_load_off();
-			level_purge_systems();
+			purge_systems();
 			level_free(&level);
 			done = 1;
 			return 0;//game over
@@ -167,7 +175,7 @@ Uint8 arcade_mode()
 		particle_check_all_dead();
 		particle_draw_all();
 
-		hud_draw(hud);
+		hud_draw();
 		
 		graphics_next_frame();
 		SDL_PumpEvents();
@@ -176,7 +184,7 @@ Uint8 arcade_mode()
 		if(keys[SDL_SCANCODE_ESCAPE])
 		{
 			player_saved_load_off();
-			level_purge_systems();
+			purge_systems();
 			done = 1;
 			return 0;//game over
 		}
@@ -196,35 +204,27 @@ void main_menu()
 	const Uint8 *keys = NULL;
 	SDL_Renderer *the_renderer;
 	int done = 0;
+	Button *arcadeButton = NULL;
 	Sprite *sprite = NULL;
 
 	//init main menu
 	//loop until player selects next game mode
-	sprite = sprite_load("images/main_menu.png", vect2d_new(1366, 768), 1, 1);
+	arcadeButton = button_load_arcade_mode(vect2d_new(200, 200));
+	arcadeButton->click = &arcade_mode;
 
 	the_renderer = graphics_get_renderer();
 	do
 	{
 		SDL_RenderClear(the_renderer);
-		sprite_draw(sprite, 0, vect2d_new(0, 0));
+
+		button_update_all();
+		button_draw_all();
+
 		graphics_next_frame();
 		SDL_PumpEvents();
 
 		keys = SDL_GetKeyboardState(NULL);
-		if(keys[SDL_SCANCODE_A])
-		{
-			if(arcade_mode())
-			{
-				//you win screen, go over points and look at high scores
-				sprite = sprite_load("images/win_screen_message.png", vect2d_new(1366, 768), 1, 1);
-			}
-			else
-			{
-				//game over screen, go over points and look at high scores, try again button
-				sprite = sprite_load("images/lose_screen_message.png", vect2d_new(1366, 768), 1, 1);
-			}
-		}
-		else if(keys[SDL_SCANCODE_E])
+		if(keys[SDL_SCANCODE_E])
 		{
 			editor_mode();
 		}
@@ -238,4 +238,13 @@ void main_menu()
 void title_text_draw(char *text)
 {
 	
+}
+
+void purge_systems()
+{
+	player_save_info();
+	//button_empty_list();
+	entity_empty_list();
+	background_empty_list();
+	audio_empty_list();
 }

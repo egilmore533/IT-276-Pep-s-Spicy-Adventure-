@@ -158,9 +158,6 @@ void entity_draw_all()
 		{
 			continue;
 		}
-		/*
-		IF (entity != cam && entity_intersect(cam, entity))
-		*/
 		entityList[i].draw(entityList[i].sprite, entityList[i].frameNumber, entityList[i].position);
 	}
 }

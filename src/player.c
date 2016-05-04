@@ -119,6 +119,11 @@ Entity *player_load()
 
 	player->owner = camera_get();
 
+	if(player->health > 1)
+	{
+		player->state = SHIELDED_STATE;
+	}
+
 	//shield bloom effect stuff
 	shield = sprite_load("images/ball.png", vect2d_new(144, 144), 1, 1);
 	SDL_SetTextureBlendMode(shield->image, SDL_BLENDMODE_ADD);

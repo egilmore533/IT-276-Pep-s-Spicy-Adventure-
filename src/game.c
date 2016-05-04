@@ -25,13 +25,19 @@
 TTF_Font *font;
 SDL_Color textColor = {255, 210 ,4};
 
+int	back = 0;
+
 void initialize_all_systems();
 void purge_systems();
 void clean_up_all();
 void initialize_next_level(Uint8 level_number);
 void main_menu();
-Uint8 arcade_mode();
+void arcade_mode();
+void control_screen();
 void editor_mode();
+void back_question();
+void yes_back();
+void no_back();
 
 /*this program must be run from the directory directly below images and src, not from within src*/
 /*notice the default arguments for main.  SDL expects main to look like that, so don't change it*/
@@ -121,8 +127,9 @@ void initialize_all_systems()
 
 }
 
-Uint8 arcade_mode()
+void arcade_mode()
 {
+	int win = 0;
 	int done;
 	const Uint8 *keys;
 	SDL_Renderer *the_renderer;
@@ -140,6 +147,15 @@ Uint8 arcade_mode()
 	do
 	{
 		SDL_RenderClear(the_renderer);
+	
+		if(level->player->state == GAME_OVER_STATE)
+		{
+			player_saved_load_off();
+			purge_systems();
+			level_free(&level);
+			done = 1;
+		}
+
 		if(level_end_reached(level))
 		{
 			purge_systems();
@@ -148,7 +164,8 @@ Uint8 arcade_mode()
 			if(level_path == 0)
 			{
 				player_saved_load_off();
-				return 1;//victory
+				win = 1;//victory
+				done = 1;
 			}
 			else
 			{
@@ -156,14 +173,7 @@ Uint8 arcade_mode()
 				hud_initialize();
 			}
 		}
-		if(level->player->state == GAME_OVER_STATE)
-		{
-			player_saved_load_off();
-			purge_systems();
-			level_free(&level);
-			done = 1;
-			return 0;//game over
-		}
+
 		background_update_all();
 		background_draw_all();
 
@@ -183,14 +193,24 @@ Uint8 arcade_mode()
 		keys = SDL_GetKeyboardState(NULL);
 		if(keys[SDL_SCANCODE_ESCAPE])
 		{
-			player_saved_load_off();
-			purge_systems();
-			done = 1;
-			return 0;//game over
+			back_question();
+			if(back == 1)
+			{
+				player_saved_load_off();
+				purge_systems();
+				done = 1;
+			}
+			back = 0;
 		}
 	}while(!done);
-	player_saved_load_off();
-	return 0;
+	if(win)
+	{
+	
+	}
+	else
+	{
+	
+	}
 }
 
 void editor_mode()
@@ -205,12 +225,16 @@ void main_menu()
 	SDL_Renderer *the_renderer;
 	int done = 0;
 	Button *arcadeButton = NULL;
+	Button *controlButton = NULL;
 	Sprite *sprite = NULL;
 
 	//init main menu
 	//loop until player selects next game mode
 	arcadeButton = button_load_arcade_mode(vect2d_new(200, 200));
 	arcadeButton->click = &arcade_mode;
+
+	controlButton = button_load_controls(vect2d_new(200, 400));
+	controlButton->click = &control_screen;
 
 	the_renderer = graphics_get_renderer();
 	do
@@ -224,27 +248,119 @@ void main_menu()
 		SDL_PumpEvents();
 
 		keys = SDL_GetKeyboardState(NULL);
-		if(keys[SDL_SCANCODE_E])
+		if(keys[SDL_SCANCODE_ESCAPE])
 		{
-			editor_mode();
-		}
-		else if(keys[SDL_SCANCODE_ESCAPE])
-		{
-			done = 1;
+			back_question();
+			if(back == 1)
+			{
+				done = 1;
+			}
+			back = 0;
 		}
 	}while(!done);
-}
-
-void title_text_draw(char *text)
-{
-	
 }
 
 void purge_systems()
 {
 	player_save_info();
-	//button_empty_list();
 	entity_empty_list();
 	background_empty_list();
 	audio_empty_list();
+}
+
+void control_screen()
+{
+	const Uint8 *keys = NULL;
+	SDL_Renderer *the_renderer;
+	int done = 0;
+	Sprite *background = NULL;
+
+	background = sprite_load("images/controls.png", vect2d_new(1366, 768), 1, 1);
+	SDL_SetTextureAlphaMod(background->image, 100); //makes the screen fade in slowly, nice transistion
+
+	the_renderer = graphics_get_renderer();
+	do
+	{
+		sprite_draw(background, 0, vect2d_new(0, 0));
+
+		graphics_next_frame();
+		SDL_PumpEvents();
+
+		keys = SDL_GetKeyboardState(NULL);
+		if(keys[SDL_SCANCODE_ESCAPE])
+		{
+			back_question();
+			if(back == 1)
+			{
+				done = 1;
+			}
+			back = 0;
+		}
+
+	}while(!done);
+}
+
+
+void back_question()
+{
+	SDL_Renderer *the_renderer;
+	int done = 0;
+	Button *yesButton = NULL;
+	Button *noButton = NULL;
+	Sprite *background = NULL;
+	Entity *cam = camera_get();
+	Vect2d positionsOffset;
+
+	if(cam)
+	{
+		positionsOffset = cam->position;
+	}
+	else
+	{
+		positionsOffset = vect2d_new(0,0);
+	}
+	yesButton = button_load_yes_back(vect2d_new(400 + positionsOffset.x, 600 + positionsOffset.y));
+	yesButton->click = &yes_back;
+	noButton = button_load_no_back(vect2d_new(700 + positionsOffset.x, 600 + positionsOffset.y));
+	noButton->click = &no_back;
+
+	background = sprite_load("images/back_screen.png", vect2d_new(1366, 768), 1, 1);
+	SDL_SetTextureAlphaMod(background->image, 100); //makes the screen fade in slowly, nice transistion
+
+	the_renderer = graphics_get_renderer();
+	do
+	{
+		sprite_draw(background, 0, positionsOffset);
+
+		button_update(yesButton);
+		button_update(noButton);
+
+		button_draw(yesButton);
+		button_draw(noButton);
+
+		graphics_next_frame();
+		SDL_PumpEvents();
+
+		if(back == 1)
+		{
+			done = 1;
+		}
+		if(back == -1)
+		{
+			done = 1;
+			back = 0;
+		}
+	}while(!done);
+	button_free(&yesButton);
+	button_free(&noButton);
+}
+
+void yes_back()
+{
+	back = 1;
+}
+
+void no_back()
+{
+	back = -1;
 }

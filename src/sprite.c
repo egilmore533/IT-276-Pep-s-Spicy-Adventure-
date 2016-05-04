@@ -316,7 +316,7 @@ Sprite* sprite_load_text(TTF_Font *font, char *text, SDL_Color color)
 
 	/*then copy the given information to the sprite*/
 	sprite->image = textTexture;
-	sprite->filename = text;
+	sprite->filename = "";
 	sprite->frameSize.x = textSurface->w;
 	sprite->frameSize.y = textSurface->h;
 	sprite->refCount++;

@@ -15,7 +15,7 @@
 	},
 	"flair": {
 		"info": {
-			"moveFactor": 0.7,
+			"moveFactor": 1.4,
 			"nextThink": 0,
 			"thinkRate": 200
 		},
@@ -29,7 +29,7 @@
 	},
 	"middle": {
 		"info": {
-			"moveFactor": 0.4,
+			"moveFactor": 0.8,
 			"nextThink": 0,
 			"thinkRate": 200
 		},

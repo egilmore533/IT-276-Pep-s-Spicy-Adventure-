@@ -84,7 +84,11 @@ void camera_update(Entity *self)
 
 Entity *camera_get()
 {
-	return camera;
+	if(camera && camera->alive)
+	{
+		return camera;
+	}
+	return NULL;
 }
 
 void camera_free_entity_outside_bounds(Entity *ent)
@@ -119,4 +123,24 @@ Uint8 camera_get_move()
 Uint32 get_time()
 {
 	return gametime;
+}
+
+void camera_editor_think(Entity *self)
+{
+	const Uint8 *keys;
+
+	//movement input 
+	keys = SDL_GetKeyboardState(NULL);
+	if(keys[SDL_SCANCODE_A])
+	{
+		camera->velocity.x = -camera->maxVelocity.x;
+	}
+	else if(keys[SDL_SCANCODE_D])
+	{
+		camera->velocity.x = camera->maxVelocity.x;
+	}
+	else
+	{
+		camera->velocity.x = 0;
+	}
 }

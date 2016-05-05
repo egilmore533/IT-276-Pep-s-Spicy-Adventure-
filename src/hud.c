@@ -152,7 +152,6 @@ void hud_editor_initialize()
 void hud_editor_draw()
 {
 	static int currentType = 0;
-	int i;
 	Vect2d drawPos;
 	float hud_height = hud->camera->position.y + HUD_HEIGHT;
 

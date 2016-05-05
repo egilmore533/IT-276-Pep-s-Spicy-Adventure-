@@ -304,8 +304,8 @@ SoundPak *audio_load_pak(int channel, char *name, char *fire1_file, char *fire2_
 	numSounds++;
 
 	strcpy(pak->name, name);
-	pak->firing1 = audio_load_sound(fire1_file, 0, FX_Bullets);
-	pak->firing2 = audio_load_sound(fire2_file, 0, FX_Bullets);
+	pak->firing1 = audio_load_sound(fire1_file, 0, FX_BULLETS);
+	pak->firing2 = audio_load_sound(fire2_file, 0, FX_BULLETS);
 	pak->death = audio_load_sound(death_file, 0, channel);
 	pak->moving = audio_load_sound(moving_fire, 0, channel);
 	pak->loaded = 1;

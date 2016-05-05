@@ -13,7 +13,7 @@
 #define MAX_INVENTORY	3
 
 /**
- * @enum INVENTORY_SLOTS
+ * @enum InventorySlots
  * @brief defines the slots inside the player's inventory
  */
 typedef enum
@@ -21,7 +21,7 @@ typedef enum
 	LIVES = 0,	/**< the number of lives the player has */
 	BOMBS,		/**< the number of bombs the player has */
 	SPREADS		/**< the number of times the player has picked up a spread power up */
-}INVENTORY_SLOTS;
+}InventorySlots;
 
 #define MAX_LIVES			5
 
@@ -50,7 +50,7 @@ typedef enum
 #define GAME_OVER_STATE		4
 
 /**
- * @enum ENTITY_TYPES
+ * @enum Entity_Types
  * @brief the different entities that could be created, seperated by file
  */
 typedef enum
@@ -73,7 +73,7 @@ typedef enum
 	PROJECTILE_PEP_BOMB,
 	PROJECTILE_MELT_CREAM,
 	PROJECTILE_PROFESSOR_SLICE_BREAD,
-}ENTITY_TYPES;
+}EntityTypes;
 
 
 /** 

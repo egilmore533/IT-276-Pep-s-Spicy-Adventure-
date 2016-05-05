@@ -8,17 +8,17 @@
  */
 
 /**
- * @enum SOUND_GROUPS
+ * @enum FX_Groups
  * @brief the different channels that the audio sounds will be played on
  */
 typedef enum	
 {
 	FX_NULL = 0, 
-	FX_Bullets, 
-	FX_Impacts, 
-	FX_Enemy, 
-	FX_Player
-}SOUND_GROUPS;
+	FX_BULLETS, 
+	FX_IMPACTS, 
+	FX_ENEMY, 
+	FX_PLAYER
+}FX_Groups;
 
 /**
  * @struct Sound

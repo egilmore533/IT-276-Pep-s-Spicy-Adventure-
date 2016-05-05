@@ -157,7 +157,7 @@ Sprite *sprite_load(char *filename, Vect2d frameSize, int fpl, int frames)
 
 void sprite_draw(Sprite *sprite, int frame, Vect2d drawPos)
 {
-	Vect2d positionRelative; // remove = drawPos after entity and camera are up
+	Vect2d positionRelative;
 	Entity *cam;
 	SDL_Rect source, destination;
 	SDL_Renderer *renderer = graphics_get_renderer();
@@ -213,7 +213,7 @@ void sprite_bloom_effect_draw(Sprite *bloom, int frame, Vect2d position)
 {
 	int i;
 	int size_factor, offset_factor_x, offset_factor_y;
-	Vect2d positionRelative; // remove = drawPos after entity and camera are up
+	Vect2d positionRelative; 
 	Entity *cam;
 	SDL_Rect source, destination;
 	SDL_Renderer *renderer = graphics_get_renderer();

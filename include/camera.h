@@ -8,7 +8,7 @@
  *			camera is used in draw all to check if the entity is on screen (if not it sin't drawn)
  */
 
-
+/** @brief the exact y position of the hud, used by most entities, the hud, and mouse to know where they are in relation to the hud */
 #define HUD_HEIGHT		618
 
 /**
@@ -61,5 +61,8 @@ Uint8 camera_get_move();
  * @return	the gametime
  */
 Uint32 get_time();
+
+/** @brief simple think for the camera so it can move left and right in editing mode (A and D keys move left and right respectively) */
+void camera_editor_think(Entity *self);
 
 #endif

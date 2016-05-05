@@ -4,6 +4,10 @@
 #include "vector.h"
 #include "entity.h"
 
+/** @file	actor.h
+ *	@brief	the class that handles drawing the sprites on the screen for the level editor, these are visual representations of what will be enemies and power ups when the game saves this level and loads it later
+ */
+
 /** @struct Actor structure
  *	@brief a sprite that has a type and a position, used for the level editor so the player can place entities and then save their types and positions
  */

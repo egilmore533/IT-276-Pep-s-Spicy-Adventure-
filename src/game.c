@@ -144,6 +144,7 @@ void arcade_mode()
 	Level *level = NULL;
 	char *level_path = NULL;
 
+	SDL_ShowCursor(SDL_ENABLE);
 	purge_systems();
 	the_renderer = graphics_get_renderer();
 	level_path = files_get_level(level_num++);
@@ -200,6 +201,7 @@ void arcade_mode()
 		keys = SDL_GetKeyboardState(NULL);
 		if(keys[SDL_SCANCODE_ESCAPE])
 		{
+			SDL_ShowCursor(SDL_DISABLE);
 			back_question();
 			if(back == 1)
 			{
@@ -208,9 +210,11 @@ void arcade_mode()
 				done = 1;
 			}
 			back = 0;
+			SDL_ShowCursor(SDL_ENABLE);
 		}
 	}while(!done);
 	hud_free();
+	SDL_ShowCursor(SDL_DISABLE);
 	if(win)
 	{
 		
@@ -226,12 +230,21 @@ void editor_mode()
 	const Uint8 *keys = NULL;
 	SDL_Renderer *the_renderer;
 	int done = 0;
-	mouse_initialize();
+	Entity *camera = NULL;
+
+	camera = camera_load(0);
+	camera->think = &camera_editor_think;
+
+	mouse_editor_on();
 	hud_editor_initialize();
 	the_renderer = graphics_get_renderer();
+
 	do
 	{
 		SDL_RenderClear(the_renderer);
+
+		camera->think(camera);
+		camera->update(camera);
 
 		actor_draw_all();
 
@@ -239,24 +252,25 @@ void editor_mode()
 
 		mouse_update();
 
-		mouse_draw();
-
 		graphics_next_frame();
 		SDL_PumpEvents();
 
 		keys = SDL_GetKeyboardState(NULL);
 		if(keys[SDL_SCANCODE_ESCAPE])
 		{
+			mouse_editor_off();
 			back_question();
 			if(back == 1)
 			{
 				done = 1;
 			}
 			back = 0;
+			mouse_editor_on();
 		}
 	}while(!done);
+	mouse_editor_off();
+	camera->free(&camera);
 	hud_editor_free();
-	mouse_free();
 	actor_empty_list();
 }
 
@@ -271,7 +285,8 @@ void main_menu()
 	Button *editorButton = NULL;
 	Sprite *sprite = NULL;
 
-	camera_load(0);
+
+	mouse_initialize();
 
 	//init main menu
 	//loop until player selects next game mode
@@ -292,6 +307,8 @@ void main_menu()
 		button_update_all();
 		button_draw_all();
 
+		mouse_update();
+
 		graphics_next_frame();
 		SDL_PumpEvents();
 
@@ -306,6 +323,7 @@ void main_menu()
 			back = 0;
 		}
 	}while(!done);
+	mouse_free();
 	button_empty_list();
 }
 
@@ -386,6 +404,8 @@ void back_question()
 
 		button_draw(yesButton);
 		button_draw(noButton);
+
+		mouse_update();
 
 		graphics_next_frame();
 		SDL_PumpEvents();

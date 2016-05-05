@@ -147,59 +147,43 @@ void button_draw(Button *button)
 
 void button_update(Button *button)
 {
-	int mouseX, mouseY;
-	Vect2d mousePosition;
-	SDL_Event click_event;
-	Entity *cam = camera_get();
-	
-	SDL_GetMouseState(&mouseX, &mouseY);
-	mousePosition = vect2d_new(mouseX, mouseY);
+	Mouse *mouse = mouse_get();
 
-	if(cam)
+	if(mouse_button_intersect(button, mouse))
 	{
-		mousePosition.x += cam->position.x;
-		mousePosition.y += cam->position.y;
-
-	}
-
-	if(mouse_button_intersect(button, mousePosition))
-	{
-		button->state = Hovered;
-		SDL_PollEvent(&click_event);
-		if(click_event.type == SDL_MOUSEBUTTONDOWN)
+		button->state = HOVERED;
+		
+		if(mouse->clicked)
 		{
 			button->click();
 		}
 	}
 	else
 	{
-		button->state = Normal;
+		button->state = NORMAL;
 	}
 }
 
-int mouse_button_intersect(Button *button, Vect2d mousePosition)
+int mouse_button_intersect(Button *button, Mouse *mouse)
 {
 	SDL_Rect aB, bB;
-	SDL_Rect mouseBounds, buttonBounds;
 
 	//this assumes that the mouse is only one frame wide and tall, also assumes the button's collision is its entire spriteSize
-	mouseBounds = rect(0, 0, 1, 1);
-	buttonBounds = rect(0, 0, button->buttonSprite->frameSize.x, button->buttonSprite->frameSize.y);
 
 	if(!button)
 	{
 		slog("button error");
 		return 0;
 	}
-	aB = rect(button->position.x + buttonBounds.x,
-				button->position.y + buttonBounds.y,
-				buttonBounds.w,
-				buttonBounds.h
+	aB = rect(button->position.x + button->bounds.x,
+				button->position.y + button->bounds.y,
+				button->bounds.w,
+				button->bounds.h
 		);
-	bB = rect(mousePosition.x + mouseBounds.x,
-				mousePosition.y + mouseBounds.y,
-				mouseBounds.w,
-				mouseBounds.h
+	bB = rect(mouse->position.x + mouse->bounds.x,
+				mouse->position.y + mouse->bounds.y,
+				mouse->bounds.w,
+				mouse->bounds.h
 		);
 	return rect_intersect(aB, bB);
 }
@@ -246,6 +230,7 @@ Button *button_load_arcade_mode(Vect2d position)
 	
 	button = button_new(position); 
 	button->buttonSprite = sprite_load("images/button.png", vect2d_new(500, 100), 1, 2);
+	button->bounds = rect(0, 0, button->buttonSprite->frameSize.x, button->buttonSprite->frameSize.y);
 	button->label = sprite_load_text(button_font, "Arcade Mode", color);
 	return button;
 	
@@ -258,6 +243,7 @@ Button *button_load_editor_mode(Vect2d position)
 	
 	button = button_new(position); 
 	button->buttonSprite = sprite_load("images/button.png", vect2d_new(500, 100), 1, 2);
+	button->bounds = rect(0, 0, button->buttonSprite->frameSize.x, button->buttonSprite->frameSize.y);
 	button->label = sprite_load_text(button_font, "Editor Mode", color);
 	return button;
 }
@@ -268,6 +254,7 @@ Button *button_load_yes_back(Vect2d position)
 	
 	button = button_new(position); 
 	button->buttonSprite = sprite_load("images/tiny_button.png", vect2d_new(250, 50), 1, 2);
+	button->bounds = rect(0, 0, button->buttonSprite->frameSize.x, button->buttonSprite->frameSize.y);
 	button->label = sprite_load_text(button_font, "Yes", color);
 	return button;
 }
@@ -278,6 +265,7 @@ Button *button_load_no_back(Vect2d position)
 	
 	button = button_new(position); 
 	button->buttonSprite = sprite_load("images/tiny_button.png", vect2d_new(250, 50), 1, 2);
+	button->bounds = rect(0, 0, button->buttonSprite->frameSize.x, button->buttonSprite->frameSize.y);
 	button->label = sprite_load_text(button_font, "No", color);
 	return button;
 }
@@ -288,6 +276,7 @@ Button *button_load_controls(Vect2d position)
 	
 	button = button_new(position); 
 	button->buttonSprite = sprite_load("images/button.png", vect2d_new(500, 100), 1, 2);
+	button->bounds = rect(0, 0, button->buttonSprite->frameSize.x, button->buttonSprite->frameSize.y);
 	button->label = sprite_load_text(button_font, "Controls", color);
 	return button;
 }
@@ -298,6 +287,7 @@ Button *button_load_next(Vect2d position)
 	
 	button = button_new(position); 
 	button->buttonSprite = sprite_load("images/tiny_button.png", vect2d_new(250, 50), 1, 2);
+	button->bounds = rect(0, 0, button->buttonSprite->frameSize.x, button->buttonSprite->frameSize.y);
 	button->label = sprite_load_text(button_font, "Next", color);
 	return button;
 }
@@ -308,6 +298,7 @@ Button *button_load_previous(Vect2d position)
 	
 	button = button_new(position); 
 	button->buttonSprite = sprite_load("images/tiny_button.png", vect2d_new(250, 50), 1, 2);
+	button->bounds = rect(0, 0, button->buttonSprite->frameSize.x, button->buttonSprite->frameSize.y);
 	button->label = sprite_load_text(button_font, "Prev", color);
 	return button;
 }

@@ -5,6 +5,7 @@
 
 Mouse *mouse = NULL;
 Uint8 currentType = ENEMY_CLARENCE;
+Uint8 editor = 0;
 
 void mouse_initialize()
 {
@@ -13,6 +14,8 @@ void mouse_initialize()
 	mouse->alive = 1;
 	mouse->bounds = rect(0, 0, 1, 1);
 	mouse->frameNumber = 0;
+	mouse->sprite = sprite_load("images/test_mouse.png", vect2d_new(16, 16), 16, 48);
+	SDL_ShowCursor(SDL_DISABLE);
 }
 
 void mouse_update()
@@ -37,10 +40,18 @@ void mouse_update()
 	SDL_PollEvent(&click_event);
 	if(click_event.type == SDL_MOUSEBUTTONDOWN)
 	{
-		actor = actor_new(mouse->position, currentType);
+		mouse->clicked = 1;
+		if(editor && mouse->position.y < HUD_HEIGHT)
+		{
+			actor = actor_new(mouse->position, currentType);
+		}
+	}
+	else
+	{
+		mouse->clicked = 0;
 	}
 
-	/*if(mouse->frameNumber < mouse->sprite->frames)
+	if(mouse->frameNumber < mouse->sprite->fpl)
 	{
 		mouse->frameNumber++;
 	}
@@ -49,7 +60,7 @@ void mouse_update()
 		mouse->frameNumber = 0;
 	}
 	
-	mouse_draw();*/
+	mouse_draw();
 }
 
 void mouse_free()
@@ -103,4 +114,14 @@ void mouse_type_previous()
 	{
 		currentType = POWER_UP_BOMB;
 	}
+}
+
+void mouse_editor_on()
+{
+	editor = 1;
+}
+
+void mouse_editor_off()
+{
+	editor = 0;
 }

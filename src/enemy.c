@@ -41,7 +41,7 @@ Entity *enemy_load(int type, Entity *enemy)
 	char *fire2_file;
 	char *death_file;
 	char *moving_file;
-	int channel = FX_Enemy;
+	int channel = FX_ENEMY;
 
 	enemy_config_file = fopen(ENEMY_CONFIG,"r");
 	if(!enemy_config_file)

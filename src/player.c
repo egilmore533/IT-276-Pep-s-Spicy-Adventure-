@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
+#include "mouse.h"
 #include "player.h"
 #include "weapon.h"
 #include "camera.h"
@@ -45,7 +46,7 @@ Entity *player_load()
 	char *fire2_file;
 	char *death_file;
 	char *moving_file;
-	int channel = FX_Enemy;
+	int channel = FX_PLAYER;
 
 	if(!player_saved_load)
 	{
@@ -132,6 +133,7 @@ Entity *player_load()
 
 void player_think(Entity *player)
 {
+	Mouse *mouse = mouse_get();
 	static Uint32 full_charge;
 	const Uint8 *keys;
 	SDL_Event click_event;
@@ -258,10 +260,6 @@ void player_update(Entity *player)
 
 	//movement input 
 	keys = SDL_GetKeyboardState(NULL);
-	if(keys[SDL_SCANCODE_Q])
-	{
-		player_add_bomb();
-	}
 	if(keys[SDL_SCANCODE_A])
 	{
 		if(!(player->position.x <= player->owner->position.x))

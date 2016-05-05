@@ -35,4 +35,6 @@ char *files_get_level(int num);
 //backgrounds
 #define SUNNY_PEPS_CONFIG				"def/backgrounds/sunny_peps_config.txt"
 
+#define ACTOR_CONFIG					"def/entities/actor_config.txt"
+
 #endif

@@ -30,9 +30,7 @@ void audio_music_free(Music **music)
 	target->used--;
 
 	if(target->refCount == 0)
-	{
-		strcpy(target->filename,"\0");
-		
+	{		
 		if(target->music != NULL)
 		{
 			Mix_FreeMusic(target->music); 

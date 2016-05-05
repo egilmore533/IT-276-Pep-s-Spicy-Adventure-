@@ -1,0 +1,101 @@
+{"actor_config": {
+	"melt": {
+		"sprite": {
+			"file": "images/enemies/melt.png",
+			"bounds": "128 128",
+			"frame": 0,
+			"fpl": 1,
+			"frames": 1
+		}
+	},
+	"celery_stalker": {
+		"sprite": {
+			"file": "images/enemies/celery_stalker.png",
+			"bounds": "128 128",
+			"frame": 0,
+			"fpl": 1,
+			"frames": 1
+		}
+	},
+	"clarence": {
+		"sprite": {
+			"file": "images/enemies/clarence.png",
+			"bounds": "128 128",
+			"frame": 0,
+			"fpl": 1,
+			"frames": 1
+		}
+	},
+	"milk_tank": {
+		"sprite": {
+			"file": "images/enemies/milk_tank.png",
+			"bounds": "128 128",
+			"frame": 0,
+			"fpl": 1,
+			"frames": 1
+		}
+	},
+	"professor_slice": {
+		"sprite": {
+			"file": "images/enemies/professor_slice.png",
+			"bounds": "128 128",
+			"frame": 0,
+			"fpl": 1,
+			"frames": 1
+		}
+	},
+	"power_up_goo_shot": {
+		"sprite": {
+			"file": "images/power_ups/goo_shot.png",
+			"bounds": "32 32",
+			"frame": 0,
+			"fpl": 1,
+			"frames": 1
+		}
+	},
+	"power_up_shield": {
+		"sprite": {
+			"file": "images/power_ups/heat_shield.png",
+			"bounds": "32 32",
+			"frame": 0,
+			"fpl": 1,
+			"frames": 1
+		}
+	},
+	"power_up_spread_shot": {
+		"sprite": {
+			"file": "images/power_ups/spread_pickup.png",
+			"bounds": "32 32",
+			"frame": 0,
+			"fpl": 1,
+			"frames": 1
+		}
+	},
+	"power_up_double_tap": {
+		"sprite": {
+			"file": "images/power_ups/double_tap.png",
+			"bounds": "32 32",
+			"frame": 0,
+			"fpl": 1,
+			"frames": 1
+		}
+	},
+	"power_up_extra_life": {
+		"sprite": {
+			"file": "images/power_ups/life_pickup.png",
+			"bounds": "32 32",
+			"frame": 0,
+			"fpl": 1,
+			"frames": 1
+		}
+	},
+	"power_up_extra_bomb": {
+		"sprite": {
+			"file": "images/power_ups/bomb_pickup.png",
+			"bounds": "32 32",
+			"frame": 0,
+			"fpl": 1,
+			"frames": 1
+		}
+	}
+}}	

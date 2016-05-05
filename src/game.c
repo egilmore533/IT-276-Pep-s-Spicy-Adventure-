@@ -10,6 +10,9 @@
 #include "audio.h"
 #include "sprite.h"
 
+#include "actor.h"
+#include "mouse.h"
+
 #include "hud.h"
 #include "button.h"
 #include "background.h"
@@ -95,6 +98,8 @@ int main(int argc, char *argv[])
 void clean_up_all()
 {
 	/* any other cleanup functions can be added here FILO order*/
+	hud_free();
+	button_close_system();
 	background_close_system();
 	entity_close_system();
 	sprite_close_system();
@@ -123,7 +128,9 @@ void initialize_all_systems()
 
 	background_initialize_system(8);
 
-	button_initialize_system(10);
+	button_initialize_system(20);
+
+	actor_initialize_system(100);
 
 }
 
@@ -203,9 +210,10 @@ void arcade_mode()
 			back = 0;
 		}
 	}while(!done);
+	hud_free();
 	if(win)
 	{
-	
+		
 	}
 	else
 	{
@@ -215,7 +223,41 @@ void arcade_mode()
 
 void editor_mode()
 {
+	const Uint8 *keys = NULL;
+	SDL_Renderer *the_renderer;
+	int done = 0;
+	mouse_initialize();
+	hud_editor_initialize();
+	the_renderer = graphics_get_renderer();
+	do
+	{
+		SDL_RenderClear(the_renderer);
 
+		actor_draw_all();
+
+		hud_editor_draw();
+
+		mouse_update();
+
+		mouse_draw();
+
+		graphics_next_frame();
+		SDL_PumpEvents();
+
+		keys = SDL_GetKeyboardState(NULL);
+		if(keys[SDL_SCANCODE_ESCAPE])
+		{
+			back_question();
+			if(back == 1)
+			{
+				done = 1;
+			}
+			back = 0;
+		}
+	}while(!done);
+	hud_editor_free();
+	mouse_free();
+	actor_empty_list();
 }
 
 
@@ -226,7 +268,10 @@ void main_menu()
 	int done = 0;
 	Button *arcadeButton = NULL;
 	Button *controlButton = NULL;
+	Button *editorButton = NULL;
 	Sprite *sprite = NULL;
+
+	camera_load(0);
 
 	//init main menu
 	//loop until player selects next game mode
@@ -235,6 +280,9 @@ void main_menu()
 
 	controlButton = button_load_controls(vect2d_new(200, 400));
 	controlButton->click = &control_screen;
+
+	editorButton = button_load_editor_mode(vect2d_new(200, 600));
+	editorButton->click = &editor_mode;
 
 	the_renderer = graphics_get_renderer();
 	do
@@ -258,6 +306,7 @@ void main_menu()
 			back = 0;
 		}
 	}while(!done);
+	button_empty_list();
 }
 
 void purge_systems()

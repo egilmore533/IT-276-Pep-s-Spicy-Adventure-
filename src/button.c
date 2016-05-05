@@ -96,20 +96,20 @@ void button_free(Button **button)
 	self = *button;
 	self->alive--;
 
-	/*if(self->buttonSprite != NULL)
+	if(self->buttonSprite != NULL)
 	{
 		sprite_free(&self->buttonSprite);
 	}
 	if(self->label != NULL)
 	{
 		sprite_free(&self->label);
-	}*/
+	}
 	
 	numButtons--;
 	*button = NULL;
 }
 
-Button *button_new()
+Button *button_new(Vect2d position)
 {
 	int i;
 	/*makesure we have the room for a new sprite*/
@@ -128,6 +128,7 @@ Button *button_new()
 		buttonList[i].alive = 1;
 		buttonList[i].draw = &button_draw;
 		buttonList[i].update = &button_update;
+		buttonList[i].position = position;
 		numButtons++;
 		return &buttonList[i];
 	}
@@ -243,23 +244,31 @@ Button *button_load_arcade_mode(Vect2d position)
 {
 	Button *button = NULL;
 	
-	button = button_new(); 
+	button = button_new(position); 
 	button->buttonSprite = sprite_load("images/button.png", vect2d_new(500, 100), 1, 2);
 	button->label = sprite_load_text(button_font, "Arcade Mode", color);
-	button->position = position;
 	return button;
 	
 	//set the click event in whatever is creating the button, so main menu creates a button then says it will perfrom the arcade mode func or will go to the controls
+}
+
+Button *button_load_editor_mode(Vect2d position)
+{
+	Button *button = NULL;
+	
+	button = button_new(position); 
+	button->buttonSprite = sprite_load("images/button.png", vect2d_new(500, 100), 1, 2);
+	button->label = sprite_load_text(button_font, "Editor Mode", color);
+	return button;
 }
 
 Button *button_load_yes_back(Vect2d position)
 {
 	Button *button = NULL;
 	
-	button = button_new(); 
+	button = button_new(position); 
 	button->buttonSprite = sprite_load("images/tiny_button.png", vect2d_new(250, 50), 1, 2);
 	button->label = sprite_load_text(button_font, "Yes", color);
-	button->position = position;
 	return button;
 }
 
@@ -267,10 +276,9 @@ Button *button_load_no_back(Vect2d position)
 {
 	Button *button = NULL;
 	
-	button = button_new(); 
+	button = button_new(position); 
 	button->buttonSprite = sprite_load("images/tiny_button.png", vect2d_new(250, 50), 1, 2);
 	button->label = sprite_load_text(button_font, "No", color);
-	button->position = position;
 	return button;
 }
 
@@ -278,11 +286,29 @@ Button *button_load_controls(Vect2d position)
 {
 	Button *button = NULL;
 	
-	button = button_new(); 
+	button = button_new(position); 
 	button->buttonSprite = sprite_load("images/button.png", vect2d_new(500, 100), 1, 2);
 	button->label = sprite_load_text(button_font, "Controls", color);
-	button->position = position;
 	return button;
 }
 
+Button *button_load_next(Vect2d position)
+{
+	Button *button = NULL;
+	
+	button = button_new(position); 
+	button->buttonSprite = sprite_load("images/tiny_button.png", vect2d_new(250, 50), 1, 2);
+	button->label = sprite_load_text(button_font, "Next", color);
+	return button;
+}
+
+Button *button_load_previous(Vect2d position)
+{
+	Button *button = NULL;
+	
+	button = button_new(position); 
+	button->buttonSprite = sprite_load("images/tiny_button.png", vect2d_new(250, 50), 1, 2);
+	button->label = sprite_load_text(button_font, "Prev", color);
+	return button;
+}
 

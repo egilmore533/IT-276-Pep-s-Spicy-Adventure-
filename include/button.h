@@ -29,7 +29,7 @@ void button_initialize_system(int buttonsMax);
 
 void button_free(Button **button);
 
-Button *button_new();
+Button *button_new(Vect2d position);
 
 void button_draw(Button *button);
 
@@ -45,10 +45,16 @@ void button_draw_all();
 
 Button *button_load_arcade_mode(Vect2d position);
 
+Button *button_load_editor_mode(Vect2d position);
+
 Button *button_load_yes_back(Vect2d position);
 
 Button *button_load_no_back(Vect2d position);
 
 Button *button_load_controls(Vect2d position);
+
+Button *button_load_next(Vect2d position);
+
+Button *button_load_previous(Vect2d position);
 
 #endif

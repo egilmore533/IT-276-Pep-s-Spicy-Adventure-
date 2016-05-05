@@ -74,7 +74,7 @@ void background_initialize_system(int maxBackground)
 	backgroundList = (Background *) malloc (sizeof (Background) * maxBackground);
 	if(!backgroundList)
 	{
-		slog("failed to initialize entityList");
+		slog("failed to initialize backgroundList");
 		return;
 	}
 	memset(backgroundList, 0, sizeof (Background) * maxBackground);

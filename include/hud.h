@@ -43,4 +43,10 @@ void hud_free();
  */
 HUD *hud_get();
 
+void hud_editor_initialize();
+
+void hud_editor_draw();
+
+void hud_editor_free();
+
 #endif

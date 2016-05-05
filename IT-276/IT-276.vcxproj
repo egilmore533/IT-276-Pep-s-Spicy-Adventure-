@@ -76,6 +76,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\include\actor.h" />
     <ClInclude Include="..\include\audio.h" />
     <ClInclude Include="..\include\background.h" />
     <ClInclude Include="..\include\button.h" />
@@ -87,6 +88,7 @@
     <ClInclude Include="..\include\graphics.h" />
     <ClInclude Include="..\include\hud.h" />
     <ClInclude Include="..\include\level.h" />
+    <ClInclude Include="..\include\mouse.h" />
     <ClInclude Include="..\include\particle.h" />
     <ClInclude Include="..\include\player.h" />
     <ClInclude Include="..\include\power_up.h" />
@@ -96,6 +98,7 @@
     <ClInclude Include="..\include\weapon.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\actor.c" />
     <ClCompile Include="..\src\audio.c" />
     <ClCompile Include="..\src\background.c" />
     <ClCompile Include="..\src\button.c" />
@@ -108,6 +111,7 @@
     <ClCompile Include="..\src\graphics.c" />
     <ClCompile Include="..\src\hud.c" />
     <ClCompile Include="..\src\level.c" />
+    <ClCompile Include="..\src\mouse.c" />
     <ClCompile Include="..\src\particle.c" />
     <ClCompile Include="..\src\player.c" />
     <ClCompile Include="..\src\power_up.c" />

@@ -29,7 +29,6 @@ void sprite_free(Sprite **sprite)
 	target->refCount--;
 	if(target->refCount == 0)
 	{
-		strcpy(target->filename,"\0");
 		
 		if(target->image != NULL)
 		{
@@ -316,7 +315,7 @@ Sprite* sprite_load_text(TTF_Font *font, char *text, SDL_Color color)
 
 	/*then copy the given information to the sprite*/
 	sprite->image = textTexture;
-	sprite->filename = "";
+	sprite->filename = text;
 	sprite->frameSize.x = textSurface->w;
 	sprite->frameSize.y = textSurface->h;
 	sprite->refCount++;

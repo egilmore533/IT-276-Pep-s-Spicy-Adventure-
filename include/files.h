@@ -12,6 +12,8 @@
 #define LEVEL_2							"def/levels/melt_level.txt"
 #define LEVEL_3							"def/levels/clarence_level.txt"
 
+#define CHALLENGE_LEVEL					"def/levels/challenge_level.txt"
+
 /**
  *	@brief	given a level number select and return the appropriate level path
  *	@param	num		the level number

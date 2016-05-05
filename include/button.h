@@ -96,4 +96,6 @@ Button *button_load_next(Vect2d position);
 
 Button *button_load_previous(Vect2d position);
 
+Button *button_load_challenge_mode(Vect2d position);
+
 #endif

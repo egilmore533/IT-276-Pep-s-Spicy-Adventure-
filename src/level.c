@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "files.h"
+
+#include "actor.h"
 #include "background.h"
 #include "level.h"
 #include "audio.h"
@@ -285,6 +288,238 @@ Level *level_load(char *level_def_file)
 	newLevel->end = cJSON_GetObjectItem(obj, "end")->valueint;
 	newLevel->level_def_file = level_def_file;
 	return newLevel;
+}
+
+void level_save()
+{
+	FILE *saved_level_config;
+	cJSON *json, *root, 
+		*obj,  *buf;
+	char *data;
+	char temp[100];
+	int i;
+	int number;
+	Vect2d tempPosition;
+	char positionString[100];
+	Uint8 currentType = ENEMY_CLARENCE;
+	int maxPosition = 0;
+
+	json = cJSON_CreateObject();
+	cJSON_AddItemToObject(json, "level", root=cJSON_CreateObject());
+
+	//DEFAULT the camera will start at this position
+	cJSON_AddItemToObject(root, "camera", obj = cJSON_CreateObject());
+	sprintf(temp, "%f %f", 0, 0);
+	cJSON_AddStringToObject(obj, "position", temp);
+	
+	//DEFAULT music for the level
+	cJSON_AddItemToObject(root, "music", obj = cJSON_CreateObject());
+	cJSON_AddStringToObject(obj, "file", "music/HotSalsa.ogg");
+	cJSON_AddNumberToObject(obj, "loop", -1);
+
+	//DEFAULT background pak to load for each level
+	cJSON_AddItemToObject(root, "background", obj = cJSON_CreateObject());
+	cJSON_AddStringToObject(obj, "file", "def/backgrounds/sunny_peps_config.txt");
+
+	//DEFAULT the player will start at this position
+	cJSON_AddItemToObject(root, "player", obj = cJSON_CreateObject());
+	sprintf(temp, "%f %f", 0.0f, 400.0f);
+	cJSON_AddStringToObject(obj, "position", temp);
+
+	cJSON_AddItemToObject(root, "clarences", obj = cJSON_CreateObject());
+	number =  actor_get_number_of_type(currentType);
+	cJSON_AddNumberToObject(obj, "number", number);
+	for(i = 0; i < number; i++)
+	{
+		tempPosition = actor_get_all_positions_of_type(currentType);
+		if(tempPosition.x > maxPosition)
+		{
+			maxPosition = tempPosition.x;
+		}
+		sprintf(temp, "%f %f", tempPosition.x, tempPosition.y);
+		sprintf(positionString, "position%d", i);
+		cJSON_AddStringToObject(obj, positionString, temp);
+	}
+	currentType++;
+
+	cJSON_AddItemToObject(root, "melts", obj = cJSON_CreateObject());
+	number =  actor_get_number_of_type(currentType);
+	cJSON_AddNumberToObject(obj, "number", number);
+	for(i = 0; i < number; i++)
+	{
+		tempPosition = actor_get_all_positions_of_type(currentType);
+		if(tempPosition.x > maxPosition)
+		{
+			maxPosition = tempPosition.x;
+		}
+		sprintf(temp, "%f %f", tempPosition.x, tempPosition.y);
+		sprintf(positionString, "position%d", i);
+		cJSON_AddStringToObject(obj, positionString, temp);
+	}
+	currentType++;
+
+	cJSON_AddItemToObject(root, "milk_tanks", obj = cJSON_CreateObject());
+	number =  actor_get_number_of_type(currentType);
+	cJSON_AddNumberToObject(obj, "number", number);
+	for(i = 0; i < number; i++)
+	{
+		tempPosition = actor_get_all_positions_of_type(currentType);
+		if(tempPosition.x > maxPosition)
+		{
+			maxPosition = tempPosition.x;
+		}
+		sprintf(temp, "%f %f", tempPosition.x, tempPosition.y);
+		sprintf(positionString, "position%d", i);
+		cJSON_AddStringToObject(obj, positionString, temp);
+	}
+	currentType++;
+
+	cJSON_AddItemToObject(root, "celery_stalkers", obj = cJSON_CreateObject());
+	number =  actor_get_number_of_type(currentType);
+	cJSON_AddNumberToObject(obj, "number", number);
+	for(i = 0; i < number; i++)
+	{
+		tempPosition = actor_get_all_positions_of_type(currentType);
+		if(tempPosition.x > maxPosition)
+		{
+			maxPosition = tempPosition.x;
+		}
+		sprintf(temp, "%f %f", tempPosition.x, tempPosition.y);
+		sprintf(positionString, "position%d", i);
+		cJSON_AddStringToObject(obj, positionString, temp);
+	}
+	currentType++;
+
+	cJSON_AddItemToObject(root, "professor_slices", obj = cJSON_CreateObject());
+	number =  actor_get_number_of_type(currentType);
+	cJSON_AddNumberToObject(obj, "number", number);
+	for(i = 0; i < number; i++)
+	{
+		tempPosition = actor_get_all_positions_of_type(currentType);
+		if(tempPosition.x > maxPosition)
+		{
+			maxPosition = tempPosition.x;
+		}
+		sprintf(temp, "%f %f", tempPosition.x, tempPosition.y);
+		sprintf(positionString, "position%d", i);
+		cJSON_AddStringToObject(obj, positionString, temp);
+	}
+	currentType++;
+
+	cJSON_AddItemToObject(root, "goo_shots", obj = cJSON_CreateObject());
+	number =  actor_get_number_of_type(currentType);
+	cJSON_AddNumberToObject(obj, "number", number);
+	for(i = 0; i < number; i++)
+	{
+		tempPosition = actor_get_all_positions_of_type(currentType);
+		if(tempPosition.x > maxPosition)
+		{
+			maxPosition = tempPosition.x;
+		}
+		sprintf(temp, "%f %f", tempPosition.x, tempPosition.y);
+		sprintf(positionString, "position%d", i);
+		cJSON_AddStringToObject(obj, positionString, temp);
+	}
+	currentType++;
+
+	cJSON_AddItemToObject(root, "heat_shields", obj = cJSON_CreateObject());
+	number =  actor_get_number_of_type(currentType);
+	cJSON_AddNumberToObject(obj, "number", number);
+	for(i = 0; i < number; i++)
+	{
+		tempPosition = actor_get_all_positions_of_type(currentType);
+		if(tempPosition.x > maxPosition)
+		{
+			maxPosition = tempPosition.x;
+		}
+		sprintf(temp, "%f %f", tempPosition.x, tempPosition.y);
+		sprintf(positionString, "position%d", i);
+		cJSON_AddStringToObject(obj, positionString, temp);
+	}
+	currentType++;
+
+	cJSON_AddItemToObject(root, "spread_shots", obj = cJSON_CreateObject());
+	number =  actor_get_number_of_type(currentType);
+	cJSON_AddNumberToObject(obj, "number", number);
+	for(i = 0; i < number; i++)
+	{
+		tempPosition = actor_get_all_positions_of_type(currentType);
+		if(tempPosition.x > maxPosition)
+		{
+			maxPosition = tempPosition.x;
+		}
+		sprintf(temp, "%f %f", tempPosition.x, tempPosition.y);
+		sprintf(positionString, "position%d", i);
+		cJSON_AddStringToObject(obj, positionString, temp);
+	}
+	currentType++;
+
+	cJSON_AddItemToObject(root, "double_taps", obj = cJSON_CreateObject());
+	number =  actor_get_number_of_type(currentType);
+	cJSON_AddNumberToObject(obj, "number", number);
+	for(i = 0; i < number; i++)
+	{
+		tempPosition = actor_get_all_positions_of_type(currentType);
+		if(tempPosition.x > maxPosition)
+		{
+			maxPosition = tempPosition.x;
+		}
+		sprintf(temp, "%f %f", tempPosition.x, tempPosition.y);
+		sprintf(positionString, "position%d", i);
+		cJSON_AddStringToObject(obj, positionString, temp);
+	}
+	currentType++;
+
+	cJSON_AddItemToObject(root, "extra_lifes", obj = cJSON_CreateObject());
+	number =  actor_get_number_of_type(currentType);
+	cJSON_AddNumberToObject(obj, "number", number);
+	for(i = 0; i < number; i++)
+	{
+		tempPosition = actor_get_all_positions_of_type(currentType);
+		if(tempPosition.x > maxPosition)
+		{
+			maxPosition = tempPosition.x;
+		}
+		sprintf(temp, "%f %f", tempPosition.x, tempPosition.y);
+		sprintf(positionString, "position%d", i);
+		cJSON_AddStringToObject(obj, positionString, temp);
+	}
+	currentType++;
+
+	cJSON_AddItemToObject(root, "bomb_pickups", obj = cJSON_CreateObject());
+	number =  actor_get_number_of_type(currentType);
+	cJSON_AddNumberToObject(obj, "number", number);
+	for(i = 0; i < number; i++)
+	{
+		tempPosition = actor_get_all_positions_of_type(currentType);
+		if(tempPosition.x > maxPosition)
+		{
+			maxPosition = tempPosition.x;
+		}
+		sprintf(temp, "%f %f", tempPosition.x, tempPosition.y);
+		sprintf(positionString, "position%d", i);
+		cJSON_AddStringToObject(obj, positionString, temp);
+	}
+	currentType++;
+
+	cJSON_AddItemToObject(root, "info", obj = cJSON_CreateObject());
+	cJSON_AddNumberToObject(obj, "end", maxPosition + 600);
+
+	data = cJSON_Print(json);
+
+	cJSON_Delete(json);
+
+	saved_level_config = fopen(CHALLENGE_LEVEL, "w");
+
+	if (saved_level_config == NULL) {
+	  fprintf(stderr, "Can't open output file %s!\n",
+			  CHALLENGE_LEVEL);
+	  return;
+	}
+
+	fprintf(saved_level_config, data);
+
+	fclose(saved_level_config);
 }
 
 Uint8 level_end_reached(Level *level)

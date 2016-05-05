@@ -41,6 +41,8 @@ void level_free(Level **level);
  */
 Level *level_load(char *level_def_file);
 
+void level_save();
+
 /**
  * @brief checks if the player is past the end flag for the level
  * @return 1 if player past the end, else 0

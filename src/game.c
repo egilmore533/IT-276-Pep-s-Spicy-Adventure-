@@ -41,6 +41,7 @@ void editor_mode();
 void back_question();
 void yes_back();
 void no_back();
+void challenge_mode();
 
 /*this program must be run from the directory directly below images and src, not from within src*/
 /*notice the default arguments for main.  SDL expects main to look like that, so don't change it*/
@@ -124,7 +125,7 @@ void initialize_all_systems()
 
 	sprite_initialize_system(MAX_SPRITES);
 	particle_initialize_system(2000);
-	entity_initialize_system(200);
+	entity_initialize_system(1024);
 
 	background_initialize_system(8);
 
@@ -268,6 +269,7 @@ void editor_mode()
 			mouse_editor_on();
 		}
 	}while(!done);
+	level_save();
 	mouse_editor_off();
 	camera->free(&camera);
 	hud_editor_free();
@@ -283,6 +285,7 @@ void main_menu()
 	Button *arcadeButton = NULL;
 	Button *controlButton = NULL;
 	Button *editorButton = NULL;
+	Button *challengeMode = NULL;
 	Sprite *sprite = NULL;
 
 
@@ -290,14 +293,17 @@ void main_menu()
 
 	//init main menu
 	//loop until player selects next game mode
-	arcadeButton = button_load_arcade_mode(vect2d_new(200, 200));
+	arcadeButton = button_load_arcade_mode(vect2d_new(100, 400));
 	arcadeButton->click = &arcade_mode;
 
-	controlButton = button_load_controls(vect2d_new(200, 400));
+	controlButton = button_load_controls(vect2d_new(700, 400));
 	controlButton->click = &control_screen;
 
-	editorButton = button_load_editor_mode(vect2d_new(200, 600));
+	editorButton = button_load_editor_mode(vect2d_new(100, 600));
 	editorButton->click = &editor_mode;
+
+	challengeMode = button_load_challenge_mode(vect2d_new(700, 600));
+	challengeMode->click = &challenge_mode;
 
 	the_renderer = graphics_get_renderer();
 	do
@@ -365,6 +371,78 @@ void control_screen()
 		}
 
 	}while(!done);
+}
+
+void challenge_mode()
+{
+	int win = 0;
+	int done;
+	const Uint8 *keys;
+	SDL_Renderer *the_renderer;
+	Uint8 level_num = 1;
+	Level *level = NULL;
+	char *level_path = NULL;
+
+	SDL_ShowCursor(SDL_ENABLE);
+	purge_systems();
+	the_renderer = graphics_get_renderer();
+	level_path = CHALLENGE_LEVEL;
+	level = level_load(level_path);
+	hud_initialize();
+	done = 0;
+	do
+	{
+		SDL_RenderClear(the_renderer);
+	
+		if(level->player->state == GAME_OVER_STATE)
+		{
+			purge_systems();
+			level_free(&level);
+			done = 1;
+			continue;
+		}
+
+		if(level_end_reached(level))
+		{
+			purge_systems();
+			level_free(&level);
+			win = 1;//victory
+			done = 1;
+			continue;
+		}
+
+		background_update_all();
+		background_draw_all();
+
+		entity_think_all();
+		entity_update_all();
+		entity_draw_all();
+
+		particle_think_all();
+		particle_check_all_dead();
+		particle_draw_all();
+
+		hud_draw();
+		
+		graphics_next_frame();
+		SDL_PumpEvents();
+
+		keys = SDL_GetKeyboardState(NULL);
+		if(keys[SDL_SCANCODE_ESCAPE])
+		{
+			SDL_ShowCursor(SDL_DISABLE);
+			back_question();
+			if(back == 1)
+			{
+				purge_systems();
+				done = 1;
+			}
+			back = 0;
+			SDL_ShowCursor(SDL_ENABLE);
+		}
+	}while(!done);
+	hud_free();
+	SDL_ShowCursor(SDL_DISABLE);
 }
 
 

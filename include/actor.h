@@ -41,5 +41,8 @@ void actor_update_all();
 
 Sprite *actor_load_sprite(Uint8 type);
 
+Uint8 actor_get_number_of_type(Uint8 type);
+
+Vect2d actor_get_all_positions_of_type(Uint8 type);
 
 #endif

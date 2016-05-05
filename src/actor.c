@@ -119,6 +119,7 @@ Actor *actor_new(Vect2d position, Uint8 type)
 		}
 		memset(&actorList[i],0,sizeof(Actor));
 		actorList[i].alive = 1;
+		actorList[i].type = type;
 		actorList[i].position = position;
 
 		actorList[i].sprite = actor_load_sprite(type);
@@ -253,4 +254,57 @@ Sprite *actor_load_sprite(Uint8 type)
 
 	sprite = sprite_load(filepath, frameSize, fpl, frames);
 	return sprite;
+}
+
+Uint8 actor_get_number_of_type(Uint8 type)
+{
+	int i;
+	Uint8 totalOfType = 0;
+	if(!actorList)
+	{
+		return;
+	}
+	for(i = 0; i < actorMax; i++)
+	{
+		if(!actorList[i].alive)
+		{
+			continue;
+		}
+		if(actorList[i].type != type)
+		{
+			continue;
+		}
+		totalOfType++;
+	}
+	return totalOfType;
+}
+
+Vect2d actor_get_all_positions_of_type(Uint8 type)
+{
+	static int i = 0;
+	static Uint8 currentType = 0;
+	Vect2d pos = vect2d_new(0, 0);
+
+	if(type != currentType)
+	{
+		i = 0;
+		currentType = type;
+	}
+	while(i < actorMax)
+	{
+		if(!actorList[i].alive)
+		{
+			i++;
+			continue;
+		}
+		if(actorList[i].type != currentType)
+		{
+			i++;
+			continue;
+		}
+		pos = actorList[i].position;
+		i++;
+		break;
+	}
+	return pos;
 }

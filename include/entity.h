@@ -85,6 +85,7 @@ typedef struct Entity_s
 	Uint8 alive;													/**< flag to know if the entity is currently active */
 	Uint32 id;														/**< id of the entity to find it */
 
+	Uint32 points;													/**< the reward the player recieves after killing this entity */
 	Vect2d position;												/**< x and y coordinates of the entity */
 	Vect2d velocity;												/**< x and y velocities that the entity is moving */
 	Vect2d maxVelocity;												/**< the entities maximum x and y velocities */

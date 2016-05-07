@@ -14,6 +14,9 @@
 
 #define CHALLENGE_LEVEL					"def/levels/challenge_level.txt"
 
+#define ARCADE_HIGHSCORES				"def/highscores/arcade_highscores.txt"
+#define CHALLENGE_HIGHSCORES			"def/highscores/challenge_highscores.txt"
+
 /**
  *	@brief	given a level number select and return the appropriate level path
  *	@param	num		the level number

@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 #include "hud.h"
 #include "SDL_ttf.h"
 #include "player.h"
@@ -10,6 +13,17 @@
 HUD *hud = NULL;
 TTF_Font	*hudFont = NULL;
 SDL_Color	hudFontColor = {0, 0, 0};
+
+TTF_Font	*hudGradeFont = NULL;
+SDL_Color	hudGradeColor_F = {247, 55, 8};
+SDL_Color	hudGradeColor_D = {247, 132, 26};
+SDL_Color	hudGradeColor_C = {0, 247, 49};
+SDL_Color	hudGradeColor_B = {0, 126, 247};
+SDL_Color	hudGradeColor_A = {239, 247, 0};
+SDL_Color	hudGradeColor_S = {247, 0, 167};
+SDL_Color	hudGradeColor_SS = {247, 231, 0};
+SDL_Color	hudGradeColor_SSS = {247, 247, 247};
+
 Button *nextButton = NULL;
 Button *prevButton = NULL;
 
@@ -21,7 +35,12 @@ Button *prevButton = NULL;
 
 void hud_initialize()
 {
+	char temp[11];
+	char *tempGrade;
+	Uint8 multiplier;
+	static SDL_Color gradeColor;
 	hudFont = TTF_OpenFont("fonts/HussarPrintASpicyAdventure.ttf", 16);
+	hudGradeFont = TTF_OpenFont("fonts/HussarPrintASpicyAdventure.ttf", 40);
 	
 	hud = (HUD *)malloc(sizeof(HUD));
 	memset(hud, 0, sizeof (HUD));
@@ -35,10 +54,57 @@ void hud_initialize()
 	
 	hud->livesLabel = sprite_load_text(hudFont, "Lives", hudFontColor);
 	hud->bombsLabel = sprite_load_text(hudFont, "Bombs", hudFontColor);
+
+	sprintf(temp, "%d", hud->player->points);
+	hud->pointsLabel = sprite_load_text(hudFont, temp, hudFontColor);
+
+	multiplier = get_multiplier();
+	switch(multiplier)
+	{
+	case 1: 
+		tempGrade = "F";
+		gradeColor = hudGradeColor_F;
+		break;
+	case 2: 
+		tempGrade = "D";
+		gradeColor = hudGradeColor_D;
+		break;
+	case 3:
+		tempGrade = "C";
+		gradeColor = hudGradeColor_C;
+		break;
+	case 4:
+		tempGrade = "B";
+		gradeColor = hudGradeColor_B;
+		break;
+	case 5:
+		tempGrade = "A";
+		gradeColor = hudGradeColor_A;
+		break;
+	case 6:
+		tempGrade = "S";
+		gradeColor = hudGradeColor_S;
+		break;
+	case 7:
+		tempGrade = "SS";
+		gradeColor = hudGradeColor_SS;
+		break;
+	case 8:
+		tempGrade = "SSS";
+		gradeColor = hudGradeColor_SSS;
+		break;
+	}
+	hud->pointsMultiplierLabel = sprite_load_text(hudGradeFont, tempGrade, gradeColor);
 }
 
 void hud_draw()
 {
+	static Uint32 points = 0;
+	static Uint8 multiplier = 1;
+	char temp[11];
+	char *tempGrade = "F";
+	static Uint8 multiplierOld;
+	static SDL_Color gradeColor;
 	int i;
 	Vect2d drawPos;
 	float hud_height = hud->camera->position.y + HUD_HEIGHT;
@@ -69,6 +135,61 @@ void hud_draw()
 		drawPos.x = hud->camera->position.x + 400 + (11 * i) + hud->bombs->frameSize.x * i;
 		sprite_draw(hud->bombs, 0, drawPos);
 	}
+
+	drawPos.x = hud->camera->position.x + 900;
+	if(points != hud->player->points)
+	{
+		points = hud->player->points;
+		sprintf(temp, "%d", points);
+		sprite_free(&hud->pointsLabel);
+		hud->pointsLabel = sprite_load_text(hudFont, temp, hudFontColor);
+	}
+	sprite_text_draw(hud->pointsLabel, drawPos);
+
+	if(multiplierOld != get_multiplier())
+	{
+		multiplierOld = get_multiplier();
+		switch(multiplierOld)
+		{
+		case 1: 
+			tempGrade = "F";
+			gradeColor = hudGradeColor_F;
+			break;
+		case 2: 
+			tempGrade = "D";
+			gradeColor = hudGradeColor_D;
+			break;
+		case 3:
+			tempGrade = "C";
+			gradeColor = hudGradeColor_C;
+			break;
+		case 4:
+			tempGrade = "B";
+			gradeColor = hudGradeColor_B;
+			break;
+		case 5:
+			tempGrade = "A";
+			gradeColor = hudGradeColor_A;
+			break;
+		case 6:
+			tempGrade = "S";
+			gradeColor = hudGradeColor_S;
+			break;
+		case 7:
+			tempGrade = "SS";
+			gradeColor = hudGradeColor_SS;
+			break;
+		case 8:
+			tempGrade = "SSS";
+			gradeColor = hudGradeColor_SSS;
+			break;
+		}
+		sprite_free(&hud->pointsMultiplierLabel);
+		hud->pointsMultiplierLabel = sprite_load_text(hudGradeFont, tempGrade, gradeColor);
+	}
+	
+	drawPos.y = hud_height + 50;
+	sprite_text_draw(hud->pointsMultiplierLabel, drawPos);
 }
 
 void hud_free()
@@ -111,13 +232,21 @@ void hud_free()
 		sprite_free(&hud->bombsLabel);
 	}
 
-	if(hud->pointsText)
-	{
-		sprite_free(&hud->pointsText);
-	}
 	if(hud->pointsLabel)
 	{
 		sprite_free(&hud->pointsLabel);
+	}
+	if(hud->pointsMultiplierLabel)
+	{
+		sprite_free(&hud->pointsMultiplierLabel);
+	}
+	if(hudFont)
+	{
+		TTF_CloseFont( hudFont );
+	}
+	if(hudGradeFont)
+	{
+		TTF_CloseFont( hudGradeFont );
 	}
 }
 

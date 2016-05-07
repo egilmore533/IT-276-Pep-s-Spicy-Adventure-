@@ -17,6 +17,15 @@ static Uint32	respawn_moment;
 static Uint32	thinkRateMin = 200;
 static Sprite	*shield = NULL;
 
+static Uint8	multiplier = 0;
+static Uint8	multiplierMax = 0;
+static Uint8	multiplierMin = 0;
+
+static Uint32	mutiplierDegradeTime = 0;
+static Uint32	multiplierDegradeRate = 0;
+static Uint32	multiplierDegradeMin = 0;
+static Uint32	multiplierDegradeMax = 0;
+
 Entity *player_load()
 {
 	//config file stuff
@@ -29,6 +38,7 @@ Entity *player_load()
 
 	//entity info
 	Uint32 thinkRate;
+	Uint32 points;
 	Vect2d vel;
 	int health;
 	int lives, bombs, spreads;
@@ -85,9 +95,16 @@ Entity *player_load()
 	sscanf(cJSON_GetObjectItem(buf, "velMax")->valuestring, "%f %f", &vel.x, &vel.y);
 	health = cJSON_GetObjectItem(buf, "health")->valueint;
 	thinkRate = cJSON_GetObjectItem(buf, "thinkRate")->valueint;
+	points = cJSON_GetObjectItem(buf, "points")->valueint;
 	lives = cJSON_GetObjectItem(buf, "lives")->valueint;
 	bombs = cJSON_GetObjectItem(buf, "bombs")->valueint;
 	spreads = cJSON_GetObjectItem(buf, "spreads")->valueint;
+
+	multiplier = cJSON_GetObjectItem(buf, "multiplier")->valueint;
+	multiplierMax = cJSON_GetObjectItem(buf, "multiplierMax")->valueint;
+	multiplierDegradeRate = cJSON_GetObjectItem(buf, "multiplierDegradeRate")->valueint;
+	multiplierDegradeMin = cJSON_GetObjectItem(buf, "multiplierDegradeMin")->valueint;
+	multiplierDegradeMax = cJSON_GetObjectItem(buf, "multiplierDegradeMax")->valueint;
 
 	buf = cJSON_GetObjectItem(obj, "sprite");
 	filepath = cJSON_GetObjectItem(buf, "file")->valuestring;
@@ -114,6 +131,7 @@ Entity *player_load()
 	player->think = &player_think;
 	player->draw = &sprite_draw;
 
+	player->points = points;
 	player->inventory[LIVES] = lives;
 	player->inventory[BOMBS] = bombs;
 	player->inventory[SPREADS] = spreads;
@@ -207,6 +225,21 @@ void player_update(Entity *player)
 		return;
 	}
 
+	if(get_time() > mutiplierDegradeTime)
+	{
+		multiplier--;
+		if(multiplier < 1)
+		{
+			multiplier = 1;
+		}
+		multiplierDegradeRate += 1000;
+		if(multiplierDegradeRate > multiplierDegradeMax)
+		{
+			multiplierDegradeRate = multiplierDegradeMax;
+		}
+		mutiplierDegradeTime = get_time() + multiplierDegradeRate;
+	}
+
 	
 	// special player states handled here
 	if(player->state == SHIELDED_STATE)
@@ -260,6 +293,10 @@ void player_update(Entity *player)
 
 	//movement input 
 	keys = SDL_GetKeyboardState(NULL);
+	if(keys[SDL_SCANCODE_Q])
+	{
+		player->position.x += 20000;
+	}
 	if(keys[SDL_SCANCODE_A])
 	{
 		if(!(player->position.x <= player->owner->position.x))
@@ -364,6 +401,7 @@ void player_save_info()
 
 	cJSON_AddItemToObject(obj, "info", buf = cJSON_CreateObject());
 	cJSON_AddNumberToObject(buf, "thinkRate", player->thinkRate);
+	cJSON_AddNumberToObject(buf, "points", player->points);
 	cJSON_AddNumberToObject(buf, "health", player->health);
 	memset(&temp[0], 0, sizeof(temp));
 	sprintf(temp, "%f %f", player->maxVelocity.x, player->maxVelocity.y);
@@ -371,6 +409,13 @@ void player_save_info()
 	cJSON_AddNumberToObject(buf, "lives", player->inventory[LIVES]);
 	cJSON_AddNumberToObject(buf, "bombs", player->inventory[BOMBS]);
 	cJSON_AddNumberToObject(buf, "spreads", player->inventory[SPREADS]);
+
+	//if I want to let the multiplier to carry between levels I'd add it here to not be constants
+	cJSON_AddNumberToObject(buf, "multiplier", 1);
+	cJSON_AddNumberToObject(buf, "multiplierMax", 8);
+	cJSON_AddNumberToObject(buf, "multiplierDegradeRate", 8000);
+	cJSON_AddNumberToObject(buf, "multiplierDegradeMin", 1000);
+	cJSON_AddNumberToObject(buf, "multiplierDegradeMax", 8000);
 
 	cJSON_AddItemToObject(obj, "audioPak", buf = cJSON_CreateObject());
 	cJSON_AddStringToObject(buf, "name", player->entitySounds->name);
@@ -424,5 +469,26 @@ void player_saved_load_on()
 void player_saved_load_off()
 {
 	player_saved_load = 0;
+}
+
+void player_reward_points(Uint32 points)
+{
+	player->points += points * multiplier;
+	multiplier++;
+	if(multiplier > 8)
+	{
+		multiplier = 8;
+	}
+	multiplierDegradeRate -= 1000;
+	if(multiplierDegradeRate < multiplierDegradeMin)
+	{
+		multiplierDegradeRate = multiplierDegradeMin;
+	}
+	mutiplierDegradeTime = get_time() + multiplierDegradeRate;
+}
+
+Uint8 get_multiplier()
+{
+	return multiplier;
 }
 

@@ -314,3 +314,14 @@ Button *button_load_challenge_mode(Vect2d position)
 	return button;
 }
 
+Button *button_load_continue(Vect2d position)
+{
+	Button *button = NULL;
+	
+	button = button_new(position); 
+	button->buttonSprite = sprite_load("images/button.png", vect2d_new(500, 100), 1, 2);
+	button->bounds = rect(0, 0, button->buttonSprite->frameSize.x, button->buttonSprite->frameSize.y);
+	button->label = sprite_load_text(button_font, "Continue", color);
+	return button;
+}
+

@@ -29,11 +29,9 @@ void sprite_free(Sprite **sprite)
 	target->refCount--;
 	if(target->refCount == 0)
 	{
-		
 		if(target->image != NULL)
 		{
 			SDL_DestroyTexture(target->image); 
-			memset(target,0,sizeof(Sprite));
 		}
 		spriteNum--;
 	}
@@ -120,6 +118,8 @@ Sprite *sprite_load(char *filename, Vect2d frameSize, int fpl, int frames)
 		slog("Maximum Sprites Reached.");
 		exit(1);
 	}
+
+	memset(sprite,0,sizeof(Sprite));
 
 	/*if its not already in memory, then load it.*/
 	spriteNum++;
@@ -274,7 +274,7 @@ Sprite* sprite_load_text(TTF_Font *font, char *text, SDL_Color color)
 		slog("spriteList uninitialized");
 		return NULL;
 	}
-	/*first search to see if the requested sprite image is alreday loaded*/
+	/*search for empty sprite location*/
 	for(i = 0; i < spriteMax; i++)
 	{
 		if(spriteList[i].refCount == 0)
@@ -282,12 +282,7 @@ Sprite* sprite_load_text(TTF_Font *font, char *text, SDL_Color color)
 			//this makes it so that the next sprite available in the list will be used if no sprite is found to match this one
 			if(sprite == NULL)
 				sprite = &spriteList[i];
-			continue;
-		}
-		if(strncmp(text, spriteList[i].filename, 128) ==0)
-		{
-			spriteList[i].refCount++;
-			return &spriteList[i];
+			break;
 		}
 	}
 	/*makesure we have the room for a new sprite*/
@@ -296,6 +291,8 @@ Sprite* sprite_load_text(TTF_Font *font, char *text, SDL_Color color)
 		slog("Maximum Sprites Reached.");
 		exit(1);
 	}
+
+	memset(sprite,0,sizeof(Sprite));
 
 	textSurface = TTF_RenderText_Blended(font, text, color);
 	if(!textSurface)
@@ -315,7 +312,7 @@ Sprite* sprite_load_text(TTF_Font *font, char *text, SDL_Color color)
 
 	/*then copy the given information to the sprite*/
 	sprite->image = textTexture;
-	sprite->filename = text;
+	sprite->filename = "";
 	sprite->frameSize.x = textSurface->w;
 	sprite->frameSize.y = textSurface->h;
 	sprite->refCount++;

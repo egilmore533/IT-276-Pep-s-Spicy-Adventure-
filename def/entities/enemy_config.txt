@@ -9,6 +9,7 @@
 		},
 		"info": {
 			"thinkRate": 1000,
+			"points": 1000,
 			"health": 3,
 			"velMax": "5 5"
 		},
@@ -30,6 +31,7 @@
 		},
 		"info": {
 			"thinkRate": 1125,
+			"points": 2000,
 			"health": 1,
 			"velMax": "20 20"
 		},
@@ -51,6 +53,7 @@
 		},
 		"info": {
 			"thinkRate": 800,
+			"points": 2000,
 			"health": 100000,
 			"velMax": "0 20"
 		},
@@ -72,6 +75,7 @@
 		},
 		"info": {
 			"thinkRate": 2000,
+			"points": 1000,
 			"health": 10,
 			"velMax": "4 4"
 		},
@@ -93,6 +97,7 @@
 		},
 		"info": {
 			"thinkRate": 800,
+			"points": 1500,
 			"health": 5,
 			"velMax": "1 3"
 		},

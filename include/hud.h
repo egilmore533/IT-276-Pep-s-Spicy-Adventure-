@@ -24,8 +24,8 @@ typedef struct
 	Sprite  *bombs;
 	Sprite  *bombsLabel;
 
-	Sprite	*pointsText;
 	Sprite	*pointsLabel;
+	Sprite	*pointsMultiplierLabel;
 }HUD;
 
 /** @brief initializes the hud, by allocating its memory, loading its sprites and getting the player and camera entities */

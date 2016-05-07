@@ -10,11 +10,17 @@
 			},
 			"info":	{
 				"thinkRate":	200,
-				"health":	2,
+				"points":	2000,
+				"health":	1,
 				"velMax":	"10.000000 10.000000",
-				"lives":	4,
+				"lives":	3,
 				"bombs":	2,
-				"spreads":	2
+				"spreads":	0,
+				"multiplier":	1,
+				"multiplierMax":	8,
+				"multiplierDegradeRate":	8000,
+				"multiplierDegradeMin":	1000,
+				"multiplierDegradeMax":	8000
 			},
 			"audioPak":	{
 				"name":	"player_audio",

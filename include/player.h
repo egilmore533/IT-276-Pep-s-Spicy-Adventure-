@@ -46,4 +46,6 @@ void player_saved_load_on();
 
 void player_saved_load_off();
 
+Uint8 get_multiplier();
+
 #endif

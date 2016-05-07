@@ -25,6 +25,7 @@ Entity *enemy_load(int type, Entity *enemy)
 
 	//entity info
 	Uint32 thinkRate;
+	Uint32 points;
 	Vect2d vel;
 	int health;
 
@@ -89,6 +90,7 @@ Entity *enemy_load(int type, Entity *enemy)
 	buf = cJSON_GetObjectItem(obj, "info");
 	//reads string that is two floats and sets them to be the two components of vel
 	sscanf(cJSON_GetObjectItem(buf, "velMax")->valuestring, "%f %f", &vel.x, &vel.y);
+	points = cJSON_GetObjectItem(buf, "points")->valueint;
 	health = cJSON_GetObjectItem(buf, "health")->valueint;
 	thinkRate = cJSON_GetObjectItem(buf, "thinkRate")->valueint;
 
@@ -132,6 +134,7 @@ Entity *enemy_load(int type, Entity *enemy)
 		break;
 	}
 
+	enemy->points = points;
 	enemy->draw = &sprite_draw;
 	enemy->free = &entity_free;
 	enemy->state = NORMAL_STATE;
@@ -182,6 +185,7 @@ void celery_stalker_update(Entity *celery_stalker)
 	entity_intersect_all(celery_stalker);
 	if(celery_stalker->health <= 0)
 	{
+		player_reward_points(celery_stalker->points);
 		particle_bundle_load(celery_stalker, 20);
 		audio_play_sound(celery_stalker->entitySounds->death);
 		celery_stalker->free(&celery_stalker);
@@ -261,6 +265,7 @@ void clarence_update(Entity *clarence)
 	entity_intersect_all(clarence);
 	if(clarence->health <= 0)
 	{
+		player_reward_points(clarence->points);
 		particle_bundle_load(clarence, 40);
 		audio_play_sound(clarence->entitySounds->death);
 		clarence->free(&clarence);
@@ -361,6 +366,7 @@ void melt_update(Entity *melt)
 	entity_intersect_all(melt);
 	if(melt->health <= 0)
 	{
+		player_reward_points(melt->points);
 		particle_bundle_load(melt, 40);
 		audio_play_sound(melt->entitySounds->death);
 		melt->free(&melt);
@@ -439,6 +445,7 @@ void milk_tank_update(Entity *milk_tank)
 	entity_intersect_all(milk_tank);
 	if(milk_tank->health <= 0)
 	{
+		player_reward_points(milk_tank->points);
 		particle_bundle_load(milk_tank, 40);
 		audio_play_sound(milk_tank->entitySounds->death);
 		milk_tank->free(&milk_tank);
@@ -545,6 +552,7 @@ void professor_slice_update(Entity *professor_slice)
 	entity_intersect_all(professor_slice);
 	if(professor_slice->health <= 0)
 	{
+		player_reward_points(professor_slice->points);
 		particle_bundle_load(professor_slice, 40);
 		audio_play_sound(professor_slice->entitySounds->death);
 		professor_slice->free(&professor_slice);

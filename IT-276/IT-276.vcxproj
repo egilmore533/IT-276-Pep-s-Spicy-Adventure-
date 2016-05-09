@@ -85,6 +85,7 @@
     <ClInclude Include="..\include\enemy.h" />
     <ClInclude Include="..\include\entity.h" />
     <ClInclude Include="..\include\files.h" />
+    <ClInclude Include="..\include\game.h" />
     <ClInclude Include="..\include\graphics.h" />
     <ClInclude Include="..\include\hud.h" />
     <ClInclude Include="..\include\level.h" />

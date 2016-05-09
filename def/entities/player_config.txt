@@ -16,6 +16,9 @@
 			"bombs": 2,
 			"spreads": 0,
 			
+			"lastPointReward": 0,
+			"pointRewardRate": 100000,
+			
 			"multiplier": 1,
 			"multiplierMax": 8,
 			"multiplierDegradeRate": 8000,

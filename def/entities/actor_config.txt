@@ -55,11 +55,11 @@
 	},
 	"power_up_shield": {
 		"sprite": {
-			"file": "images/power_ups/heat_shield.png",
+			"file": "images/power_ups/shield.png",
 			"bounds": "32 32",
 			"frame": 0,
-			"fpl": 1,
-			"frames": 1
+			"fpl": 15,
+			"frames": 15
 		}
 	},
 	"power_up_spread_shot": {
@@ -73,11 +73,11 @@
 	},
 	"power_up_double_tap": {
 		"sprite": {
-			"file": "images/power_ups/double_tap.png",
+			"file": "images/power_ups/rapid.png",
 			"bounds": "32 32",
 			"frame": 0,
-			"fpl": 1,
-			"frames": 1
+			"fpl": 15,
+			"frames": 15
 		}
 	},
 	"power_up_extra_life": {

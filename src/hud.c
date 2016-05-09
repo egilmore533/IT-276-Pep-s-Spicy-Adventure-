@@ -261,7 +261,8 @@ HUD *hud_get()
 void hud_editor_initialize()
 {
 	hudFont = TTF_OpenFont("fonts/HussarPrintASpicyAdventure.ttf", 16);
-	
+	hudGradeFont = NULL;
+
 	hud = (HUD *)malloc(sizeof(HUD));
 	memset(hud, 0, sizeof (HUD));
 
@@ -269,10 +270,10 @@ void hud_editor_initialize()
 
 	hud->background = sprite_load("images/hud_background_bar.png", vect2d_new(1366, 150), 1, 1);
 
-	nextButton = button_load_next(vect2d_new(NEXT_BUTTON_X + hud->camera->position.x, NEXT_BUTTON_Y + hud->camera->position.y));
+	nextButton = button_load_small(vect2d_new(NEXT_BUTTON_X + hud->camera->position.x, NEXT_BUTTON_Y + hud->camera->position.y), "Next");
 	nextButton->click = &mouse_type_next;
 
-	prevButton = button_load_previous(vect2d_new(PREV_BUTTON_X + hud->camera->position.x, PREV_BUTTON_Y + hud->camera->position.y));
+	prevButton = button_load_small(vect2d_new(PREV_BUTTON_X + hud->camera->position.x, PREV_BUTTON_Y + hud->camera->position.y), "Prev");
 	prevButton->click = &mouse_type_previous;
 	
 	

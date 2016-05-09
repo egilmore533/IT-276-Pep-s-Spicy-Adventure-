@@ -30,8 +30,12 @@ typedef struct Button_t
 	Uint8 state;								/**< what state this button is in (HOVERED or NORMAL) */
 	Vect2d position;							/**< the location in the game world of the button, will usually update based on where the camera is */
 	SDL_Rect bounds;							/**< bounding box of the button, used to compare between the mouse and itself */
+	
 	Sprite *buttonSprite;						/**< the backdrop of the button, twp frames to switch between to represent HOVERED, and NORMAL states */
 	Sprite *label;								/**< the text label to be drawn on top of the buttons backdrop */
+
+	Sound *hoverNoise;
+
 	void (*click)();							/**< function that will occur on button click */
 	void (*draw)(struct Button_t *self);		/**< draw function for the button */
 	void (*update)(struct Button_t *self);		/**< updates the button to check the mouse for clicks and position */
@@ -82,22 +86,8 @@ void button_draw_all();
 
 ////////////////////////SPECIF LOAD FUNCTIONS/////////////////////////////////
 
-Button *button_load_arcade_mode(Vect2d position);
+Button *button_load_big(Vect2d position, char *labelText);
 
-Button *button_load_editor_mode(Vect2d position);
-
-Button *button_load_yes_back(Vect2d position);
-
-Button *button_load_no_back(Vect2d position);
-
-Button *button_load_controls(Vect2d position);
-
-Button *button_load_next(Vect2d position);
-
-Button *button_load_previous(Vect2d position);
-
-Button *button_load_challenge_mode(Vect2d position);
-
-Button *button_load_continue(Vect2d position);
+Button *button_load_small(Vect2d position, char *labelText);
 
 #endif

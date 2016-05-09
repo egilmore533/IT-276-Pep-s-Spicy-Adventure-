@@ -46,6 +46,8 @@ void player_saved_load_on();
 
 void player_saved_load_off();
 
+void player_reward_points(Uint32 points);
+
 Uint8 get_multiplier();
 
 #endif

@@ -1,70 +1,73 @@
-{"level":{
-	"camera": {
-		"position": "0 0"
-	},
-	"music": {
-		"file": "sound/HotSalsa.ogg",
-		"loop": -1
-	},
-	"background": {
-		"file": "def/backgrounds/sunny_peps_config.txt"
-	},
-	"player": {
-		"id": 1,
-		"position": "0 400"
-	},
-	"melts": {
-		"number": 3,
-		"position0": "1500 400",
-		"position1": "5700 550",
-		"position2": "5700 700"
-	},
-	"milk_tanks": {
-		"number": 3,
-		"position0": "3000 400",
-		"position1": "10500 200",
-		"position2": "10500 400"
-	},
-	"clarences": {
-		"number": 2,
-		"position0": "7500 10",
-		"position1": "7700 10"
-	},
-	"celery_stalkers": {
-		"number": 1,
-		"position0": "4500 100"
-	},
-	"professor_slices": {
-		"number": 2,
-		"position0": "9000 400",
-		"position1": "2200 300"
-	},
-	"heat_shields": {
-		"number": 1,
-		"position0": "3000 200"
-	},
-	"goo_shots": {
-		"number": 1,
-		"position0": "7800 100"
-	},
-	"spread_shots": {
-		"number": 2,
-		"position0": "4500 200",
-		"position1": "5500 600"
-	},
-	"double_taps": {
-		"number": 0
-	},
-	"extra_lifes": {
-		"number": 1,
-		"position0": "11500 400"
-	},
-	"bomb_pickups": {
-		"number": 1,
-		"position0": "11500 500"
-	},
-	"info":{
-		"end": 13000
+{
+	"level":	{
+		"camera":	{
+			"position":	"0.000000 0.000000"
+		},
+		"music":	{
+			"file":	"sound/HotSalsa.ogg",
+			"loop":	-1
+		},
+		"background":	{
+			"file":	"def/backgrounds/sunny_peps_config.txt"
+		},
+		"player":	{
+			"position":	"0.000000 400.000000"
+		},
+		"clarences":	{
+			"number":	2,
+			"position0":	"10406.000000 18.000000",
+			"position1":	"10406.000000 18.000000"
+		},
+		"melts":	{
+			"number":	3,
+			"position0":	"2248.000000 240.000000",
+			"position1":	"8027.000000 103.000000",
+			"position2":	"8079.000000 393.000000"
+		},
+		"milk_tanks":	{
+			"number":	4,
+			"position0":	"6745.000000 174.000000",
+			"position1":	"9311.000000 76.000000",
+			"position2":	"9549.000000 231.000000",
+			"position3":	"9415.000000 468.000000"
+		},
+		"celery_stalkers":	{
+			"number":	1,
+			"position0":	"5376.000000 79.000000"
+		},
+		"professor_slices":	{
+			"number":	4,
+			"position0":	"3987.000000 311.000000",
+			"position1":	"11734.000000 94.000000",
+			"position2":	"12079.000000 327.000000",
+			"position3":	"11844.000000 506.000000"
+		},
+		"goo_shots":	{
+			"number":	1,
+			"position0":	"11035.000000 302.000000"
+		},
+		"heat_shields":	{
+			"number":	1,
+			"position0":	"4741.000000 374.000000"
+		},
+		"spread_shots":	{
+			"number":	1,
+			"position0":	"6059.000000 277.000000"
+		},
+		"double_taps":	{
+			"number":	1,
+			"position0":	"7367.000000 244.000000"
+		},
+		"extra_lifes":	{
+			"number":	1,
+			"position0":	"11040.000000 358.000000"
+		},
+		"bomb_pickups":	{
+			"number":	1,
+			"position0":	"8751.000000 303.000000"
+		},
+		"info":	{
+			"end":	12679
+		}
 	}
-}}	
-
+}

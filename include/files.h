@@ -17,6 +17,8 @@
 #define ARCADE_HIGHSCORES				"def/highscores/arcade_highscores.txt"
 #define CHALLENGE_HIGHSCORES			"def/highscores/challenge_highscores.txt"
 
+#define ENDLESS_LEVEL					"def/levels/level_config_template.txt"
+
 /**
  *	@brief	given a level number select and return the appropriate level path
  *	@param	num		the level number

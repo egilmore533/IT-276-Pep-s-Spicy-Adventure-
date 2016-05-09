@@ -45,11 +45,11 @@
 	},
 	"clarence": {
 		"sprite": {
-			"file": "images/enemies/clarence.png",
+			"file": "images/enemies/clarence3.png",
 			"bounds": "128 128",
 			"frame": 0,
-			"fpl": 1,
-			"frames": 1
+			"fpl": 3,
+			"frames": 3
 		},
 		"info": {
 			"thinkRate": 800,

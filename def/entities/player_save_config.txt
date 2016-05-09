@@ -4,18 +4,20 @@
 			"sprite":	{
 				"file":	"images/player/pep_no_shield.png",
 				"bounds":	"128 64",
-				"frame":	0,
+				"frame":	2,
 				"fpl":	4,
 				"frames":	4
 			},
 			"info":	{
 				"thinkRate":	200,
-				"points":	2000,
+				"points":	132500,
 				"health":	1,
 				"velMax":	"10.000000 10.000000",
 				"lives":	3,
-				"bombs":	2,
+				"bombs":	1,
 				"spreads":	0,
+				"lastPointReward":	100000,
+				"pointRewardRate":	100000,
 				"multiplier":	1,
 				"multiplierMax":	8,
 				"multiplierDegradeRate":	8000,

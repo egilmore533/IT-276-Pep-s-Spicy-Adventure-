@@ -16,10 +16,12 @@ static Uint8	player_saved_load = 0;
 static Uint32	respawn_moment;
 static Uint32	thinkRateMin = 200;
 static Sprite	*shield = NULL;
+static int		lastPointReward = 0;
+static int		pointRewardRate = 0;
 
 static Uint8	multiplier = 0;
 static Uint8	multiplierMax = 0;
-static Uint8	multiplierMin = 0;
+static Uint8	multiplierMin = 1;
 
 static Uint32	mutiplierDegradeTime = 0;
 static Uint32	multiplierDegradeRate = 0;
@@ -99,6 +101,9 @@ Entity *player_load()
 	lives = cJSON_GetObjectItem(buf, "lives")->valueint;
 	bombs = cJSON_GetObjectItem(buf, "bombs")->valueint;
 	spreads = cJSON_GetObjectItem(buf, "spreads")->valueint;
+
+	pointRewardRate = cJSON_GetObjectItem(buf, "pointRewardRate")->valueint;
+	lastPointReward = cJSON_GetObjectItem(buf, "lastPointReward")->valueint;
 
 	multiplier = cJSON_GetObjectItem(buf, "multiplier")->valueint;
 	multiplierMax = cJSON_GetObjectItem(buf, "multiplierMax")->valueint;
@@ -240,6 +245,12 @@ void player_update(Entity *player)
 		mutiplierDegradeTime = get_time() + multiplierDegradeRate;
 	}
 
+	if(lastPointReward + pointRewardRate < player->points)
+	{
+		lastPointReward += pointRewardRate;
+		player_add_life();
+	}
+
 	
 	// special player states handled here
 	if(player->state == SHIELDED_STATE)
@@ -282,6 +293,12 @@ void player_update(Entity *player)
 			return;
 		}
 		player->state = DEAD_STATE;
+
+
+		multiplier = multiplierMin;
+		multiplierDegradeRate = multiplierDegradeMin;
+		mutiplierDegradeTime = get_time() + multiplierDegradeRate;
+		
 		player->inventory[LIVES]--;
 		player->inventory[SPREADS] = 0;
 		player->thinkRate = thinkRateMin;
@@ -410,6 +427,9 @@ void player_save_info()
 	cJSON_AddNumberToObject(buf, "bombs", player->inventory[BOMBS]);
 	cJSON_AddNumberToObject(buf, "spreads", player->inventory[SPREADS]);
 
+	cJSON_AddNumberToObject(buf, "lastPointReward", lastPointReward);
+	cJSON_AddNumberToObject(buf, "pointRewardRate", pointRewardRate);
+
 	//if I want to let the multiplier to carry between levels I'd add it here to not be constants
 	cJSON_AddNumberToObject(buf, "multiplier", 1);
 	cJSON_AddNumberToObject(buf, "multiplierMax", 8);
@@ -429,8 +449,9 @@ void player_save_info()
 
 	player_save_config_file = fopen(PLAYER_SAVE_CONFIG, "w");
 
-	if (player_save_config_file == NULL) {
-	  fprintf(stderr, "Can't open output file %s!\n",
+	if (player_save_config_file == NULL) 
+	{
+	  slog("Can't open output file %s!\n",
 			  PLAYER_SAVE_CONFIG);
 	  return;
 	}

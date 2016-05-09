@@ -1,9 +1,12 @@
+#include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
 
 #include "SDL_ttf.h"
 #include "cJSON.h"
 #include "simple_logger.h"
+
+#include "game.h"
 
 #include "files.h"
 #include "graphics.h"
@@ -25,32 +28,12 @@
 TTF_Font *font;
 SDL_Color textColor = {255, 210 ,4};
 
+Score *headArcade;
+Score *headChallenge;
+
+Music *titleTheme;
+
 int	back = 0;
-
-void initialize_all_systems();
-void purge_systems();
-void clean_up_all();
-void initialize_next_level(Uint8 level_number);
-
-void back_question();
-void continue_screen();									//needs to be tested
-void main_menu();
-
-void challenge_mode();
-void arcade_mode();
-void control_screen();
-void editor_mode();
-
-void arcade_highscores_view();								//needs to be written
-void challenge_highscores_view();							//needs to be written
-
-void yes_back();
-void no_back();
-
-void merge_sort_scores(Uint32 *unorderedScores, Uint32 left, Uint32 right);	//needs to be tested
-void erase_highscores(char *file);											//needs to be tested
-void write_highscores(char *file, Uint32 *topTenScores);					//needs to be tested
-Uint32 *get_highscores(char *file);											//needs to be tested
 
 /*this program must be run from the directory directly below images and src, not from within src*/
 /*notice the default arguments for main.  SDL expects main to look like that, so don't change it*/
@@ -61,11 +44,14 @@ int main(int argc, char *argv[])
 	int done = 0;
 	Sprite *sprite = NULL;
 	Sprite *text_start_menu = NULL;
+
 	initialize_all_systems();
 
 	//init title card, loop until player enters main menu
 	sprite = sprite_load("images/Title.png", vect2d_new(1366, 768), 1, 1);
 	text_start_menu = sprite_load_text(font, "Press Space to Start", textColor);
+	titleTheme = audio_load_music("sound/title_theme.ogg", -1);
+	audio_play_music(titleTheme);
 
 	the_renderer = graphics_get_renderer();
 	do
@@ -97,7 +83,14 @@ int main(int argc, char *argv[])
 			done = 1;
 		}
 	}while(!done);
+
+	audio_music_free(&titleTheme);
+
+	write_highscores(ARCADE_HIGHSCORES);
+	write_highscores(CHALLENGE_HIGHSCORES);
 	
+	erase_challenge_highscores(0);
+	erase_arcade_highscores(0);
 
 	slog("QUIT GAME \n\n========================================================\n\n");
 
@@ -142,6 +135,8 @@ void initialize_all_systems()
 
 	actor_initialize_system(100);
 
+	get_highscores(ARCADE_HIGHSCORES);
+	get_highscores(CHALLENGE_HIGHSCORES);
 }
 
 void arcade_mode()
@@ -153,7 +148,6 @@ void arcade_mode()
 	Level *level = NULL;
 	char *level_path = NULL;
 	Uint32 playerScore = 0;
-	Uint32 *scores;
 
 	SDL_ShowCursor(SDL_ENABLE);
 	purge_systems();
@@ -232,11 +226,7 @@ void arcade_mode()
 	hud_free();
 	SDL_ShowCursor(SDL_DISABLE);
 
-	scores = get_highscores(ARCADE_HIGHSCORES);
-	scores[10] = playerScore;
-	merge_sort_scores(scores, 0, 10);
-	write_highscores(ARCADE_HIGHSCORES, scores);
-
+	update_arcade_highscores(playerScore);
 	arcade_highscores_view();
 }
 
@@ -288,6 +278,9 @@ void editor_mode()
 	camera->free(&camera);
 	hud_editor_free();
 	actor_empty_list();
+
+	erase_challenge_highscores(1);
+	get_highscores(CHALLENGE_HIGHSCORES);
 }
 
 void main_menu()
@@ -299,24 +292,36 @@ void main_menu()
 	Button *controlButton = NULL;
 	Button *editorButton = NULL;
 	Button *challengeMode = NULL;
+	Button *arcadeHighscores = NULL;
+	Button *challengeHighscores = NULL;
+	Button *endlessMode = NULL;
 	Sprite *sprite = NULL;
 
 
 	mouse_initialize();
 
 	//init main menu
-	//loop until player selects next game mode
-	arcadeButton = button_load_arcade_mode(vect2d_new(100, 400));
+	//loop until player selects next game mode, then enter that loop, or until player exits
+	arcadeButton = button_load_big(vect2d_new(100, 300), "Arcade Mode");
 	arcadeButton->click = &arcade_mode;
 
-	controlButton = button_load_controls(vect2d_new(700, 400));
+	controlButton = button_load_big(vect2d_new(700, 300), "Controls");
 	controlButton->click = &control_screen;
 
-	editorButton = button_load_editor_mode(vect2d_new(100, 600));
+	editorButton = button_load_big(vect2d_new(100, 450), "Editor Mode");
 	editorButton->click = &editor_mode;
 
-	challengeMode = button_load_challenge_mode(vect2d_new(700, 600));
+	challengeMode = button_load_big(vect2d_new(700, 450), "Challenge Mode");
 	challengeMode->click = &challenge_mode;
+
+	arcadeHighscores = button_load_big(vect2d_new(100, 150), "Arcade Highscores");
+	arcadeHighscores->click = &arcade_highscores_view;
+
+	challengeHighscores = button_load_big(vect2d_new(700, 150), "Challenge Highscores");
+	challengeHighscores->click = &challenge_highscores_view;
+
+	endlessMode = button_load_big(vect2d_new(100, 600), "Endless Mode");
+	endlessMode->click = &endless_mode;
 
 	the_renderer = graphics_get_renderer();
 	do
@@ -351,7 +356,7 @@ void purge_systems()
 	player_save_info();
 	entity_empty_list();
 	background_empty_list();
-	audio_empty_list();
+	//audio_empty_list();
 }
 
 void control_screen()
@@ -395,6 +400,7 @@ void challenge_mode()
 	Uint8 level_num = 1;
 	Level *level = NULL;
 	char *level_path = NULL;
+	Uint32 playerScore = 0;
 
 	SDL_ShowCursor(SDL_ENABLE);
 	purge_systems();
@@ -417,6 +423,7 @@ void challenge_mode()
 
 		if(level_end_reached(level))
 		{
+			playerScore = level->player->points;
 			purge_systems();
 			level_free(&level);
 			win = 1;//victory
@@ -456,6 +463,9 @@ void challenge_mode()
 	}while(!done);
 	hud_free();
 	SDL_ShowCursor(SDL_DISABLE);
+
+	update_challenge_highscores(playerScore);
+	challenge_highscores_view();
 }
 
 void back_question()
@@ -476,9 +486,9 @@ void back_question()
 	{
 		positionsOffset = vect2d_new(0,0);
 	}
-	yesButton = button_load_yes_back(vect2d_new(400 + positionsOffset.x, 600 + positionsOffset.y));
+	yesButton = button_load_small(vect2d_new(400 + positionsOffset.x, 600 + positionsOffset.y), "Yes");
 	yesButton->click = &yes_back;
-	noButton = button_load_no_back(vect2d_new(700 + positionsOffset.x, 600 + positionsOffset.y));
+	noButton = button_load_small(vect2d_new(700 + positionsOffset.x, 600 + positionsOffset.y), "No");
 	noButton->click = &no_back;
 
 	background = sprite_load("images/back_screen.png", vect2d_new(1366, 768), 1, 1);
@@ -547,12 +557,12 @@ void continue_screen()
 	}
 	scorePos.x = positionsOffset.x + 600;
 	scorePos.y = positionsOffset.y + 100;
-	continueButton = button_load_continue(vect2d_new(600 + positionsOffset.x, 600 + positionsOffset.y));
+	continueButton = button_load_big(vect2d_new(600 + positionsOffset.x, 600 + positionsOffset.y), "Continue");
 	continueButton->click = &no_back;
 
 	background = sprite_load("images/black_background.png", vect2d_new(1366, 768), 1, 1);
 	SDL_SetTextureAlphaMod(background->image, 100); //makes the screen fade in slowly, nice transistion
-	sprintf(tempScore, "Score: %d", player->points);
+	sprintf(tempScore, "Score: %u", player->points);
 	score = sprite_load_text(font, tempScore, textColor);
 	//tempScore = "temp";
 
@@ -581,7 +591,7 @@ void continue_screen()
 	sprite_free(&score);
 }
 
-Uint32 *get_highscores(char *file)
+void get_highscores(char *file)
 {
 	//config file stuff
 	cJSON *json, *root;
@@ -589,15 +599,15 @@ Uint32 *get_highscores(char *file)
 	long length;
 	char *data;
 
-	int i = 0;
+	int i = 1;
+	Score *nextScore;
 	char position[10];
-	static Uint32 scores[11];
 
 	highscore_file = fopen(file,"r");
 	if(!highscore_file)
 	{
 		slog("No file found: %s", file);
-		return NULL;
+		return;
 	}
 
 	//get the length of the file
@@ -617,145 +627,297 @@ Uint32 *get_highscores(char *file)
 		slog("error parseing the file, file not a scores file");
 		return;
 	}
-	for(i = 0; i < 10; i++)
+
+	if(file == ARCADE_HIGHSCORES)
 	{
-		sprintf(position, "%d", i + 1);
-		scores[i] = cJSON_GetObjectItem(root, position)->valueint;
-	}
-
-	return scores;
-}
-
-void write_highscores(char *file, Uint32 *topTenScores)
-{
-	FILE *highscore_file;
-	cJSON *json, *root;
-	char *data;
-	char *position[10];
-	int i;
-
-	json = cJSON_CreateObject();
-	cJSON_AddItemToObject(json, "scores", root=cJSON_CreateObject());
-	for(i = 0; i < 10; i++)
-	{
-		sprintf(position, "%d", i + 1);
-		cJSON_AddNumberToObject(root, position, topTenScores[i]);
-	}
-
-	data = cJSON_Print(json);
-	cJSON_Delete(json);
-
-	highscore_file = fopen(file, "w");
-
-	if (file == NULL) {
-	  fprintf(stderr, "Can't open output file %s!\n",
-			  file);
-	  return;
-	}
-
-	fprintf(highscore_file, data);
-
-	fclose(highscore_file);
-
-}
-
-void erase_highscores(char *file)
-{
-	FILE *highscore_file;
-	cJSON *json, *root;
-	char *data;
-	int i;
-	char position[10];
-
-	json = cJSON_CreateObject();
-	cJSON_AddItemToObject(json, "scores", root=cJSON_CreateObject());
-	for(i = 0; i < 10; i++)
-	{
-		sprintf(position, "%d", i + 1);
-		cJSON_AddNumberToObject(root, position, 0);
-	}
-
-	data = cJSON_Print(json);
-	cJSON_Delete(json);
-
-	highscore_file = fopen(file, "w");
-
-	if (file == NULL) {
-	  fprintf(stderr, "Can't open output file %s!\n",
-			  file);
-	  return;
-	}
-
-	fprintf(highscore_file, data);
-
-	fclose(highscore_file);
-}
-
-//uses merge sort to sort a list of 11 integers, used in arranging highscores
-void merge_sort_scores(Uint32 *unorderedScores, Uint32 left, Uint32 right)
-{
-	static Uint32 *workspace;
-	Uint32 i;
-	Uint32 length;
-	Uint32 midpointDistance;
-	Uint32 rPosition, lPosition;
-
-	if(!workspace)
-	{
-		workspace = (Uint32 *)malloc(11 * sizeof(Uint32));
-	}
-	else if(workspace)
-	{
-		//stops the recursive calls when comparing same position
-		if(right == left + 1)
+		if(!headArcade)
 		{
-			return;
+			headArcade = (Score *)malloc(sizeof(Score));
 		}
-		//recursively call left and right directions to split the input down (Binary Tree)
+		nextScore = headArcade;
+	}
+	else
+	{
+		if(!headChallenge)
+		{
+			headChallenge = (Score *)malloc(sizeof(Score));
+		}
+		nextScore = headChallenge;
+	}
+	while(1)
+	{
+		sprintf(position, "%d", i++);
+		nextScore->score = cJSON_GetObjectItem(root, position)->valueint;
+		if(i > 10)
+		{
+			break;
+		}
 		else
 		{
-			i = 0;
-			length = right - left;
-			midpointDistance = length/2;
-
-			//positions in the left and right subarray
-			lPosition = left;
-			rPosition = left + midpointDistance;
-
-			//sort my subarrays
-			merge_sort_scores(unorderedScores, left, left + midpointDistance);
-			merge_sort_scores(unorderedScores, left + midpointDistance, right);
-
-			//merge together the arrays together using worksace for temporary storage
-			for(i = 0; i < length; i++)
-			{
-				if(lPosition < left + midpointDistance && (rPosition == right || MAX(unorderedScores[lPosition], unorderedScores[rPosition]) == unorderedScores[lPosition]))
-				{
-					workspace[i] = unorderedScores[lPosition];
-					lPosition++;
-				}
-				else
-				{
-					workspace[i] = unorderedScores[rPosition];
-					rPosition++;
-				}
-			}
-			//copy the workspace sorted array back into input
-			for(i = left; i < right; i++)
-			{
-				unorderedScores[i] = workspace[i - left];
-			}
+			nextScore->next = (Score *)malloc(sizeof(Score));
+			nextScore = nextScore->next;
+			nextScore->next = NULL;
 		}
+		
 	}
 }
 
+void update_arcade_highscores(Uint32 playerScore)
+{
+	Score *insertScore; 
+	Score *nextScore;
+	Score *prev;
+	Score *n;
+	int count = 0;
+	if(playerScore == 0)
+	{
+		return;
+	}
+	if(headArcade->score < playerScore)
+	{
+		insertScore = (Score *)malloc(sizeof(Score));
+		nextScore = headArcade;
+		headArcade = insertScore;
+		headArcade->next = nextScore;
+		headArcade->score = playerScore;
+		playerScore = 0;
+	}
+	for(n = headArcade; n != NULL; n = nextScore)
+	{
+		nextScore = n->next;
+		count++;
+		if(count > 10)
+		{
+			//prev->next = NULL;
+			free(n);
+		}
+		else if(nextScore)
+		{
+			if(n->score < playerScore)
+			{
+				insertScore = (Score *)malloc(sizeof(Score));
+				insertScore->score = playerScore;
+				insertScore->next = nextScore;
+				prev->next = insertScore;
+				insertScore->next = n;
+				playerScore = 0;
+			}
+		}
+		prev = n;
+	}
+}
+
+void update_challenge_highscores(Uint32 playerScore)
+{
+	Score *insertScore; 
+	Score *nextScore;
+	Score *prev;
+	Score *n;
+	int count = 0;
+	if(headChallenge->score < playerScore)
+	{
+		insertScore = (Score *)malloc(sizeof(Score));
+		nextScore = headChallenge;
+		headChallenge = insertScore;
+		headChallenge->next = nextScore;
+		headChallenge->score = playerScore;
+		playerScore = 0;
+	}
+	for(n = headChallenge; n != NULL; n = nextScore)
+	{
+		nextScore = n->next;
+		count++;
+		if(count > 10)
+		{
+			prev->next = NULL;
+			free(n);
+		}
+		else if(nextScore)
+		{
+			if(n->score < playerScore)
+			{
+				insertScore = (Score *)malloc(sizeof(Score));
+				insertScore->score = playerScore;
+				insertScore->next = nextScore;
+				prev->next = insertScore;
+				insertScore->next = n;
+				playerScore = 0;
+			}
+		}
+		prev = n;
+	}
+}
+
+void write_highscores(char *file)
+{
+	FILE *highscore_file;
+	cJSON *json, *root;
+	char *data;
+	Score *nextScore;
+	char position[11];
+	int i = 0;
+
+	if(file == ARCADE_HIGHSCORES)
+	{
+		if(headArcade == NULL)
+		{
+			slog("cannot save no, arcade data");
+			return;
+		}
+		nextScore = headArcade;
+	}
+	else
+	{
+		if(!headChallenge)
+		{
+			slog("cannot save no, challenge data");
+			return;
+		}
+		nextScore = headChallenge;
+	}
+
+	json = cJSON_CreateObject();
+	cJSON_AddItemToObject(json, "scores", root=cJSON_CreateObject());
+	while(nextScore != NULL)
+	{
+		i++;
+		if(i > 10)
+		{
+			break;
+		}
+		sprintf(position, "%d", i);
+		cJSON_AddNumberToObject(root, position, nextScore->score);
+		if(nextScore->next == NULL)
+		{
+			break;
+		}
+		else
+		{
+			nextScore = nextScore->next;
+		}
+	}
+
+	data = cJSON_Print(json);
+	cJSON_Delete(json);
+	highscore_file = fopen(file, "w");
+	if (file == NULL) 
+	{
+		slog("Can't open output file %s!\n", file);
+	}
+
+	fprintf(highscore_file, data);
+	fclose(highscore_file);
+}
+
+void erase_challenge_highscores(int write)
+{
+	//config file stuff
+	cJSON *json, *root;
+	FILE *highscore_file;
+	long length;
+	char *data;
+	char position[11];
+	int i = 1;
+
+	Score *temp;
+	while( headChallenge != NULL)
+	{
+		temp = headChallenge;
+		headChallenge = headChallenge->next;
+		free(temp);
+	}
+
+	if(write)
+	{
+		json = cJSON_CreateObject();
+		cJSON_AddItemToObject(json, "scores", root=cJSON_CreateObject());
+		for(i = 1; i <= 10; i++)
+		{
+			sprintf(position, "%d", i);
+			cJSON_AddNumberToObject(root, position, 0);
+		}
+
+		data = cJSON_Print(json);
+		cJSON_Delete(json);
+
+		highscore_file = fopen(CHALLENGE_HIGHSCORES, "w");
+
+		if (highscore_file == NULL) 
+		{
+		  slog("Can't open output file %s!\n",
+				  highscore_file);
+		  return;
+		}
+
+		fprintf(highscore_file, data);
+
+		fclose(highscore_file);
+	}
+}
+
+void erase_arcade_highscores(int write)
+{
+	//config file stuff
+	cJSON *json, *root;
+	FILE *highscore_file;
+	long length;
+	char *data;
+	char position[11];
+	int i = 1;
+
+	Score *temp;
+	while( headArcade != NULL)
+	{
+		temp = headArcade;
+		headArcade = headArcade->next;
+		free(temp);
+	}
+
+	if(write)
+	{
+		json = cJSON_CreateObject();
+		cJSON_AddItemToObject(json, "scores", root=cJSON_CreateObject());
+		for(i = 1; i <= 10; i++)
+		{
+			sprintf(position, "%d", i);
+			cJSON_AddNumberToObject(root, position, 0);
+		}
+
+		data = cJSON_Print(json);
+		cJSON_Delete(json);
+
+		highscore_file = fopen(ARCADE_HIGHSCORES, "w");
+
+		if (highscore_file == NULL) 
+		{
+		  slog("Can't open output file %s!\n",
+				  highscore_file);
+		  return;
+		}
+
+		fprintf(highscore_file, data);
+
+		fclose(highscore_file);
+	}
+}
 
 void arcade_highscores_view()
+{
+	highscores_view(headArcade);
+}
+
+void challenge_highscores_view()
+{
+	highscores_view(headChallenge);
+}
+
+void highscores_view(Score *head)
 {
 	SDL_Renderer *the_renderer;
 	int done = 0;
 	const Uint8 *keys;
-	int i;
+	int i = 0;
+	Score *n;
 	Sprite *scoreSprite1 = NULL;
 	Sprite *scoreSprite2 = NULL;
 	Sprite *scoreSprite3 = NULL;
@@ -766,51 +928,55 @@ void arcade_highscores_view()
 	Sprite *scoreSprite8 = NULL;
 	Sprite *scoreSprite9 = NULL;
 	Sprite *scoreSprite10 = NULL;
-	Uint32 *scores = get_highscores(ARCADE_HIGHSCORES);
+	
 	char scoreTemp[255];
 	Vect2d drawPos;
 
-	for(i = 0; i < 10; i++)
+	audio_play_music(titleTheme);
+
+	for(n = head; n != NULL; n = n->next)
 	{
-		sprintf(scoreTemp, "%d: %d", i + 1, scores[i]);
-		switch(i)
+		i++;
+		if(i > 10)
 		{
-		case 0:
-			scoreSprite1 = sprite_load_text(font, scoreTemp,textColor);
-			break;
-		case 1:
-			scoreSprite2 = sprite_load_text(font, scoreTemp,textColor);
-			break;
-		case 2:
-			scoreSprite3 = sprite_load_text(font, scoreTemp,textColor);
-			break;
-		case 3:
-			scoreSprite4 = sprite_load_text(font, scoreTemp,textColor);
-			break;
-		case 4:
-			scoreSprite5 = sprite_load_text(font, scoreTemp,textColor);
-			break;
-		case 5:
-			scoreSprite6 = sprite_load_text(font, scoreTemp,textColor);
-			break;
-		case 6:
-			scoreSprite7 = sprite_load_text(font, scoreTemp,textColor);
-			break;
-		case 7:
-			scoreSprite8 = sprite_load_text(font, scoreTemp,textColor);
-			break;
-		case 8:
-			scoreSprite9 = sprite_load_text(font, scoreTemp,textColor);
-			break;
-		case 9:
-			scoreSprite10 = sprite_load_text(font, scoreTemp,textColor);
 			break;
 		}
-		
+		sprintf(scoreTemp, "%d: %u", i, n->score);
+		switch(i)
+		{
+		case 1:
+			scoreSprite1 = sprite_load_text(font, scoreTemp, textColor);
+			break;
+		case 2:
+			scoreSprite2 = sprite_load_text(font, scoreTemp, textColor);
+			break;
+		case 3:
+			scoreSprite3 = sprite_load_text(font, scoreTemp, textColor);
+			break;
+		case 4:
+			scoreSprite4 = sprite_load_text(font, scoreTemp, textColor);
+			break;
+		case 5:
+			scoreSprite5 = sprite_load_text(font, scoreTemp, textColor);
+			break;
+		case 6:
+			scoreSprite6 = sprite_load_text(font, scoreTemp, textColor);
+			break;
+		case 7:
+			scoreSprite7 = sprite_load_text(font, scoreTemp, textColor);
+			break;
+		case 8:
+			scoreSprite8 = sprite_load_text(font, scoreTemp, textColor);
+			break;
+		case 9:
+			scoreSprite9 = sprite_load_text(font, scoreTemp, textColor);
+			break;
+		case 10:
+			scoreSprite10 = sprite_load_text(font, scoreTemp, textColor);
+			break;
+		}
 	}
-	
 
-	
 	the_renderer = graphics_get_renderer();
 	do
 	{
@@ -872,4 +1038,115 @@ void arcade_highscores_view()
 		}
 
 	}while(!done);
+	sprite_free(&scoreSprite1);
+	sprite_free(&scoreSprite2);
+	sprite_free(&scoreSprite3);
+	sprite_free(&scoreSprite4);
+	sprite_free(&scoreSprite5);
+	sprite_free(&scoreSprite6);
+	sprite_free(&scoreSprite7);
+	sprite_free(&scoreSprite8);
+	sprite_free(&scoreSprite9);
+	sprite_free(&scoreSprite10);
+}
+
+void endless_mode()
+{
+	int done;
+	const Uint8 *keys;
+	SDL_Renderer *the_renderer;
+	Uint8 level_num = 1;
+	Level *level = NULL;
+	char *level_path = NULL;
+	Uint32 playerScore = 0;
+
+	float nextLoadPosition = 0;
+	float loadPositionRate = 2000;
+	int i = 0;
+	int spawnNum = 3;
+	Entity *entity = NULL;
+	Uint32 id = 0;
+	int type;
+	Vect2d position;
+
+	SDL_ShowCursor(SDL_ENABLE);
+	purge_systems();
+	the_renderer = graphics_get_renderer();
+	level = level_load(ENDLESS_LEVEL);
+
+	hud_initialize();
+	player_saved_load_on();
+	done = 0;
+	while(!done)
+	{
+		SDL_RenderClear(the_renderer);
+	
+		if(level->player->state == GAME_OVER_STATE)
+		{
+			player_saved_load_off();
+			purge_systems();
+			level_free(&level);
+			break;
+		}
+
+		if(level->cam->position.x > nextLoadPosition)
+		{
+			for(i = 0; i < spawnNum; i++)
+			{
+				if( (rand() % 3) < 1)
+				{
+					type = 2 + (rand() % 11);
+				}
+				else
+				{
+					type = 2 + (rand() % 5);
+				}
+				entity = level_entity_load(type, id++);
+				position.x = level->cam->position.x + (WINDOW_WIDTH * (rand() % 100) * 0.01) + WINDOW_WIDTH;
+				position.y = level->cam->position.y + (HUD_HEIGHT * (rand() % 100) * 0.01);
+				if(type == ENEMY_CLARENCE)
+				{
+					position.y = 10;
+				}
+				entity->position = position;
+			}
+			loadPositionRate -= rand() % 10;
+			nextLoadPosition += loadPositionRate;
+		}
+
+		background_update_all();
+		background_draw_all();
+
+		entity_think_all();
+		entity_update_all();
+		entity_draw_all();
+
+		particle_think_all();
+		particle_check_all_dead();
+		particle_draw_all();
+
+		hud_draw();
+		
+		graphics_next_frame();
+		SDL_PumpEvents();
+
+		keys = SDL_GetKeyboardState(NULL);
+		if(keys[SDL_SCANCODE_ESCAPE])
+		{
+			SDL_ShowCursor(SDL_DISABLE);
+			back_question();
+			if(back == 1)
+			{
+				player_saved_load_off();
+				purge_systems();
+				done = 1;
+			}
+			back = 0;
+			SDL_ShowCursor(SDL_ENABLE);
+		}
+	}
+	hud_free();
+	SDL_ShowCursor(SDL_DISABLE);
+
+	audio_play_music(titleTheme);
 }

@@ -234,8 +234,13 @@ void clarence_think_start(Entity *clarence)
 		slog("no clarence target");
 		return;
 	}
+	if(clarence->target->position.x + clarence->target->sprite->frameSize.x * 2 >= clarence->position.x)
+	{
+		clarence->frameNumber = 1;
+	}
 	if(clarence->target->position.x + clarence->target->sprite->frameSize.x * 0.5 >= clarence->position.x)
 	{
+		clarence->frameNumber = 2;
 		dir = vect2d_new(0, 1);
 		clarence->think = &clarence_think_moving;
 		clarence->direction = dir;

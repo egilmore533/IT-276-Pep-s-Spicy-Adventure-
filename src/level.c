@@ -314,7 +314,7 @@ void level_save()
 	
 	//DEFAULT music for the level
 	cJSON_AddItemToObject(root, "music", obj = cJSON_CreateObject());
-	cJSON_AddStringToObject(obj, "file", "music/HotSalsa.ogg");
+	cJSON_AddStringToObject(obj, "file", "sound/HotSalsa.ogg");
 	cJSON_AddNumberToObject(obj, "loop", -1);
 
 	//DEFAULT background pak to load for each level
@@ -511,8 +511,9 @@ void level_save()
 
 	saved_level_config = fopen(CHALLENGE_LEVEL, "w");
 
-	if (saved_level_config == NULL) {
-	  fprintf(stderr, "Can't open output file %s!\n",
+	if (saved_level_config == NULL) 
+	{
+	  slog("Can't open output file %s!\n",
 			  CHALLENGE_LEVEL);
 	  return;
 	}

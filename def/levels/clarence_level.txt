@@ -64,8 +64,9 @@
 		"number": 0
 	},
 	"bomb_pickups": {
-		"number": 1,
-		"position0": "600 300"
+		"number": 2,
+		"position0": "600 300",
+		"position1": "10000 400"
 	},
 	"info":{
 		"end": 12500

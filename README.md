@@ -28,3 +28,6 @@ Pep starts with 3 lives and 2 bombs.
 There are bomb pick ups and extra lifes found in the stages.
 
 
+"music by audionautix.com"
+
+

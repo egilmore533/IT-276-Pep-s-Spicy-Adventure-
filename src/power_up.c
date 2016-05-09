@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+#include "camera.h"
 #include "power_up.h"
 #include "player.h"
 #include "simple_logger.h"
@@ -81,6 +82,8 @@ Entity *power_up_load(int type, Entity *power_up)
 	power_up->sprite = sprite_load(filepath, frameSize, fpl, frames);
 	power_up->bounds = rect(0, 0, power_up->sprite->frameSize.x, power_up->sprite->frameSize.y);
 	power_up->frameNumber = frame;
+	power_up->thinkRate = 100;
+	power_up->nextThink = get_time() + power_up->thinkRate;
 
 	switch(type)
 	{
@@ -112,6 +115,15 @@ Entity *power_up_load(int type, Entity *power_up)
 
 void power_up_update(Entity *power_up)
 {
+	if(get_time() > power_up->nextThink)
+	{
+		power_up->frameNumber++;
+		if(power_up->frameNumber >= power_up->sprite->frames)
+		{
+			power_up->frameNumber = 0;
+		}
+		power_up->nextThink = get_time() + power_up->thinkRate;
+	}
 	entity_intersect_all(power_up);
 }
 

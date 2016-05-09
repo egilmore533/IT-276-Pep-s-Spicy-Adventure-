@@ -913,3 +913,1296 @@ c:\users\user\desktop\it-276\src\game.c:102: QUIT GAME
 ========================================================
 
 
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:240: score[0]: 10
+c:\users\user\desktop\it-276\src\game.c:240: score[1]: 9
+c:\users\user\desktop\it-276\src\game.c:240: score[2]: 8
+c:\users\user\desktop\it-276\src\game.c:240: score[3]: 7
+c:\users\user\desktop\it-276\src\game.c:240: score[4]: 6
+c:\users\user\desktop\it-276\src\game.c:240: score[5]: 5
+c:\users\user\desktop\it-276\src\game.c:240: score[6]: 4
+c:\users\user\desktop\it-276\src\game.c:240: score[7]: 3
+c:\users\user\desktop\it-276\src\game.c:240: score[8]: 2
+c:\users\user\desktop\it-276\src\game.c:240: score[9]: 1
+c:\users\user\desktop\it-276\src\game.c:240: score[10]: 0
+c:\users\user\desktop\it-276\src\game.c:102: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:240: score[0]: 10
+c:\users\user\desktop\it-276\src\game.c:240: score[1]: 9
+c:\users\user\desktop\it-276\src\game.c:240: score[2]: 8
+c:\users\user\desktop\it-276\src\game.c:240: score[3]: 7
+c:\users\user\desktop\it-276\src\game.c:240: score[4]: 6
+c:\users\user\desktop\it-276\src\game.c:240: score[5]: 5
+c:\users\user\desktop\it-276\src\game.c:240: score[6]: 4
+c:\users\user\desktop\it-276\src\game.c:240: score[7]: 3
+c:\users\user\desktop\it-276\src\game.c:240: score[8]: 2
+c:\users\user\desktop\it-276\src\game.c:240: score[9]: 1
+c:\users\user\desktop\it-276\src\game.c:240: score[10]: 1000
+c:\users\user\desktop\it-276\src\game.c:245: score[0]: 10
+c:\users\user\desktop\it-276\src\game.c:245: score[1]: 9
+c:\users\user\desktop\it-276\src\game.c:245: score[2]: 8
+c:\users\user\desktop\it-276\src\game.c:245: score[3]: 7
+c:\users\user\desktop\it-276\src\game.c:245: score[4]: 6
+c:\users\user\desktop\it-276\src\game.c:245: score[5]: 5
+c:\users\user\desktop\it-276\src\game.c:245: score[6]: 4
+c:\users\user\desktop\it-276\src\game.c:245: score[7]: 3
+c:\users\user\desktop\it-276\src\game.c:245: score[8]: 2
+c:\users\user\desktop\it-276\src\game.c:245: score[9]: 1
+c:\users\user\desktop\it-276\src\game.c:245: score[10]: 1000
+c:\users\user\desktop\it-276\src\game.c:102: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:102: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:104: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\game.c:104: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:104: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:104: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:104: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:104: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:104: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:104: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:104: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:104: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:104: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:104: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:104: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:104: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:104: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\game.c:82: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\sprite.c:340: text_sprite doesn't point to anything
+c:\users\user\desktop\it-276\src\game.c:82: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:82: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\game.c:82: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:82: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\game.c:82: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\game.c:82: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:85: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:85: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:85: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:85: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\game.c:85: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:85: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:85: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\game.c:85: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\game.c:85: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\game.c:85: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:85: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:85: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:85: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:85: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:85: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:85: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:85: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:85: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:85: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\game.c:85: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:87: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:87: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:87: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:87: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:87: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\game.c:87: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\game.c:87: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:87: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:87: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:87: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:87: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:87: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:87: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:87: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\game.c:87: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:87: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:87: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:88: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:88: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:88: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:88: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:88: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:88: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:88: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\game.c:88: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:92: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\game.c:92: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:95: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\game.c:95: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:95: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:95: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:95: QUIT GAME 
+
+========================================================
+
+
+c:\users\user\desktop\it-276\src\graphics.c:62: graphics initialized
+
+c:\users\user\desktop\it-276\src\background.c:201: no front for the pak
+c:\users\user\desktop\it-276\src\game.c:95: QUIT GAME 
+
+========================================================
+
+

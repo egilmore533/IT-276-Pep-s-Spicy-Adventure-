@@ -1,17 +1,21 @@
-#include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #include "SDL_image.h"
 #include "SDL_ttf.h"
-#include "sprite.h"
-#include "simple_logger.h"
-#include "graphics.h"
-#include "camera.h"
 
-static Sprite *spriteList = NULL;
-static int spriteNum;
-static int spriteMax = 0;
+#include "simple_logger.h"
+
+#include "sprite.h"
+#include "camera.h"
+#include "graphics.h"
+
+
+/* resource management */
+static Sprite	*spriteList = NULL;
+static int		spriteNum;
+static int		spriteMax = 0;
 
 void sprite_free(Sprite **sprite)
 {
@@ -53,6 +57,7 @@ void sprite_close_system()
 			SDL_DestroyTexture(spriteList[i].image);
 		}
 	}
+
 	free(spriteList);
 	spriteList = NULL;
 	spriteNum = 0;
@@ -201,6 +206,7 @@ void sprite_empty_list()
 		sprite = &spriteList[i];
 		sprite_free(&sprite);
 	}
+
 	memset(spriteList, 0, sizeof(Sprite) * spriteMax);
 	for(i = 0; i < spriteMax; ++i)
 	{
@@ -248,7 +254,6 @@ void sprite_bloom_effect_draw(Sprite *bloom, int frame, Vect2d position)
 	SDL_SetTextureAlphaMod(bloom->image, 255);
 	SDL_SetTextureColorMod(bloom->image, 255, 255, 255);
 }
-
 
 Sprite* sprite_load_text(TTF_Font *font, char *text, SDL_Color color)
 {

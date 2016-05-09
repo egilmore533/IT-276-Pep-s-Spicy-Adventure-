@@ -1,12 +1,14 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
-#include "camera.h"
-#include "power_up.h"
-#include "player.h"
-#include "simple_logger.h"
 #include "cJSON.h"
+#include "simple_logger.h"
+
+#include "power_up.h"
+#include "camera.h"
 #include "files.h"
+#include "player.h"
+
 
 Entity *power_up_load(int type, Entity *power_up)
 {

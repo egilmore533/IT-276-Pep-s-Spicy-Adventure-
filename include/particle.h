@@ -28,10 +28,10 @@ typedef struct Particle_s
  */
 typedef struct Particle_p
 {
-	char *name;
-	Sprite *red;
-	Sprite *green;
-	Sprite *blue;
+	char *name;					/**< name of the particlePak */
+	Sprite *red;				/**< red particle sprite sheet */
+	Sprite *green;				/**< green particle sprite sheet */
+	Sprite *blue;				/**< blue particle sprite sheet */
 }ParticlePak;
 
 /**
@@ -111,7 +111,8 @@ int particle_dead(Particle *particle);
 /** @brief	checks every particle in particleList with particle_dead. */
 void particle_check_all_dead();
 
-/** @brief	draws every particle to the screen using sprite draw, this needs 
+/** 
+ * @brief	draws every particle to the screen using sprite draw, this needs 
  *			to be used because particles aren't entities and camera won't draw them 
  */
 void particle_draw_all();

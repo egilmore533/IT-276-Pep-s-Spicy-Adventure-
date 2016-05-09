@@ -143,12 +143,24 @@ SoundPak *audio_load_pak(int channel, char *name, char *fire1_file, char *fire2_
  */
 void audio_pak_free(SoundPak **pak);
 
+/**
+ * @brief empties all the audio lists leaving the system in tact, calls audio_empty_music_list, audio_empty_sound_list, and audio_empty_pak_list
+ */
 void audio_empty_list();
 
+/**
+ * @brief empties the musicList leaving the system in tact
+ */
 void audio_empty_music_list();
 
+/**
+ * @brief empties the soundList leaving the system in tact
+ */
 void audio_empty_sound_list();
 
+/**
+ * @brief empties the pakList leaving the system in tact
+ */
 void audio_empty_pak_list();
 
 

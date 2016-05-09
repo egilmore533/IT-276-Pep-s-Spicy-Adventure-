@@ -3,37 +3,38 @@
 #include <math.h>
 
 #include "SDL_ttf.h"
+
 #include "cJSON.h"
 #include "simple_logger.h"
 
 #include "game.h"
-
+#include "actor.h"
+#include "background.h"
+#include "button.h"
+#include "camera.h"
 #include "files.h"
 #include "graphics.h"
+#include "hud.h"
+#include "level.h"
+#include "mouse.h"
+#include "particle.h"
+#include "player.h"
 #include "sprite.h"
 
-#include "actor.h"
-#include "mouse.h"
-#include "hud.h"
-#include "button.h"
-#include "background.h"
-#include "particle.h"
-#include "level.h"
-#include "camera.h"
-#include "player.h"
 
+/* menu fonts data */
+TTF_Font		*font;
+SDL_Color		textColor = {255, 210 ,4};
 
-#define	MAX_SPRITES		1000
+/* highscore linked lists heads */
+Score			*headArcade;
+Score			*headChallenge;
 
-TTF_Font *font;
-SDL_Color textColor = {255, 210 ,4};
+/* menu music data */
+Music			*titleTheme;
 
-Score *headArcade;
-Score *headChallenge;
-
-Music *titleTheme;
-
-int	back = 0;
+/* back flag to check if the player wants to move back through the menues */
+int				back = 0;
 
 /*this program must be run from the directory directly below images and src, not from within src*/
 /*notice the default arguments for main.  SDL expects main to look like that, so don't change it*/
@@ -93,7 +94,7 @@ int main(int argc, char *argv[])
 	erase_arcade_highscores(0);
 
 	slog("QUIT GAME \n\n========================================================\n\n");
-
+	
 	exit(0);		/*technically this will end the program, but the compiler likes all functions that can return a value TO return a value*/
 	return 0;
 }
@@ -118,22 +119,22 @@ void initialize_all_systems()
 		slog("error TTF_Init");
 		exit(2);
 	}
-	font = TTF_OpenFont("fonts/HussarPrintASpicyAdventure.ttf", 28);
+	font = TTF_OpenFont(PEP_FONT, 28);
 
 	init_logger(LOG_FILE); //init simple logger from DJ's source code
 	
 	graphics_initialize("Pep's Spicy Adventure", WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_WIDTH, WINDOW_HEIGHT, 0);
-	audio_initialize(128, 3, 30);
+	audio_initialize(MAX_SOUNDS, MAX_MUSICS, MAX_SOUNDPAKS);
 
 	sprite_initialize_system(MAX_SPRITES);
-	particle_initialize_system(2000);
-	entity_initialize_system(1024);
+	particle_initialize_system(MAX_PARTICLES);
+	entity_initialize_system(MAX_ENTITIES);
 
-	background_initialize_system(8);
+	background_initialize_system(MAX_BACKGROUNDS);
 
-	button_initialize_system(20);
+	button_initialize_system(MAX_BUTTONS);
 
-	actor_initialize_system(100);
+	actor_initialize_system(MAX_ACTORS);
 
 	get_highscores(ARCADE_HIGHSCORES);
 	get_highscores(CHALLENGE_HIGHSCORES);

@@ -7,7 +7,8 @@
  *	@brief	Parallax Scrolling system used to contain and handle backgrounds
  */
 
-/** @struct Background structure
+/** 
+ *  @struct Background structure
  *	@brief the struct for background layers so that they can be drawn infinitely at a unique speed 
  */
 typedef struct Background_s
@@ -30,7 +31,8 @@ typedef struct Background_s
 	void (*free)	(struct Background_s **self);						/**< function to free the background from the list */
 }Background;
 
-/** @struct BackgroundPak structure
+/** 
+ *  @struct BackgroundPak structure
  *	@brief a collection of backgrounds, used by level structure
  */
 typedef struct Background_p
@@ -61,6 +63,9 @@ void background_close_system();
  */
 void background_initialize_system(int maxBackground);
 
+/**
+ * @brief frees a backgroundPak from the backgroundPak list (CAUSE OF DISSASMBLY ERROR?)
+ */
 void background_pak_free(BackgroundPak *pak);
 
 /**
@@ -96,6 +101,9 @@ void background_update_all();
  */
 void background_update(Background *background);
 
+/**
+ * @brief empties the backgroundList leaving the system in tact
+ */
 void background_empty_list();
 
 #endif

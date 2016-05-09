@@ -13,9 +13,9 @@
 #include "enemy.h"
 #include "power_up.h"
 
-#include <glib.h>
 #include "cJSON.h"
 #include "simple_logger.h"
+
 
 Entity *level_entity_load(int type, int id)
 {

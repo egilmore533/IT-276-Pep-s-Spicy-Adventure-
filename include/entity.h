@@ -8,46 +8,30 @@
  *	@brief	Entity system with resource management and functions to do all: draw, touch, update, and think functions
  */
 
-////////////////////Inventory/////////////////////
-/** @brief	A macro that defines maximum inventory. */
-#define MAX_INVENTORY	3
+////////////////////INVENTORY/////////////////////
+#define MAX_INVENTORY	3		/**< A macro that defines maximum inventory. */
 
-/**
- * @enum InventorySlots
- * @brief defines the slots inside the player's inventory
- */
-typedef enum
-{
-	LIVES = 0,	/**< the number of lives the player has */
-	BOMBS,		/**< the number of bombs the player has */
-	SPREADS		/**< the number of times the player has picked up a spread power up */
-}InventorySlots;
+#define MAX_LIVES			5	/**< A macro that defines maximum lives I allow the player to have. */
 
-#define MAX_LIVES			5
+#define MAX_BOMBS			3	/**< A macro that defines maximum boms I allow the player to hold. */
 
-#define MAX_BOMBS			3
+//////////////////STATES//////////////////////////////
 
-//////////////////States//////////////////////////////
-/** @brief bullet is in the normal state*/
-#define NORMAL_SHOT_STATE	10
+#define NORMAL_SHOT_STATE	10	/**< bullet is in the normal state*/
 
-/** @brief bullet will sticky the enemy it strikes*/
-#define GOO_SHOT_STATE		11
+#define GOO_SHOT_STATE		11	/**< bullet will sticky the enemy it strikes*/
 
-/** @brief the entity is in its normal state */
-#define NORMAL_STATE		0
+#define NORMAL_STATE		0	/**< the entity is in its normal state */
 
-/** @brief the entity was hit by a goo shot and is sticky (enemies only) */
-#define STICKIED_STATE		1
+#define STICKIED_STATE		1	/**< the entity was hit by a goo shot and is sticky (enemies only) */
 
-/** @brief the player is being shielded */
-#define SHIELDED_STATE		2 
+#define SHIELDED_STATE		2	/**< the player is being shielded */
 
-/** @brief the player's state after having a health of 0 and dying, but having another life state */
-#define DEAD_STATE			3
+#define DEAD_STATE			3	/**< the player's state after having a health of 0 and dying, but having another life state */
 
-/** @brief the player has no lives remaining and died */
-#define GAME_OVER_STATE		4
+#define GAME_OVER_STATE		4	/**< the player has no lives remaining and died */
+
+
 
 /**
  * @enum Entity_Types
@@ -74,6 +58,17 @@ typedef enum
 	PROJECTILE_MELT_CREAM,
 	PROJECTILE_PROFESSOR_SLICE_BREAD,
 }EntityTypes;
+
+/**
+ * @enum InventorySlots
+ * @brief defines the slots inside the player's inventory
+ */
+typedef enum
+{
+	LIVES = 0,	/**< the number of lives the player has */
+	BOMBS,		/**< the number of bombs the player has */
+	SPREADS		/**< the number of times the player has picked up a spread power up */
+}InventorySlots;
 
 
 /** 
@@ -181,6 +176,9 @@ int entity_intersect(Entity *entity, Entity *other);
  */
 Entity *entity_get_by_id(Uint32 id);
 
+/**
+ * @brief clears the entityList of all entities leaving the system intact
+ */
 void entity_empty_list();
 
 

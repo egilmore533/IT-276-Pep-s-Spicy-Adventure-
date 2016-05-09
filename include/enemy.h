@@ -8,6 +8,12 @@
  *          accordingly for the enemy
  */
 
+/**
+ * @brief loads a given entity from a config file (sprite, info, and audioPak), and gives the entity the correct function pointer, all based on its type (Defined in EntityTypes)
+ * @param type	the enemy type to be loaded, what the config file will be searched and what enemy load function will be called
+ * @param [in, out] enemy	the entity that will be loaded to the given entity type
+ * @return the entity with the correct function pointers
+ */
 Entity *enemy_load(int type, Entity *enemy);
 
 /////////////////////////////CELERY STALKER CODE////////////////////////////////////
@@ -95,6 +101,10 @@ Entity *melt_load(Entity *melt);
  */
 void melt_think(Entity *melt);
 
+/**
+ *  @brief	 melt will be stickied until the nextThink, then will reset the think function and its think rate back to normal
+ *  @param	[in,out] melt	the  melt
+ */
 void melt_stickied_think(Entity *melt);
 
 /** 

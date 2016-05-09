@@ -3,14 +3,20 @@
 
 #include "cJSON.h"
 #include "simple_logger.h"
+
 #include "camera.h"
-#include "graphics.h"
 #include "files.h"
+#include "graphics.h"
 
-static Entity *camera = NULL;
-static Uint8 moving = 1; /**< flag to tell the camera to start and stop moving */
 
-static Uint32 gametime = 0;
+/* camera resource manager */
+static Entity		*camera = NULL;
+
+/* camera movement flag */
+static Uint8		moving = 1; /**< flag to tell the camera to start and stop moving */
+
+/* game timer */
+static Uint32		gametime = 0;
 
 Entity *camera_load(int id)
 {

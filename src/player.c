@@ -1,28 +1,39 @@
+#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 
-#include "mouse.h"
-#include "player.h"
-#include "weapon.h"
-#include "camera.h"
 #include "cJSON.h"
 #include "simple_logger.h"
-#include "audio.h"
-#include "files.h"
 
+#include "player.h"
+#include "audio.h"
+#include "camera.h"
+#include "files.h"
+#include "mouse.h"
+#include "weapon.h"
+
+
+/* player resource manager */
 static Entity	*player = NULL;
-static Uint8	player_saved_load = 0;
-static Uint32	respawn_moment;
+static Uint8	playerSavedLoad = 0;
+
+/* player respawning data */
+static Uint32	respawnMoment;
 static Uint32	thinkRateMin = 200;
+
+/* shield sprite */
 static Sprite	*shield = NULL;
+
+/* points data */
 static int		lastPointReward = 0;
 static int		pointRewardRate = 0;
 
+/* multiplier data */
 static Uint8	multiplier = 0;
 static Uint8	multiplierMax = 0;
 static Uint8	multiplierMin = 1;
 
+/* mutiplier degrade data */
 static Uint32	mutiplierDegradeTime = 0;
 static Uint32	multiplierDegradeRate = 0;
 static Uint32	multiplierDegradeMin = 0;
@@ -60,7 +71,7 @@ Entity *player_load()
 	char *moving_file;
 	int channel = FX_PLAYER;
 
-	if(!player_saved_load)
+	if(!playerSavedLoad)
 	{
 		def_file_path = PLAYER_CONFIG;
 	}
@@ -267,7 +278,7 @@ void player_update(Entity *player)
 	}
 	else if(player->state == DEAD_STATE)
 	{
-		if(respawn_moment < get_time())
+		if(respawnMoment < get_time())
 		{
 			player->state = NORMAL_STATE;
 			SDL_SetTextureAlphaMod(player->sprite->image, 255);
@@ -302,7 +313,7 @@ void player_update(Entity *player)
 		player->inventory[LIVES]--;
 		player->inventory[SPREADS] = 0;
 		player->thinkRate = thinkRateMin;
-		respawn_moment = get_time() + RESPAWN_RATE;
+		respawnMoment = get_time() + RESPAWN_RATE;
 		return;
 	}
 
@@ -394,7 +405,7 @@ void player_save_info()
 	char temp[100];
 	int i;
 
-	if(!player_saved_load)
+	if(!playerSavedLoad)
 	{
 		return;
 	}
@@ -484,12 +495,12 @@ Entity *player_get()
 
 void player_saved_load_on()
 {
-	player_saved_load = 1;
+	playerSavedLoad = 1;
 }
 
 void player_saved_load_off()
 {
-	player_saved_load = 0;
+	playerSavedLoad = 0;
 }
 
 void player_reward_points(Uint32 points)

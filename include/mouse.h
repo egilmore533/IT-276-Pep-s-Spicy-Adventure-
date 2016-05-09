@@ -13,12 +13,12 @@
  */
 typedef struct Mouse_s
 {
-	Uint8 alive;
-	Vect2d position;
-	SDL_Rect bounds;
-	Sprite *sprite;
-	int frameNumber;
-	Uint8 clicked;
+	Uint8 alive;				/**< the flag to determine if the mouse is alive */
+	Vect2d position;			/**< x and y coordinates of the mouse */
+	SDL_Rect bounds;			/**< bounds of the mouse (1 by 1) */
+	Sprite *sprite;				/**< the mouse's sprite, using template from DJ, Bo made one and never gave it to me */
+	int frameNumber;			/**< frameNumner of the mouse */
+	Uint8 clicked;				/**< a flag to know if the mouse is clicked or not */
 }Mouse;
 
 /** @brief initializes the mouse for use */

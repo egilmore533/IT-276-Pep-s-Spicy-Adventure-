@@ -1,11 +1,16 @@
-#include "mouse.h"
-#include "camera.h"
-#include "actor.h"
 #include "simple_logger.h"
 
-Mouse *mouse = NULL;
-Uint8 currentType = ENEMY_CLARENCE;
-Uint8 editor = 0;
+#include "mouse.h"
+#include "actor.h"
+#include "camera.h"
+
+
+/* mouse management (only one mouse allowed so no list, max, or min) */
+static Mouse *mouse = NULL;
+
+/* editor data */
+static Uint8	currentType = ENEMY_CLARENCE;
+static Uint8	editor = 0;
 
 void mouse_initialize()
 {

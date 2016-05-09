@@ -1,37 +1,39 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "hud.h"
 #include "SDL_ttf.h"
-#include "player.h"
-#include "camera.h"
+
 #include "simple_logger.h"
-#include "mouse.h"
-#include "button.h"
+
+#include "hud.h"
 #include "actor.h"
+#include "button.h"
+#include "files.h"
+#include "mouse.h"
+#include "player.h"
 
-HUD *hud = NULL;
-TTF_Font	*hudFont = NULL;
-SDL_Color	hudFontColor = {0, 0, 0};
 
-TTF_Font	*hudGradeFont = NULL;
-SDL_Color	hudGradeColor_F = {247, 55, 8};
-SDL_Color	hudGradeColor_D = {247, 132, 26};
-SDL_Color	hudGradeColor_C = {0, 247, 49};
-SDL_Color	hudGradeColor_B = {0, 126, 247};
-SDL_Color	hudGradeColor_A = {239, 247, 0};
-SDL_Color	hudGradeColor_S = {247, 0, 167};
-SDL_Color	hudGradeColor_SS = {247, 231, 0};
-SDL_Color	hudGradeColor_SSS = {247, 247, 247};
+/* hud management (used for arcade, endless, challenge and editor mode) */
+static HUD			*hud = NULL;
 
-Button *nextButton = NULL;
-Button *prevButton = NULL;
+/* normal hud text data (not used for editor mode) */
+static TTF_Font		*hudFont = NULL;
+static SDL_Color	hudFontColor = {0, 0, 0};
 
-#define NEXT_BUTTON_X		100
-#define NEXT_BUTTON_Y		HUD_HEIGHT + 30
+/* normal hud's grade data (colors need to be changed dynamically so they are defined here) */
+static TTF_Font		*hudGradeFont = NULL;
+static SDL_Color	hudGradeColor_F = {247, 55, 8};
+static SDL_Color	hudGradeColor_D = {247, 132, 26};
+static SDL_Color	hudGradeColor_C = {0, 247, 49};
+static SDL_Color	hudGradeColor_B = {0, 126, 247};
+static SDL_Color	hudGradeColor_A = {239, 247, 0};
+static SDL_Color	hudGradeColor_S = {247, 0, 167};
+static SDL_Color	hudGradeColor_SS = {247, 231, 0};
+static SDL_Color	hudGradeColor_SSS = {247, 247, 247};
 
-#define PREV_BUTTON_X		800
-#define PREV_BUTTON_Y		HUD_HEIGHT + 30
+/* editor hud buttons */
+static Button		*nextButton = NULL;
+static Button		*prevButton = NULL;
 
 void hud_initialize()
 {
@@ -39,8 +41,8 @@ void hud_initialize()
 	char *tempGrade;
 	Uint8 multiplier;
 	static SDL_Color gradeColor;
-	hudFont = TTF_OpenFont("fonts/HussarPrintASpicyAdventure.ttf", 16);
-	hudGradeFont = TTF_OpenFont("fonts/HussarPrintASpicyAdventure.ttf", 40);
+	hudFont = TTF_OpenFont(PEP_FONT, 16);
+	hudGradeFont = TTF_OpenFont(PEP_FONT, 40);
 	
 	hud = (HUD *)malloc(sizeof(HUD));
 	memset(hud, 0, sizeof (HUD));
@@ -260,7 +262,7 @@ HUD *hud_get()
 
 void hud_editor_initialize()
 {
-	hudFont = TTF_OpenFont("fonts/HussarPrintASpicyAdventure.ttf", 16);
+	hudFont = TTF_OpenFont(PEP_FONT, 16);
 	hudGradeFont = NULL;
 
 	hud = (HUD *)malloc(sizeof(HUD));

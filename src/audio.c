@@ -1,19 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "audio.h"
-#include "simple_logger.h"
-#include <SDL.h>
 
-static int numSounds = 0;
-static int maxSounds = 0;
-static int numMusics = 0;
-static int maxMusics = 0;
-static int numPaks = 0;
-static int maxPaks = 0;
-static Sound *soundList = NULL;
-static Music *musicList = NULL;
-static SoundPak *pakList = NULL;
+#include <SDL.h>
+#include "simple_logger.h"
+
+#include "audio.h"
+
+
+/* sound resource manager */
+static Sound		*soundList = NULL;
+static int			numSounds = 0;
+static int			maxSounds = 0;
+
+/* music resource manager */
+static Music		*musicList = NULL;
+static int			numMusics = 0;
+static int			maxMusics = 0;
+
+/* soundPak resource manager */
+static SoundPak		*pakList = NULL;
+static int			numPaks = 0;
+static int			maxPaks = 0;
+
 
 void audio_music_free(Music **music)
 {
@@ -27,10 +36,11 @@ void audio_music_free(Music **music)
 		return;
 	}
 	target = *music;
-	target->used--;
+	target->refCount--;
 
 	if(target->refCount == 0)
 	{		
+		target->used--;
 		if(target->music != NULL)
 		{
 			Mix_FreeMusic(target->music); 
@@ -53,11 +63,11 @@ void audio_sound_free(Sound **sound)
 		return;
 	}
 	target = *sound;
-	target->used--;
+	target->refCount--;
 
 	if(target->refCount == 0)
 	{
-		strcpy(target->filename,"\0");
+		target->used--;
 		
 		if(target->sound != NULL)
 		{
@@ -83,6 +93,7 @@ void audio_close_music()
 		music = &musicList[i];
 		audio_music_free(&music);
 	}
+
 	maxMusics = 0;
 	free(musicList); 
 	musicList = NULL;
@@ -152,6 +163,8 @@ void audio_initialize(int soundMax, int musicMax, int pakMax)
 	maxMusics = musicMax;
 	maxSounds = soundMax;
 	maxPaks = pakMax;
+
+	atexit(audio_close_lists);
 }
 
 Music *audio_load_music(char *filename, int loop)
@@ -325,12 +338,10 @@ void audio_pak_free(SoundPak **pak)
 		return;
 	}
 	target = *pak;
-	target->loaded--;
+	target->refCount--;
 
 	if(target->refCount == 0)
 	{
-		strcpy(target->name,"\0");
-		
 		if(target->moving != NULL)
 		{
 			audio_sound_free(&target->moving); 
@@ -347,6 +358,7 @@ void audio_pak_free(SoundPak **pak)
 		{
 			audio_sound_free(&target->death);
 		}
+		target->loaded--;
 		memset(target,0,sizeof(SoundPak));
 		numPaks--;
 	}

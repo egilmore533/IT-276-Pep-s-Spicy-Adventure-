@@ -1,12 +1,19 @@
 #ifndef __HUD_H__
 #define __HUD_H__
 
+#include "camera.h"
 #include "entity.h"
 #include "glib.h"
 
 /** @file	hud.h
  *	@brief	handles the Heads Up Display, how it draws
  */
+
+#define NEXT_BUTTON_X		100						/**< X coordinate of the next button for the level editor */
+#define NEXT_BUTTON_Y		HUD_HEIGHT + 30			/**< Y coordinate of the previous button for the level editor */
+
+#define PREV_BUTTON_X		800
+#define PREV_BUTTON_Y		HUD_HEIGHT + 30
 
 /**
  * @struct HUD

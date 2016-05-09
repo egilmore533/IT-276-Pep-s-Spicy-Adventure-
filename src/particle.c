@@ -1,16 +1,21 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "particle.h"
-#include "simple_logger.h"
 #include "cJSON.h"
+#include "simple_logger.h"
+
+#include "particle.h"
 #include "camera.h"
 #include "files.h"
 
-static Particle *particleList = NULL;	/**< the list of active particles */
-static int particleMax;					/**< the maximum number of particles allowed for the game */
-static int particleNum;					/**< the number of particles currently running */
-static ParticlePak *Dust;
+
+/* resource management */
+static Particle		*particleList = NULL;	/**< the list of active particles */
+static int			particleMax;					/**< the maximum number of particles allowed for the game */
+static int			particleNum;					/**< the number of particles currently running */
+
+/* particle paks */
+static ParticlePak *Dust= NULL;			/**< the particles that the game will be using exclusively */
 
 void particle_free(Particle **particle)
 {

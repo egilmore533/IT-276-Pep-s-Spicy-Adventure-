@@ -7,22 +7,14 @@
  *	@brief	Handles everything to do with the Window, renderer, and frame rate
  */
 
-/** 
- *  @brief example macro to return the largest of two values.
- *         can be read as: if a greater than b then a, else b
- */
-#define MAX(a,b) (a>b?a:b)
 
-/** @brief example macro to return the smallest of two values.
- *			can be read as: if a less than b then a, else b
- */
-#define MIN(a,b) (a<b?a:b)
+#define MAX(a,b) (a>b?a:b)	/**< example macro to return the largest of two values. can be read as: if a greater than b then a, else b */
 
-/** @brief constant to be used to get the size of the window's width */
-#define WINDOW_WIDTH	1366
+#define MIN(a,b) (a<b?a:b)	/**< example macro to return the smallest of two values. can be read as: if a less than b then a, else b */
 
-/** @brief constant to be used to get the size of the window's height */
-#define WINDOW_HEIGHT	768
+#define WINDOW_WIDTH	1366	/**< constant to be used to get the size of the window's width */
+
+#define WINDOW_HEIGHT	768		/**< constant to be used to get the size of the window's height */
 
 /**
  * @brief	initializes the main window and the main renderer.

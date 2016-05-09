@@ -12,12 +12,12 @@
  * @brief used to check if the end of the level has been reached by the player
  */
 typedef struct {
-	BackgroundPak *background;
-	Music *backgroundMusic;
-	Entity *cam;
-	Entity *player;
-	char *level_def_file;
-	int end;
+	BackgroundPak *background;			/**< BackgroundPak */
+	Music *backgroundMusic;				/**< backgroundMusic for the level */
+	Entity *cam;						/**< the game's camera entity */
+	Entity *player;						/**< the game's player entity */
+	char *level_def_file;				/**< the def file for this level */
+	int end;							/**< the x corrdinate of the end of the level */
 }Level;
 
 /**
@@ -41,6 +41,10 @@ void level_free(Level **level);
  */
 Level *level_load(char *level_def_file);
 
+/**
+ * @brief creates a level file using cJSON and the actorList saving the number of the type of actor and the positions of all the entities of that type, default background, music, camea and player are saved
+ *			gets to the type of entity it is going to save next, checks how many actors there are in the actorList, the loops through the actorList searching for their position
+ */
 void level_save();
 
 /**

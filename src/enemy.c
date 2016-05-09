@@ -1,17 +1,18 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-#include "graphics.h"
-#include "enemy.h"
-#include "weapon.h"
-#include "camera.h"
-#include "particle.h"
-#include "weapon.h"
-#include "simple_logger.h"
 #include "cJSON.h"
-#include "player.h"
+#include "simple_logger.h"
+
+#include "enemy.h"
+#include "camera.h"
 #include "files.h"
+#include "graphics.h"
+#include "particle.h"
+#include "player.h"
+#include "weapon.h"
+
 
 Entity *enemy_load(int type, Entity *enemy)
 {

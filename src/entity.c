@@ -1,9 +1,12 @@
-#include "entity.h"
 #include "simple_logger.h"
 
-static Entity *entityList = NULL;
-static int entityNum = 0;
-static int entityMax = 0;
+#include "entity.h"
+
+
+/* entity resource manager */
+static Entity	*entityList = NULL;
+static int		entityNum = 0;
+static int		entityMax = 0;
 
 void entity_free(Entity **entity)
 {

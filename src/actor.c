@@ -2,15 +2,17 @@
 #include <stdlib.h>
 
 #include "cJSON.h"
-
-#include "files.h"
-#include "actor.h"
-#include "camera.h"
 #include "simple_logger.h"
 
-static Actor *actorList = NULL;
-static int actorNum;
-static int actorMax = 0;
+#include "actor.h"
+#include "camera.h"
+#include "files.h"
+
+
+/* resource management */
+static Actor	*actorList = NULL;
+static int		actorNum;
+static int		actorMax = 0;
 
 void actor_empty_list()
 {

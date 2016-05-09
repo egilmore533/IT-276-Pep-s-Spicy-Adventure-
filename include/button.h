@@ -78,16 +78,38 @@ void button_draw(Button *button);
  */
 void button_update(Button *button);
 
+/**
+ * @brief checks to see if a given mouse and button are intersecting, uses the same logic as entity_intersect
+ * @param [in] button	checks its bounds and position vs the bounds and positions of mouse
+ * @param [in] mouse	checks its bounds and position vs the bounds and positions of button
+ * @return 1 if the the givne mouse and button are intersecting
+ */
 int mouse_button_intersect(Button *button, Mouse *mouse);
 
+/**
+ * @brief updates every button in the buttonList, better to manually update the button you want to use in the loop you want to use
+ */
 void button_update_all();
 
+/**
+ * @brief draws every button in the buttonList, better to manually draw the button you want to use in the loop you want to use
+ */
 void button_draw_all();
 
-////////////////////////SPECIF LOAD FUNCTIONS/////////////////////////////////
-
+/**
+ * @brief loads a big button, at a given position, with a given label
+ * @param position the position for the button to exist in the game world
+ * @param labelText is what text will show on the button
+ * @return a large button button at the given position with the given text label
+ */
 Button *button_load_big(Vect2d position, char *labelText);
 
+/**
+ * @brief loads a small button, at a given position, with a given label
+ * @param position the position for the button to exist in the game world
+ * @param labelText is what text will show on the button
+ * @return a tiny button button at the given position with the given text label
+ */
 Button *button_load_small(Vect2d position, char *labelText);
 
 #endif

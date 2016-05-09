@@ -2,13 +2,15 @@
 #include <stdlib.h>
 
 #include "cJSON.h"
-#include "background.h"
-#include "camera.h"
 #include "simple_logger.h"
 
-static Background *backgroundList = NULL;
-static int backgroundNum;
-static int backgroundMax = 0;
+#include "background.h"
+#include "camera.h"
+
+/* background resource manager */
+static Background	*backgroundList = NULL;
+static int			backgroundNum;
+static int			backgroundMax = 0;
 
 void background_free(Background **background)
 {

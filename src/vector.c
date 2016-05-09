@@ -1,6 +1,7 @@
-#include "vector.h"
 #include <math.h>
 #include <stdio.h>
+
+#include "vector.h"
 
 
 void vect3d_cross_product(Vect3d *out, Vect3d vect1, Vect3d vect2)
@@ -187,6 +188,7 @@ Vect3d vect3d_new(float a, float b, int c)
 	Vect3d v = {a, b, c};
 	return v;
 }
+
 Vect4d vect4d_new(float a, float b, int c, int d)
 {
 	Vect4d v = {a, b, c, d};

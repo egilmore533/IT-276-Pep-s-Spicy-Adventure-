@@ -1,16 +1,16 @@
 #include <math.h>
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
+
+#include "cJSON.h"
+#include "simple_logger.h"
 
 #include "weapon.h"
 #include "camera.h"
+#include "files.h"
 #include "level.h"
 #include "particle.h"
-#include "simple_logger.h"
-#include "cJSON.h"
-#include "files.h"
 
-#define PI			3.141589
 
 Entity *weapon_fire(int type, Entity *owner)
 {

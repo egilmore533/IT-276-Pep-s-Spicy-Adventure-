@@ -1,14 +1,19 @@
+#include "files.h"
 #include "audio.h"
 #include "button.h"
 #include "SDL_ttf.h"
 #include "simple_logger.h"
 #include "camera.h"
 
-static Button *buttonList = NULL;
-static int numButtons = 0;
-static int maxButtons = 0;
-static TTF_Font *button_font = NULL;
-static SDL_Color color = {255, 255, 255};
+
+/* button resource manager */
+static Button		*buttonList = NULL;
+static int			numButtons = 0;
+static int			maxButtons = 0;
+
+/* button font data */
+static TTF_Font		*buttonFont = NULL;
+static SDL_Color	color = {255, 255, 255};
 
 
 void button_empty_list()
@@ -52,7 +57,7 @@ void button_close_system()
 	free(buttonList);
 	buttonList = NULL;
 
-	TTF_CloseFont(button_font);
+	TTF_CloseFont(buttonFont);
 }
 
 void button_initialize_system(int buttonsMax)
@@ -78,7 +83,7 @@ void button_initialize_system(int buttonsMax)
 	}
 	maxButtons = buttonsMax;
 
-	button_font = TTF_OpenFont("fonts/HussarPrintASpicyAdventure.ttf", 28);
+	buttonFont = TTF_OpenFont(PEP_FONT, 28);
 
 	atexit(button_close_system);
 }
@@ -134,7 +139,7 @@ Button *button_new(Vect2d position)
 		buttonList[i].draw = &button_draw;
 		buttonList[i].update = &button_update;
 		buttonList[i].position = position;
-		buttonList[i].hoverNoise = audio_load_sound("sound/button_hover_noise.ogg" , 0, FX_IMPACTS);
+		buttonList[i].hoverNoise = audio_load_sound(BUTTON_HOVER_NOISE , 0, FX_IMPACTS);
 
 		numButtons++;
 		return &buttonList[i];
@@ -242,7 +247,7 @@ Button *button_load_big(Vect2d position, char *labelText)
 	button = button_new(position); 
 	button->buttonSprite = sprite_load("images/button.png", vect2d_new(500, 100), 1, 2);
 	button->bounds = rect(0, 0, button->buttonSprite->frameSize.x, button->buttonSprite->frameSize.y);
-	button->label = sprite_load_text(button_font, labelText, color);
+	button->label = sprite_load_text(buttonFont, labelText, color);
 	return button;
 }
 
@@ -253,7 +258,7 @@ Button *button_load_small(Vect2d position, char *labelText)
 	button = button_new(position); 
 	button->buttonSprite = sprite_load("images/tiny_button.png", vect2d_new(250, 50), 1, 2);
 	button->bounds = rect(0, 0, button->buttonSprite->frameSize.x, button->buttonSprite->frameSize.y);
-	button->label = sprite_load_text(button_font, labelText, color);
+	button->label = sprite_load_text(buttonFont, labelText, color);
 	return button;
 }
 

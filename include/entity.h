@@ -9,7 +9,7 @@
  */
 
 ////////////////////INVENTORY/////////////////////
-#define MAX_INVENTORY	3		/**< A macro that defines maximum inventory. */
+#define MAX_INVENTORY		3	/**< A macro that defines maximum inventory. */
 
 #define MAX_LIVES			5	/**< A macro that defines maximum lives I allow the player to have. */
 

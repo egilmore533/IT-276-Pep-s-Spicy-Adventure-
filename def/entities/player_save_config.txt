@@ -9,13 +9,13 @@
 				"frames":	4
 			},
 			"info":	{
-				"thinkRate":	100,
-				"points":	69500,
+				"thinkRate":	200,
+				"points":	0,
 				"health":	1,
 				"velMax":	"10.000000 10.000000",
-				"lives":	4,
-				"bombs":	1,
-				"spreads":	1,
+				"lives":	3,
+				"bombs":	2,
+				"spreads":	0,
 				"lastPointReward":	0,
 				"pointRewardRate":	100000,
 				"multiplier":	1,

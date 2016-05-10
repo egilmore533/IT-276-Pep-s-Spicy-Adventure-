@@ -556,12 +556,12 @@ void continue_screen()
 	{
 		positionsOffset = vect2d_new(0,0);
 	}
-	scorePos.x = positionsOffset.x + 600;
-	scorePos.y = positionsOffset.y + 100;
-	continueButton = button_load_big(vect2d_new(600 + positionsOffset.x, 600 + positionsOffset.y), "Continue");
+	continueButton = button_load_big(vect2d_new(400 + positionsOffset.x, 600 + positionsOffset.y), "Continue");
 	continueButton->click = &no_back;
 
 	background = sprite_load("images/black_background.png", vect2d_new(1366, 768), 1, 1);
+	scorePos.x = positionsOffset.x + continueButton->position.x + 85;
+	scorePos.y = positionsOffset.y + 100;
 	SDL_SetTextureAlphaMod(background->image, 100); //makes the screen fade in slowly, nice transistion
 	sprintf(tempScore, "Score: %u", player->points);
 	score = sprite_load_text(font, tempScore, textColor);

@@ -37,7 +37,7 @@ static Button		*prevButton = NULL;
 
 void hud_initialize()
 {
-	char temp[11];
+	char temp[100];
 	char *tempGrade;
 	Uint8 multiplier;
 	static SDL_Color gradeColor;
@@ -57,42 +57,42 @@ void hud_initialize()
 	hud->livesLabel = sprite_load_text(hudFont, "Lives", hudFontColor);
 	hud->bombsLabel = sprite_load_text(hudFont, "Bombs", hudFontColor);
 
-	sprintf(temp, "%d", hud->player->points);
+	sprintf(temp, "Score: %d", hud->player->points);
 	hud->pointsLabel = sprite_load_text(hudFont, temp, hudFontColor);
 
 	multiplier = get_multiplier();
 	switch(multiplier)
 	{
 	case 1: 
-		tempGrade = "F";
+		tempGrade = "Multiplier: F";
 		gradeColor = hudGradeColor_F;
 		break;
 	case 2: 
-		tempGrade = "D";
+		tempGrade = "Multiplier: D";
 		gradeColor = hudGradeColor_D;
 		break;
 	case 3:
-		tempGrade = "C";
+		tempGrade = "Multiplier: C";
 		gradeColor = hudGradeColor_C;
 		break;
 	case 4:
-		tempGrade = "B";
+		tempGrade = "Multiplier: B";
 		gradeColor = hudGradeColor_B;
 		break;
 	case 5:
-		tempGrade = "A";
+		tempGrade = "Multiplier: A";
 		gradeColor = hudGradeColor_A;
 		break;
 	case 6:
-		tempGrade = "S";
+		tempGrade = "Multiplier: S";
 		gradeColor = hudGradeColor_S;
 		break;
 	case 7:
-		tempGrade = "SS";
+		tempGrade = "Multiplier: SS";
 		gradeColor = hudGradeColor_SS;
 		break;
 	case 8:
-		tempGrade = "SSS";
+		tempGrade = "Multiplier: SSS";
 		gradeColor = hudGradeColor_SSS;
 		break;
 	}
@@ -103,7 +103,7 @@ void hud_draw()
 {
 	static Uint32 points = 0;
 	static Uint8 multiplier = 1;
-	char temp[11];
+	char temp[100];
 	char *tempGrade = "F";
 	static Uint8 multiplierOld;
 	static SDL_Color gradeColor;
@@ -138,11 +138,12 @@ void hud_draw()
 		sprite_draw(hud->bombs, 0, drawPos);
 	}
 
-	drawPos.x = hud->camera->position.x + 900;
+	drawPos.x = hud->camera->position.x + 950;
+	drawPos.y = hud_height + 20;
 	if(points != hud->player->points)
 	{
 		points = hud->player->points;
-		sprintf(temp, "%d", points);
+		sprintf(temp, "Score: %d", points);
 		sprite_free(&hud->pointsLabel);
 		hud->pointsLabel = sprite_load_text(hudFont, temp, hudFontColor);
 	}
@@ -154,43 +155,44 @@ void hud_draw()
 		switch(multiplierOld)
 		{
 		case 1: 
-			tempGrade = "F";
+			tempGrade = "Multiplier: F";
 			gradeColor = hudGradeColor_F;
 			break;
 		case 2: 
-			tempGrade = "D";
+			tempGrade = "Multiplier: D";
 			gradeColor = hudGradeColor_D;
 			break;
 		case 3:
-			tempGrade = "C";
+			tempGrade = "Multiplier: C";
 			gradeColor = hudGradeColor_C;
 			break;
 		case 4:
-			tempGrade = "B";
+			tempGrade = "Multiplier: B";
 			gradeColor = hudGradeColor_B;
 			break;
 		case 5:
-			tempGrade = "A";
+			tempGrade = "Multiplier: A";
 			gradeColor = hudGradeColor_A;
 			break;
 		case 6:
-			tempGrade = "S";
+			tempGrade = "Multiplier: S";
 			gradeColor = hudGradeColor_S;
 			break;
 		case 7:
-			tempGrade = "SS";
+			tempGrade = "Multiplier: SS";
 			gradeColor = hudGradeColor_SS;
 			break;
 		case 8:
-			tempGrade = "SSS";
+			tempGrade = "Multiplier: SSS";
 			gradeColor = hudGradeColor_SSS;
 			break;
 		}
 		sprite_free(&hud->pointsMultiplierLabel);
-		hud->pointsMultiplierLabel = sprite_load_text(hudGradeFont, tempGrade, gradeColor);
+		hud->pointsMultiplierLabel = sprite_load_text(hudGradeFont, tempGrade , gradeColor);
 	}
 	
-	drawPos.y = hud_height + 50;
+	drawPos.x = hud->camera->position.x + 900;
+	drawPos.y = hud_height + 75;
 	sprite_text_draw(hud->pointsMultiplierLabel, drawPos);
 }
 
